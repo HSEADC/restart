@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: 'Impact';
+        src: url('../fonts/impact.eot'); /* IE 9 Compatibility Mode */
+        src: url('../fonts/impact.eot?#iefix') format('embedded-opentype'),
+          /* IE < 9 */ url('../fonts/impact.woff2') format('woff2'),
+          /* Super Modern Browsers */ url('../fonts/impact.woff') format('woff'),
+          /* Firefox >= 3.6, any other modern browser */
+            url('../fonts/impact.ttf') format('truetype'),
+          /* Safari, Android, iOS */ url('../fonts/impact.svg#impact')
+            format('svg'); /* Chrome < 4, Legacy iOS */
+      }
+      @font-face {
+        font-family: 'Gilroy';
+        src: local('Gilroy Light'), local('Gilroy-Light'),
+          url('Gilroylight.woff2') format('woff2'),
+          url('Gilroylight.woff') format('woff'),
+          url('Gilroylight.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Gilroy';
+        src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+          url('Gilroyextrabold.woff2') format('woff2'),
+          url('Gilroyextrabold.woff') format('woff'),
+          url('Gilroyextrabold.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+      }
+      body {
+        background-color: #f7e6f0;
+        width: 1440px;
+        margin: 0;
+        padding: 0;
+      }
+      .white {
+        border-radius: 15px;
+        width: 1299px;
+        height: 58px;
+        backdrop-filter: blur(100px);
+        background: #fff;
+        margin-left: 70px;
+        margin-top: 40px;
+      }
+      .menu {
+        display: flex;
+        justify-content: start;
+        gap: 37px;
+        margin-left: 21px;
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #141414;
+        padding-top: 10px;
+      }
+      a {
+        text-decoration: inherit;
+        color: #121212;
+      }
+      .logo {
+        justify-content: center;
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 312%;
+        text-align: right;
+        color: #141414;
+        margin-top: -35px;
+        margin-left: -182px;
+      }
+      .whitebox {
+        display: flex;
+        justify-content: space-between;
+      }
+      .but {
+        border-radius: 10px;
+        width: 201px;
+        height: 50px;
+        background: #141414;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        margin-top: 4px;
+      }
+      .start {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 298%;
+        color: #f7e6f0;
+      }
+
+      /* test */
+
+      .restart {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 380px;
+        line-height: 21%;
+        text-align: center;
+        color: #fe0300;
+        margin-top: -150px;
+        display: block;
+        justify-content: center;
+        animation: moveText 5s linear infinite;
+        width: 1440px;
+      }
+      .whitebag {
+        border-radius: 80px;
+        width: 1470px;
+        /* width: 100vw; */
+        height: 5136px;
+        background: #fff;
+        margin-top: -100px;
+      }
+      @keyframes moveText {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .about {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 100%;
+        color: #141414;
+        padding-top: 40px;
+        padding-left: 67px;
+      }
+      .firsttext {
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 130%;
+        color: #141414;
+        width: 689px;
+      }
+      .gotext {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 250%;
+        text-transform: capitalize;
+        color: #fe0300;
+      }
+      .go {
+        border-radius: 100px;
+        width: 301px;
+        height: 92px;
+        background: #f7e6f0;
+      }
+      .first {
+        display: flex;
+      }
+      .firstblock {
+        padding-left: 300px;
+        padding-top: 300px;
+      }
+      .gotext {
+        padding-left: 85px;
+      }
+      .longtext {
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 110%;
+        color: #141414;
+        margin-left: 67px;
+        margin-top: 100px;
+      }
+      .rose {
+        border-radius: 80px;
+        width: 1470px;
+        height: 876px;
+        background: #f7e6f0;
+        margin-top: -500px;
+      }
+      .number {
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 600px;
+        color: #fe0300;
+        margin-left: 150px;
+      }
+      .day {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 100%;
+        color: #141414;
+        margin-top: -660px;
+        margin-left: 406px;
+      }
+      .circle {
+        border-radius: 100%;
+        fill: #000;
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: #141414;
+        border: none;
+        margin-left: 1100px;
+        margin-top: -600px;
+      }
+      .starttera {
+        display: flex;
+        justify-content: center;
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: #fbff8a;
+        margin-top: 30px;
+      }
+      .tworect {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 72px;
+      }
+      .firstrect {
+        border-radius: 30px;
+        width: 640px;
+        height: 389px;
+        background: #f7e6f0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .tests {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 150%;
+        color: #fe0300;
+        margin-left: 44px;
+      }
+      .secondrect {
+        border-radius: 30px;
+        width: 640px;
+        height: 389px;
+        background: #fe0300;
+        display: flex;
+        justify-content: space-between;
+      }
+      .articles {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 150%;
+        color: #f7e6f0;
+        margin-left: 44px;
+      }
+      .circlebut2 {
+        border-radius: 100%;
+        fill: #fe0300;
+        width: 104px;
+        height: 104px;
+        background-color: #fe0300;
+        border: none;
+      }
+      .redbut {
+        padding-top: 26px;
+        padding-right: 35px;
+      }
+      .circlebut3 {
+        border-radius: 100%;
+        fill: #f7e6f0;
+        width: 104px;
+        height: 104px;
+        background-color: #f7e6f0;
+        border: none;
+      }
+      .rosebut {
+        padding-top: 26px;
+        padding-right: 35px;
+      }
+      .get {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 100%;
+        color: #141414;
+        display: flex;
+        justify-content: center;
+      }
+      .what {
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 130%;
+        color: #fe0300;
+        display: flex;
+        justify-content: center;
+      }
+      .firstday {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 100%;
+        color: #fe0300;
+        display: flex;
+        justify-content: center;
+        margin-left: 208px;
+        z-index: 0;
+        width: 986px;
+        padding-left: 125px;
+      }
+      .zero {
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 600px;
+        color: #f7e6f0;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -500px;
+        z-index: 1;
+        margin-left: -456px;
+      }
+      .butstart {
+        border-radius: 100px;
+        width: 301px;
+        height: 92px;
+        background: #f7e6f0;
+        margin-left: 373px;
+      }
+      .butstarttext {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 250%;
+        text-transform: capitalize;
+        color: #fe0300;
+        padding-left: 96px;
+      }
+      .textandbut {
+        display: block;
+      }
+      .fiveblock {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .fivetext {
+        width: 726px;
+        font-family: 'Gilroy';
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 110%;
+        color: #141414;
+      }
+      .fivetext {
+        padding-left: 68px;
+        padding-top: 150px;
+      }
+      .thoughts {
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 100%;
+        color: #141414;
+        padding-left: 68px;
+        padding-top: 50px;
+      }
+      .circle5 {
+        border-radius: 100%;
+        fill: #141414;
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: #141414;
+        border: none;
+        margin-left: 1100px;
+        /* margin-top: -600px; */
+        margin-top: -200px;
+      }
+      .starttera5 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: #fbff8a;
+        margin-top: 30px;
+      }
+      .starttera5 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Impact';
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: #fbff8a;
+        margin-top: 30px;
+      }
+      .textthought1 {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 130%;
+        color: #fe0300;
+      }
+      .thought1 {
+        background-image: url(images/thought1.svg);
+        background-repeat: no-repeat;
+        width: 465px;
+        /* height: 278px; */
+        height: 269px;
+        margin-top: 50px;
+        margin-left: 200px;
+      }
+      .textthought1 {
+        padding-left: 56px;
+        padding-top: 30px;
+      }
+      .textthought2 {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 130%;
+        color: #fe0300;
+      }
+      .thought2 {
+        background-image: url(images/thought2.svg);
+        background-repeat: no-repeat;
+        width: 425px;
+        height: 273px;
+        margin-top: 0px;
+        margin-right: 200px;
+      }
+      .textthought2 {
+        padding-left: 56px;
+        padding-top: 30px;
+      }
+      .twothoughts {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .textthought3 {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 130%;
+        color: #fe0300;
+      }
+      .thought3 {
+        background-image: url(images/thought3.svg);
+        background-repeat: no-repeat;
+        width: 578px;
+        height: 271px;
+        margin-top: 60px;
+        margin-left: 220px;
+      }
+      .textthought3 {
+        padding-left: 56px;
+        padding-top: 30px;
+      }
+      .textthought4 {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 130%;
+        color: #fe0300;
+      }
+      .thought4 {
+        background-image: url(images/thought4.svg);
+        background-repeat: no-repeat;
+        width: 428px;
+        height: 198px;
+        margin-top: 0px;
+        margin-right: 100px;
+      }
+      .textthought4 {
+        padding-left: 56px;
+        padding-top: 30px;
+      }
+      .twothoughts2 {
+        display: flex;
+        justify-content: space-around;
+      }
+      .hidden-image {
+        display: none;
+      }
+
+      @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+        body {
+          max-width: 1440px;
+        }
+      }
+      @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (min-width: 414px) and (max-width: 768px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 360px) and (max-width: 414px) {
+        body {
+          max-width: 414px;
+        }
+        .hidden-image {
+          display: block;
+          margin-left: 350px;
+        }
+        .first {
+          display: block;
+        }
+        .about {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 100%;
+          color: #141414;
+          padding-top: 20px;
+          padding-left: 56px;
+          margin-top: 100px;
+        }
+        .firstblock {
+          padding-left: 56px;
+          padding-top: 0px;
+          display: block;
+          justify-content: center;
+        }
+        .firsttext {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          /* font-size: 19vw; */
+          font-size: 20px;
+          line-height: 130%;
+          color: #141414;
+          /* width: 689px; */
+          width: 300px;
+          display: block;
+          justify-content: center;
+        }
+        .gotext {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 250%;
+          text-transform: capitalize;
+          color: #fe0300;
+        }
+        .go {
+          border-radius: 100px;
+          width: 301px;
+          height: 92px;
+          background: #f7e6f0;
+          justify-content: center;
+        }
+        .whitebag {
+          width: 414px;
+          height: 3950px;
+          margin-top: 100px;
+        }
+        /* .restart {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 50vw;
+          line-height: 21%;
+          text-align: center;
+          color: #fe0300;
+          margin-top: -90px;
+          display: block;
+          justify-content: center;
+          animation: moveText 5s linear infinite;
+          width: 100vw;
+        } */
+        .restart {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 100px;
+          line-height: 21%;
+          text-align: center;
+          color: #fe0300;
+          margin-top: -20px;
+          display: block;
+          justify-content: center;
+          animation: moveText 5s linear infinite;
+          width: 414px;
+        }
+        .rose {
+          width: 414px;
+          display: block;
+          margin-top: -250px;
+          height: 654px;
+        }
+        .white {
+          display: none;
+        }
+        .big {
+          display: block;
+        }
+        /* test */
+        .number {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 300px;
+          color: #fe0300;
+          margin-left: 36px;
+        }
+
+        .circle {
+          border-radius: 100%;
+          fill: #000;
+          display: flex;
+          height: 200px;
+          width: 200px;
+          background-color: #141414;
+          border: none;
+          margin-left: 107px;
+          margin-top: 10px;
+        }
+        .starttera {
+          display: flex;
+          justify-content: center;
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 30px;
+          text-align: center;
+          color: #fbff8a;
+          margin-top: 30px;
+        }
+        .tworect {
+          display: block;
+          gap: 50px;
+          justify-content: center;
+          margin-top: 30px;
+          padding-left: 5vw;
+        }
+        .firstrect {
+          border-radius: 30px;
+          width: 95%;
+          height: 389px;
+          background: #f7e6f0;
+          display: flex;
+          justify-content: space-between;
+        }
+        .tests {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 150%;
+          color: #fe0300;
+          margin-left: 44px;
+        }
+        .secondrect {
+          border-radius: 30px;
+          width: 95%;
+          height: 389px;
+          background: #fe0300;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 5%;
+        }
+        .articles {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 150%;
+          color: #f7e6f0;
+          margin-left: 44px;
+        }
+        .circlebut2 {
+          border-radius: 100%;
+          fill: #fe0300;
+          width: 104px;
+          height: 104px;
+          background-color: #fe0300;
+          border: none;
+        }
+        .redbut {
+          padding-top: 26px;
+          padding-right: 35px;
+        }
+        .circlebut3 {
+          border-radius: 100%;
+          fill: #f7e6f0;
+          width: 104px;
+          height: 104px;
+          background-color: #f7e6f0;
+          border: none;
+        }
+        .rosebut {
+          padding-top: 26px;
+          padding-right: 35px;
+        }
+        .get {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 10vw;
+          width: 80%;
+          line-height: 100%;
+          color: #141414;
+          display: flex;
+          /* justify-content: center; */
+          padding-left: 13vw;
+        }
+        .what {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 130%;
+          color: #fe0300;
+          display: flex;
+          justify-content: center;
+          padding-left: 7vw;
+        }
+        .firstday {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 10vw;
+          line-height: 100%;
+          color: #fe0300;
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 2px;
+          z-index: 0;
+          width: 80vw;
+          padding-left: 12vw;
+        }
+
+        .zero {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 300px;
+          color: #f7e6f0;
+          /* display: block; */
+          justify-content: flex-start;
+          margin-top: -1115px;
+          z-index: 1;
+          /* margin-left: -258vw; */
+          margin-left: 70px;
+          /* display: none; */
+        }
+        .butstart {
+          border-radius: 100px;
+          width: 301px;
+          height: 92px;
+          background: #f7e6f0;
+          margin-left: 60px;
+          margin-top: 250px;
+        }
+        .butstarttext {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 250%;
+          text-transform: capitalize;
+          color: #fe0300;
+          padding-left: 96px;
+        }
+        .textandbut {
+          display: block;
+        }
+        .fiveblock {
+          display: block;
+        }
+        .fivetext {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 5vw;
+          line-height: 130%;
+          color: #141414;
+          width: 80%;
+          margin-left: -1.2%;
+          margin-top: -25%;
+          display: block;
+          justify-content: center;
+        }
+        .thoughts {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 40px;
+          width: 300px;
+          line-height: 100%;
+          color: #141414;
+          padding-left: 50px;
+          padding-top: 10px;
+        }
+        .circle5 {
+          border-radius: 100%;
+          fill: #141414;
+          display: flex;
+          height: 200px;
+          width: 200px;
+          background-color: #141414;
+          border: none;
+          margin-left: 1px;
+          /* margin-top: -600px; */
+          margin-top: -30px;
+        }
+        .starttera5 {
+          display: flex;
+          justify-content: center;
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 30px;
+          text-align: center;
+          color: #fbff8a;
+          margin-top: 30px;
+        }
+        .starttera5 {
+          display: flex;
+          justify-content: center;
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 30px;
+          text-align: center;
+          color: #fbff8a;
+          margin-top: 30px;
+        }
+        .twothoughts {
+          display: block;
+          margin-top: -60px;
+        }
+        .textthought1 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 80vw;
+        }
+        .thought1 {
+          background-image: url(images/thought1.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 278px;
+          margin-top: 250px;
+          margin-left: 5vw;
+          padding-top: -10%;
+        }
+        .textthought1 {
+          padding-left: 10%;
+          padding-top: 10%;
+        }
+        .textthought2 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 70vw;
+        }
+        .thought2 {
+          background-image: url(images/thought3.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          /* width: 50vw; */
+          height: 278px;
+          margin-top: -10vw;
+          margin-left: 5vw;
+          /* padding-top: -50%; */
+        }
+        .textthought2 {
+          padding-left: 10%;
+          padding-top: 5%;
+        }
+        .twothoughts2 {
+          display: block;
+        }
+        .textthought3 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 75vw;
+        }
+        .thought3 {
+          background-image: url(images/thought2.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 278px;
+          margin-top: 50px;
+          margin-left: 5vw;
+          padding-top: -50%;
+          display: none;
+        }
+        .textthought3 {
+          padding-left: 10%;
+          padding-top: 10%;
+        }
+        .textthought4 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 70vw;
+        }
+        .thought4 {
+          background-image: url(images/thought3.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 278px;
+          margin-top: -20vw;
+          margin-left: 5vw;
+          padding-top: -50%;
+        }
+        .textthought4 {
+          padding-left: 10%;
+          padding-top: 10%;
+        }
+
+        .longtext {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 100%;
+          line-height: 110%;
+          color: #141414;
+          margin-left: 67px;
+          margin-top: 100px;
+          display: none;
+        }
+
+        .day {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 100%;
+          color: #141414;
+          margin-top: -340px;
+          margin-left: 86px;
+        }
+        .circlebut5 {
+          display: none;
+        }
+        .thoughtsandbut {
+          display: block;
+        }
+      }
+
+      @media only screen and (max-width: 360px) {
+        body {
+          max-width: 414px;
+        }
+        .hidden-image {
+          display: block;
+          margin-left: 350px;
+        }
+        .first {
+          display: block;
+        }
+        .about {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 100%;
+          color: #141414;
+          padding-top: 20px;
+          padding-left: 56px;
+          margin-top: 100px;
+        }
+        .firstblock {
+          padding-left: 56px;
+          padding-top: 0px;
+          display: block;
+          justify-content: center;
+        }
+        .firsttext {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          /* font-size: 19vw; */
+          font-size: 20px;
+          line-height: 130%;
+          color: #141414;
+          /* width: 689px; */
+          width: 300px;
+          display: block;
+          justify-content: center;
+        }
+        .gotext {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 250%;
+          text-transform: capitalize;
+          color: #fe0300;
+        }
+        .go {
+          border-radius: 100px;
+          width: 301px;
+          height: 92px;
+          background: #f7e6f0;
+          justify-content: center;
+        }
+        .whitebag {
+          width: 414px;
+          height: 3950px;
+          margin-top: 100px;
+        }
+        /* .restart {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 50vw;
+          line-height: 21%;
+          text-align: center;
+          color: #fe0300;
+          margin-top: -90px;
+          display: block;
+          justify-content: center;
+          animation: moveText 5s linear infinite;
+          width: 100vw;
+        } */
+        .restart {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 100px;
+          line-height: 21%;
+          text-align: center;
+          color: #fe0300;
+          margin-top: -20px;
+          display: block;
+          justify-content: center;
+          animation: moveText 5s linear infinite;
+          width: 414px;
+        }
+        .rose {
+          width: 414px;
+          display: block;
+          margin-top: -250px;
+          height: 654px;
+        }
+        .white {
+          display: none;
+        }
+        .big {
+          display: block;
+        }
+        /* test */
+        .number {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 300px;
+          color: #fe0300;
+          margin-left: 36px;
+        }
+
+        .circle {
+          border-radius: 100%;
+          fill: #000;
+          display: flex;
+          height: 200px;
+          width: 200px;
+          background-color: #141414;
+          border: none;
+          margin-left: 107px;
+          margin-top: 10px;
+        }
+        .starttera {
+          display: flex;
+          justify-content: center;
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 30px;
+          text-align: center;
+          color: #fbff8a;
+          margin-top: 30px;
+        }
+        .tworect {
+          display: block;
+          gap: 50px;
+          justify-content: center;
+          margin-top: 30px;
+          padding-left: 5vw;
+        }
+        .firstrect {
+          border-radius: 30px;
+          width: 95%;
+          height: 389px;
+          background: #f7e6f0;
+          display: flex;
+          justify-content: space-between;
+        }
+        .tests {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 150%;
+          color: #fe0300;
+          margin-left: 44px;
+        }
+        .secondrect {
+          border-radius: 30px;
+          width: 95%;
+          height: 389px;
+          background: #fe0300;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 5%;
+        }
+        .articles {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 150%;
+          color: #f7e6f0;
+          margin-left: 44px;
+        }
+        .circlebut2 {
+          border-radius: 100%;
+          fill: #fe0300;
+          width: 104px;
+          height: 104px;
+          background-color: #fe0300;
+          border: none;
+        }
+        .redbut {
+          padding-top: 26px;
+          padding-right: 35px;
+        }
+        .circlebut3 {
+          border-radius: 100%;
+          fill: #f7e6f0;
+          width: 104px;
+          height: 104px;
+          background-color: #f7e6f0;
+          border: none;
+        }
+        .rosebut {
+          padding-top: 26px;
+          padding-right: 35px;
+        }
+        .get {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 10vw;
+          width: 80%;
+          line-height: 100%;
+          color: #141414;
+          display: flex;
+          /* justify-content: center; */
+          padding-left: 13vw;
+        }
+        .what {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 130%;
+          color: #fe0300;
+          display: flex;
+          justify-content: center;
+          padding-left: 7vw;
+        }
+        .firstday {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 10vw;
+          line-height: 100%;
+          color: #fe0300;
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 2px;
+          z-index: 0;
+          width: 80vw;
+          padding-left: 12vw;
+        }
+
+        .zero {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 300px;
+          color: #f7e6f0;
+          /* display: block; */
+          justify-content: flex-start;
+          margin-top: -1115px;
+          z-index: 1;
+          /* margin-left: -258vw; */
+          margin-left: 70px;
+          /* display: none; */
+        }
+        .butstart {
+          border-radius: 100px;
+          width: 301px;
+          height: 92px;
+          background: #f7e6f0;
+          margin-left: 60px;
+          margin-top: 250px;
+        }
+        .butstarttext {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 250%;
+          text-transform: capitalize;
+          color: #fe0300;
+          padding-left: 96px;
+        }
+        .textandbut {
+          display: block;
+        }
+        .fiveblock {
+          display: block;
+        }
+        .fivetext {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 5vw;
+          line-height: 130%;
+          color: #141414;
+          width: 80%;
+          margin-left: -1.2%;
+          margin-top: -25%;
+          display: block;
+          justify-content: center;
+        }
+        .thoughts {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 40px;
+          width: 300px;
+          line-height: 100%;
+          color: #141414;
+          padding-left: 50px;
+          padding-top: 10px;
+        }
+        .circle5 {
+          border-radius: 100%;
+          fill: #141414;
+          display: flex;
+          height: 200px;
+          width: 200px;
+          background-color: #141414;
+          border: none;
+          margin-left: 1px;
+          /* margin-top: -600px; */
+          margin-top: -30px;
+        }
+        .starttera5 {
+          display: flex;
+          justify-content: center;
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 30px;
+          text-align: center;
+          color: #fbff8a;
+          margin-top: 30px;
+        }
+        .starttera5 {
+          display: flex;
+          justify-content: center;
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 30px;
+          text-align: center;
+          color: #fbff8a;
+          margin-top: 30px;
+        }
+        .twothoughts {
+          display: block;
+          margin-top: -60px;
+        }
+        .textthought1 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 80vw;
+        }
+        .thought1 {
+          background-image: url(images/thought1.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 278px;
+          margin-top: 250px;
+          margin-left: 5vw;
+          padding-top: -10%;
+        }
+        .textthought1 {
+          padding-left: 10%;
+          padding-top: 10%;
+        }
+        .textthought2 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 70vw;
+        }
+        .thought2 {
+          background-image: url(images/thought3.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          /* width: 50vw; */
+          height: 278px;
+          margin-top: -10vw;
+          margin-left: 5vw;
+          /* padding-top: -50%; */
+        }
+        .textthought2 {
+          padding-left: 10%;
+          padding-top: 5%;
+        }
+        .twothoughts2 {
+          display: block;
+        }
+        .textthought3 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 75vw;
+        }
+        .thought3 {
+          background-image: url(images/thought2.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 278px;
+          margin-top: 50px;
+          margin-left: 5vw;
+          padding-top: -50%;
+          display: none;
+        }
+        .textthought3 {
+          padding-left: 10%;
+          padding-top: 10%;
+        }
+        .textthought4 {
+          font-family: 'Gilroy';
+          font-weight: 800;
+          font-size: 6vw;
+          line-height: 130%;
+          color: #fe0300;
+          width: 70vw;
+        }
+        .thought4 {
+          background-image: url(images/thought3.svg);
+          background-repeat: no-repeat;
+          width: 374px;
+          height: 278px;
+          margin-top: -20vw;
+          margin-left: 5vw;
+          padding-top: -50%;
+        }
+        .textthought4 {
+          padding-left: 10%;
+          padding-top: 10%;
+        }
+
+        .longtext {
+          font-family: 'Gilroy';
+          font-weight: 400;
+          font-size: 100%;
+          line-height: 110%;
+          color: #141414;
+          margin-left: 67px;
+          margin-top: 100px;
+          display: none;
+        }
+
+        .day {
+          font-family: 'Impact';
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 100%;
+          color: #141414;
+          margin-top: -340px;
+          margin-left: 86px;
+        }
+        .circlebut5 {
+          display: none;
+        }
+        .thoughtsandbut {
+          display: block;
+        }
+      }
+    </style>
+    <div class="hidden-image"><img src="images/menu.svg" alt="" /></div>
+    <div class="white">
+      <div class="whitebox">
+        <div class="menu">
+          <div class="main">
+            <p><a href="index.html">Главная</a></p>
+          </div>
+          <div class="main">
+            <p><a href="therapy.html">Терапия</a></p>
+          </div>
+          <div class="main">
+            <p><a href="articles.html">Статьи</a></p>
+          </div>
+          <div class="main">
+            <p><a href="thoughts.html">Мысли</a></p>
+          </div>
+          <div class="main">
+            <p><a href="tests.html">Тесты</a></p>
+          </div>
+        </div>
+        <div class="logo"><p>RESTART</p></div>
+        <div class="but">
+          <div class="start"><p>Начать терапию</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="restart"><h1>RESTART</h1></div>
+
+    <!-- второй блок -->
+    <div class="whitebag">
+      <div class="first">
+        <div class="about"><h2>О нас</h2></div>
+        <div class="firstblock">
+          <div class="firsttext">
+            <p>
+              Медиа сервис с терапией после расставания, включающий в себя
+              статьи о психологии и саморазвитии, психологические практики и
+              задания, действия, которые помогут начать новую жизнь.
+            </p>
+          </div>
+          <div class="go">
+            <div class="gotext"><p>Перейти</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="longtext">
+        <p>
+          Разрыв отношений — это всегда сложно. Но это также возможность для
+          роста и саморазвития. Медиа-сервис предлагает уникальную программу,
+          которая поможет <br />
+          тебе пройти через этот трудный период.
+        </p>
+      </div>
+      <div class="rose">
+        <div class="big">
+          <div class="number"><p>30</p></div>
+          <div class="day"><p>Дней терапии</p></div>
+        </div>
+        <div class="circlebut">
+          <button class="circle">
+            <div class="starttera"><p>Начать терапию</p></div>
+          </button>
+        </div>
+      </div>
+      <!-- третий блок -->
+      <div class="tworect">
+        <div class="firstrect">
+          <div class="tests"><p>Тесты</p></div>
+          <div class="redbut">
+            <button class="circlebut2">
+              <div class="arrow"><img src="images/arrow1.svg" alt="" /></div>
+            </button>
+          </div>
+        </div>
+        <div class="secondrect">
+          <div class="articles"><p>Статьи</p></div>
+          <a href="./articles/article.html"
+            ><div class="rosebut">
+              <button class="circlebut3">
+                <div class="arrow"><img src="images/arrow2.svg" alt="" /></div>
+              </button></div
+          ></a>
+        </div>
+      </div>
+      <!-- четвертый блок -->
+      <div class="get"><p>Что ты получишь?</p></div>
+      <div class="what">
+        <p>
+          Статьи на актуальные темы <br />
+          Психологические практики <br />
+          Вопросы для самоанализа <br />
+          Действия на каждый день для изменения жизни
+        </p>
+      </div>
+      <!-- Пятый блок -->
+      <div class="fivewithtext">
+        <div class="fiveblock">
+          <div class="textandbut">
+            <div class="firstday">
+              <p>
+                Начни свой путь <br />
+                к новой жизни сегодня
+              </p>
+            </div>
+            <div class="butstart">
+              <div class="butstarttext"><p>Начать</p></div>
+            </div>
+            <div class="fivetext">
+              <p>
+                Cделай первый шаг к своему новому "я". Каждый день — это
+                возможность стать лучше, сильнее и счастливее!
+              </p>
+            </div>
+            <div class="thoughtsandbut">
+              <div class="thoughts">
+                <p>
+                  Разбор мыслей <br />
+                  после расставания
+                </p>
+              </div>
+              <div class="circlebut5">
+                <button class="circle5">
+                  <div class="starttera5"><p>Начать терапию</p></div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="zero"><p>01</p></div>
+        </div>
+      </div>
+      <div class="twothoughts">
+        <div class="thought1">
+          <div class="textthought1">
+            <p>
+              Больше этого человека <br />
+              не будет рядом
+            </p>
+          </div>
+        </div>
+        <div class="thought2">
+          <div class="textthought2">
+            <p>
+              Как я не увидела <br />
+              элементарного?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--вторые мысли -->
+      <div class="twothoughts2">
+        <div class="thought3">
+          <div class="textthought3">
+            <p>
+              Он начнет новые отношения <br />
+              и будет любить кого-то другого
+            </p>
+          </div>
+        </div>
+        <div class="thought4">
+          <div class="textthought4">
+            <p>Это моя вина</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
