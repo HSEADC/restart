@@ -113,10 +113,22 @@ module.exports = {
       filename: './article.html'
     }),
 
-    // Страница со днями
+    // Страница с днями
     new HtmlWebpackPlugin({
       template: './src/days/day.html',
       filename: './day.html'
+    }),
+
+    // Страница с тизером
+    new HtmlWebpackPlugin({
+      template: './src/tizer.html',
+      filename: './tizer.html'
+    }),
+
+    // Страница с стайлгайдом
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
     }),
 
     // Internal pages

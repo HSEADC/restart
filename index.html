@@ -1,570 +1,308 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Медиа сервис</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <analytics></analytics>
-    <!--jsdelivr-->
-    <link
-      href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css"
-      rel="stylesheet"
-    />
-    <!--or github raw-->
-    <link
-      href="https://raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Extrabold.css"
-      rel="stylesheet"
-    />
-    <!--jsdelivr-->
-    <link
-      href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Light.css"
-      rel="stylesheet"
-    />
-    <!--or github raw-->
-    <link
-      href="raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Light.css"
-      rel="stylesheet"
-    />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
   </head>
-
-  <body>
-    <style>
-      @font-face {
-        font-family: 'Impact';
-        src: url('../fonts/impact.eot'); /* IE 9 Compatibility Mode */
-        src: url('../fonts/impact.eot?#iefix') format('embedded-opentype'),
-          /* IE < 9 */ url('../fonts/impact.woff2') format('woff2'),
-          /* Super Modern Browsers */ url('../fonts/impact.woff') format('woff'),
-          /* Firefox >= 3.6, any other modern browser */
-            url('../fonts/impact.ttf') format('truetype'),
-          /* Safari, Android, iOS */ url('../fonts/impact.svg#impact')
-            format('svg'); /* Chrome < 4, Legacy iOS */
-      }
-      @font-face {
-        font-family: 'Gilroy';
-        src: local('Gilroy Light'), local('Gilroy-Light'),
-          url('Gilroylight.woff2') format('woff2'),
-          url('Gilroylight.woff') format('woff'),
-          url('Gilroylight.ttf') format('truetype');
-        font-weight: 300;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'Gilroy';
-        src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-          url('Gilroyextrabold.woff2') format('woff2'),
-          url('Gilroyextrabold.woff') format('woff'),
-          url('Gilroyextrabold.ttf') format('truetype');
-        font-weight: 800;
-        font-style: normal;
-      }
-
-      @import url('https://fonts.cdnfonts.com/css/gilroy');
-
+  <body class="index">
+    <!-- <style>
       body {
-        background-color: #f7e6f0;
-        width: 1440px;
-        margin: 0;
-        padding: 0;
+        background-color: #f7f7f7;
       }
-      .white {
-        border-radius: 15px;
-        width: 1299px;
-        height: 58px;
-        backdrop-filter: blur(100px);
-        background: #fff;
-        margin-left: 70px;
-        margin-top: 40px;
+      .blur {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: 10px;
+        margin-left: 30px;
+        animation: blur 5s linear infinite;
       }
-      .menu {
+      .blur2 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: -400px;
+        margin-left: 0px;
+        animation: blur 5s linear infinite;
+      }
+      .blur3 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: -30px;
+        margin-left: 50px;
+        animation: blur 5s linear infinite;
+      }
+      .blur4 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: 200px;
+        margin-left: 300px;
+        animation: blur 5s linear infinite;
+      }
+      .blur5 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: 0px;
+        margin-left: 100px;
+        animation: blur 5s linear infinite;
+      }
+      .blur6 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: -100px;
+        margin-left: 40px;
+        animation: blur 5s linear infinite;
+      }
+      .blur7 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: 120px;
+        margin-left: 10px;
+        animation: blur 5s linear infinite;
+      }
+      .blur8 {
+        border-radius: 100%;
+        fill: #000;
+        margin-top: -310px;
+        margin-left: -200px;
+        animation: blur 5s linear infinite;
+      }
+      .nav {
         display: flex;
-        justify-content: start;
-        gap: 37px;
-        margin-left: 21px;
-        font-family: 'Gilroy';
-        font-weight: 400;
-        font-size: 13px;
-        text-transform: uppercase;
-        color: #141414;
-        padding-top: 10px;
-      }
-      a {
-        text-decoration: inherit;
-        color: #141414;
-      }
-      .logo {
         justify-content: center;
-        font-family: 'Gilroy';
-        font-weight: 800;
-        font-size: 25px;
-        line-height: 312%;
-        text-align: right;
-        color: #141414;
-        margin-top: -35px;
-        margin-left: -182px;
+        padding-top: 41px;
       }
-      .whitebox {
+      .cont {
+        border-radius: 100px;
+        width: 572px;
+        height: 65px;
+        backdrop-filter: blur(30px);
+        background: rgba(255, 255, 255, 0.5);
+        padding-top: 8px;
+        padding-left: 8px;
         display: flex;
-        justify-content: space-between;
       }
-      .but {
-        border-radius: 10px;
-        width: 201px;
-        height: 50px;
-        background: #141414;
+      .bold {
+        border-radius: 100px;
+        width: 105px;
+        height: 49px;
+        background: #fff;
+        /* margin-left: 8px;
+        margin-top: 8px; */
+        display: flex;
+        justify-content: center;
+        margin-top: 4px;
+        margin-left: 4px;
+      }
+      h1 {
+        font-family: Proxima Nova;
+        font-weight: 600;
+        font-size: 70px;
+        color: #000;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 5px;
-        margin-top: 4px;
+        margin-top: 200px;
       }
-      .start {
-        font-family: 'Gilroy';
-        font-weight: 800;
-        font-size: 13px;
-        line-height: 298%;
-        color: #f7e6f0;
-      }
-      /* тест */
-      .restart {
-        font-family: 'Impact';
+      .firstpar {
+        font-family: Proxima Nova;
         font-weight: 400;
-        font-size: 380px;
-        line-height: 21%;
+        font-size: 20px;
         text-align: center;
-        color: #fe0300;
-        margin-top: -150px;
-        display: block;
-        justify-content: center;
-        animation: moveText 5s linear infinite;
-        width: 1440px;
-      }
-      .whitebag {
-        border-radius: 80px;
-        width: 1470px;
-        height: 668px;
-        background: #fff;
-        margin-top: -100px;
-      }
-      .life {
-        font-family: 'Impact';
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 170%;
         color: #141414;
-        padding-top: 40px;
-        padding-left: 67px;
-        width: 800px;
+        line-height: 130%;
       }
-      .contact {
-        font-family: 'Gilroy';
-        font-weight: 400;
-        font-size: 25px;
-        color: #141414;
-        padding-left: 67px;
-        padding-top: 50px;
+      .blur {
+        border-radius: 100%;
+        fill: #000;
       }
-      input {
-        border-radius: 100px;
-        width: 750px;
-        height: 92px;
-        background: #f7e6f0;
-        border: none;
-      }
-      button {
-        font-family: 'Impact';
-        font-weight: 400;
-        font-size: 36px;
-        /* line-height: 250%; */
-        text-transform: capitalize;
-        color: #fe0300;
-        border: none;
-        background-color: transparent;
-        margin-top: 25px;
-      }
-      .label {
-        font-family: 'Gilroy';
-        font-weight: 400;
-        font-size: 25px;
-        color: #f7e6f0;
-        margin-top: -50px;
-        padding-bottom: 20px;
-      }
-      .textandform {
+      .all {
         display: flex;
       }
-      .form {
-        margin-top: 394px;
-        margin-left: -220px;
-      }
-      ::placeholder {
-        font-family: 'Gilroy';
-        font-weight: 400;
-        font-size: 25px;
-        color: #fff;
-        padding-left: 50px;
-      }
-      .hidden-image {
-        display: none;
-      }
-      @keyframes moveText {
+      @keyframes blur {
         0% {
-          transform: translateX(-100%);
+          -webkit-filter: blur(50px);
+        }
+        50% {
+          -webkit-filter: blur(0px);
         }
         100% {
-          transform: translateX(100%);
+          -webkit-filter: blur(0px);
         }
       }
-      @media only screen and (min-width: 1440px) and (max-width: 1920px) {
-        body {
-          max-width: 1440px;
-        }
+      .main {
+        font-family: Proxima Nova;
+        font-weight: 300;
+        font-size: 14px;
+        color: #000;
+        margin-top: 3px;
       }
-      @media only screen and (min-width: 1366px) and (max-width: 1440px) {
-        body {
-          width: 100%;
-        }
+      .terapy {
+        font-family: Proxima Nova;
+        font-weight: 300;
+        font-size: 14px;
+        color: #000;
       }
-      @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-        body {
-          width: 100%;
-        }
+      .articles {
+        font-family: Proxima Nova;
+        font-weight: 300;
+        font-size: 14px;
+        color: #000;
       }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        body {
-          width: 100%;
-        }
+      .tests {
+        font-family: Proxima Nova;
+        font-weight: 300;
+        font-size: 14px;
+        color: #000;
       }
-      @media only screen and (min-width: 414px) and (max-width: 768px) {
-        body {
-          width: 100%;
-        }
+      .thoughts {
+        font-family: Proxima Nova;
+        font-weight: 300;
+        font-size: 14px;
+        color: #000;
       }
-      @media only screen and (min-width: 360px) and (max-width: 414px) {
-        body {
-          width: 100%;
-        }
-        .white {
-          display: none;
-        }
-        .hidden-image {
-          display: block;
-          margin-left: 350px;
-        }
-        .whitebox {
-          display: block;
-          justify-content: space-between;
-          width: 1000px;
-        }
-        .but {
-          border-radius: 10px;
-          width: 201px;
-          height: 50px;
-          background: #141414;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 5px;
-          margin-top: 4px;
-        }
-        .start {
-          font-family: 'Gilroy';
-          font-weight: 800;
-          font-size: 13px;
-          line-height: 298%;
-          color: #f7e6f0;
-        }
-        /* тест */
-        .restart {
-          font-family: 'Impact';
-          font-weight: 400;
-          font-size: 100px;
-          line-height: 21%;
-          text-align: center;
-          color: #fe0300;
-          margin-top: -20px;
-          display: block;
-          justify-content: center;
-          animation: moveText 5s linear infinite;
-          width: 414px;
-        }
-        .whitebag {
-          border-radius: 80px;
-          width: 414px;
-          height: 479px;
-          background: #fff;
-          margin-top: 100px;
-        }
-        .life {
-          font-family: 'Impact';
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 170%;
-          color: #141414;
-          padding-top: 40px;
-          padding-left: 56px;
-          width: 300px;
-        }
-        .contact {
-          font-family: 'Gilroy';
-          font-weight: 400;
-          font-size: 15px;
-          color: #141414;
-          padding-left: 56px;
-          padding-top: 10px;
-        }
-        input {
-          border-radius: 100px;
-          width: 301px;
-          height: 92px;
-          background: #f7e6f0;
-          border: none;
-        }
-        button {
-          font-family: 'Impact';
-          font-weight: 400;
-          font-size: 36px;
-          /* line-height: 250%; */
-          text-transform: capitalize;
-          color: #fe0300;
-          border: none;
-          background-color: transparent;
-          margin-top: 25px;
-        }
-        .label {
-          font-family: 'Gilroy';
-          font-weight: 400;
-          font-size: 25px;
-          color: #f7e6f0;
-          margin-top: -50px;
-          padding-bottom: 20px;
-        }
-        .textandform {
-          display: flex;
-        }
-        .form {
-          margin-top: 250px;
-          margin-left: -300px;
-        }
-        ::placeholder {
-          font-family: 'Gilroy';
-          font-weight: 400;
-          font-size: 25px;
-          color: #fff;
-          padding-left: 50px;
-        }
+      .four {
+        display: flex;
+        gap: 70px;
+        margin-left: 44px;
+        margin-top: 6px;
       }
-      @media only screen and (max-width: 360px) {
-        body {
-          width: 100%;
-        }
-        .white {
-          display: none;
-        }
-        .hidden-image {
-          display: block;
-          margin-left: 350px;
-        }
-        .whitebox {
-          display: block;
-          justify-content: space-between;
-          width: 1000px;
-        }
-        .but {
-          border-radius: 10px;
-          width: 201px;
-          height: 50px;
-          background: #141414;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 5px;
-          margin-top: 4px;
-        }
-        .start {
-          font-family: 'Gilroy';
-          font-weight: 800;
-          font-size: 13px;
-          line-height: 298%;
-          color: #f7e6f0;
-        }
-        /* тест */
-        .restart {
-          font-family: 'Impact';
-          font-weight: 400;
-          font-size: 100px;
-          line-height: 21%;
-          text-align: center;
-          color: #fe0300;
-          margin-top: -20px;
-          display: block;
-          justify-content: center;
-          animation: moveText 5s linear infinite;
-          width: 414px;
-        }
-        .whitebag {
-          border-radius: 80px;
-          width: 414px;
-          height: 479px;
-          background: #fff;
-          margin-top: 100px;
-        }
-        .life {
-          font-family: 'Impact';
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 170%;
-          color: #141414;
-          padding-top: 40px;
-          padding-left: 56px;
-          width: 300px;
-        }
-        .contact {
-          font-family: 'Gilroy';
-          font-weight: 400;
-          font-size: 15px;
-          color: #141414;
-          padding-left: 56px;
-          padding-top: 10px;
-        }
-        input {
-          border-radius: 100px;
-          width: 301px;
-          height: 92px;
-          background: #f7e6f0;
-          border: none;
-        }
-        button {
-          font-family: 'Impact';
-          font-weight: 400;
-          font-size: 36px;
-          /* line-height: 250%; */
-          text-transform: capitalize;
-          color: #fe0300;
-          border: none;
-          background-color: transparent;
-          margin-top: 25px;
-        }
-        .label {
-          font-family: 'Gilroy';
-          font-weight: 400;
-          font-size: 25px;
-          color: #f7e6f0;
-          margin-top: -50px;
-          padding-bottom: 20px;
-        }
-        .textandform {
-          display: flex;
-        }
-        .form {
-          margin-top: 250px;
-          margin-left: -300px;
-        }
-        ::placeholder {
-          font-family: 'Gilroy';
-          font-weight: 400;
-          font-size: 25px;
-          color: #fff;
-          padding-left: 50px;
-        }
+      a {
+        text-decoration: inherit;
+        color: #000;
       }
-    </style>
-    <div class="hidden-image"><img src="images/menu.svg" alt="" /></div>
-    <div class="white">
-      <div class="whitebox">
-        <div class="menu">
+    </style> -->
+    <div class="nav">
+      <div class="cont">
+        <div class="bold">
           <div class="main">
-            <p><a href="main.html">Главная</a></p>
-          </div>
-          <div class="main">
-            <p><a href="therapy.html">Терапия</a></p>
-          </div>
-          <div class="main">
-            <p><a href="articles.html">Статьи</a></p>
-          </div>
-          <div class="main">
-            <p><a href="thoughts.html">Мысли</a></p>
-          </div>
-          <div class="main">
-            <p><a href="tests.html">Тесты</a></p>
+            <p><a href="index.html">Главная</a></p>
           </div>
         </div>
-        <div class="logo"><p>RESTART</p></div>
-        <div class="but">
-          <div class="start"><p>Начать терапию</p></div>
+        <div class="four">
+          <div class="terapy">
+            <p><a href="src/therapy.html">Терапия</a></p>
+          </div>
+          <div class="articles">
+            <p><a href="src/articles.html">Статьи</a></p>
+          </div>
+          <div class="tests">
+            <p><a href="src/tests.html">Тесты</a></p>
+          </div>
+          <div class="thoughts">
+            <p><a href="src/thoughts.html">Мысли</a></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="restart"><h1>RESTART</h1></div>
-
-    <div class="whitebag">
-      <div class="textandform">
-        <div class="whitetext">
-          <div class="life">
-            <h2>Начни новую жизнь после расставания</h2>
-          </div>
-          <div class="contact">
-            <p>
-              Оставь контакты, если <br />
-              планируешь расстаться
-            </p>
-          </div>
-        </div>
-        <div class="form">
-          <form
-            id="my-form"
-            action="https://formspree.io/f/xkgnwnnq"
-            method="POST"
-          >
-            <!-- <div class="label"><label>Email:</label></div> -->
-            <input type="email" name="email" placeholder="Почта" />
-            <!-- <label>Message:</label>
-      <input type="text" name="message" /> -->
-            <div class="myform">
-              <button id="my-form-button">Отправить</button>
-            </div>
-            <p id="my-form-status"></p>
-          </form>
-        </div>
+    <div class="firsttext">
+      <h1>Restart</h1>
+      <div class="firstpar">
+        <p>
+          Используйте расставание как возможность <br />
+          для роста: наш медиа-сервис поможет вам
+        </p>
       </div>
     </div>
-
-    <script>
-      var form = document.getElementById('my-form')
-
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'Thanks for your submission!'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Oops! There was a problem submitting your form'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Oops! There was a problem submitting your form'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
+    <!-- new -->
+    <div class="all">
+      <!-- firstsvg -->
+      <div class="blur">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- secondsvg -->
+      <div class="blur2">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- thirdsvg -->
+      <div class="blur3">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- foursvg -->
+      <div class="blur4">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- firstsvg -->
+      <div class="blur5">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- secondsvg -->
+      <div class="blur6">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- thirdsvg -->
+      <div class="blur7">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+      <!-- foursvg -->
+      <div class="blur8">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="60" cy="60" r="60" fill="black" />
+        </svg>
+      </div>
+    </div>
   </body>
 </html>
