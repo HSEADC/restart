@@ -1,5 +1,156 @@
 body.thoughts {
-  h1 {
-    font-size: 200px;
+  .bagel-fat-one-regular {
+    font-family: 'Bagel Fat One', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+    background-color: #ffffff;
+    width: 1440px;
+    margin: 0;
+    padding: 0;
+  }
+  .white {
+    border-radius: 15px;
+    width: 1299px;
+    height: 58px;
+    backdrop-filter: blur(100px);
+    background: #fff;
+    margin-left: 70px;
+    margin-top: 22px;
+  }
+  .menu {
+    display: flex;
+    justify-content: start;
+    gap: 37px;
+    margin-left: 21px;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #141414;
+    padding-top: 10px;
+  }
+  a {
+    text-decoration: inherit;
+    color: #121212;
+  }
+  .logo {
+    justify-content: center;
+    font-family: 'Bagel Fat One';
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 312%;
+    text-align: right;
+    color: #141414;
+    margin-top: -35px;
+    margin-left: -182px;
+  }
+  .whitebox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .but {
+    border-radius: 10px;
+    width: 201px;
+    height: 50px;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-top: 4px;
+  }
+  .start {
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 298%;
+    color: #f29db0;
+  }
+  .firstname {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 140%;
+    color: #000;
+    margin-left: 64px;
+  }
+  .firstthought {
+    border-radius: 30px;
+    width: 420px;
+    height: 260px;
+    background: #f29db0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thought1 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 490%;
+    color: #be153e;
+    backface-visibility: hidden;
+    text-align: center;
+  }
+  .firstrow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -20px;
+  }
+  .secondrow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card:hover .cardeffect {
+    transform: rotateY(180deg);
+  }
+  .razbor {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #be153e;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -78px;
+  }
+  .card {
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .cardeffect {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 30px;
+    width: 420px;
+    height: 260px;
+    background: #f29db0;
+    /* display: flex;
+        justify-content: center;
+        align-items: center; */
+  }
+  .thought0 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #be153e;
+    backface-visibility: hidden;
+    white-space: nowrap;
+    /* margin-left: 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 97px;
   }
 }

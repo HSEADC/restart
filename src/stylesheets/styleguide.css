@@ -1,5 +1,1672 @@
-body.styleguide {
-  h1 {
+.bagel-fat-one-regular {
+  font-family: 'Bagel Fat One', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+.roseblock {
+  width: 1470px;
+  /* height: 1844px; */
+  height: 1844px;
+  margin: 0;
+  padding: 0;
+  background-color: #f29db0;
+}
+.rosemenu {
+  display: flex;
+  justify-content: center;
+  padding-top: 36px;
+}
+.menu {
+  border-radius: 100px;
+  width: 571px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+}
+.oval1 {
+  border-radius: 100px;
+  width: 105px;
+  height: 50px;
+  background: #be153e;
+}
+.oval2 {
+  border-radius: 100px;
+  width: 105px;
+  height: 50px;
+  background: #f29db0;
+}
+.menu1 {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+.menu2 {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  font-size: 14px;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+.guide {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 200px;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+}
+.malina {
+  margin-top: -200px;
+}
+.firsttext {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px;
+}
+.long {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 40px;
+  color: #be153e;
+  margin-top: -250px;
+}
+.short {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #be153e;
+  margin-top: -50px;
+}
+.words {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 90px;
+}
+.words3 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 90px;
+}
+.circle1 {
+  border: 4px solid #000;
+  border-radius: 100px;
+  width: 573px;
+  height: 172px;
+  transform: rotate(-12deg);
+  display: flex;
+  justify-content: center;
+}
+.circeword1 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 27px;
+}
+.circle2 {
+  border: 4px solid #000;
+  border-radius: 100px;
+  width: 550px;
+  height: 172px;
+  transform: rotate(10deg);
+  display: flex;
+  justify-content: center;
+}
+.circeword2 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 27px;
+}
+.circles1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 78px;
+  margin-right: 78px;
+}
+/* второй слой кругов */
+.circle3 {
+  border-radius: 100px;
+  width: 625px;
+  height: 172px;
+  background: #f29db0;
+  transform: rotate(8deg);
+  display: flex;
+  justify-content: center;
+}
+.circeword3 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #be153e;
+  margin-top: 27px;
+}
+.circle4 {
+  border: 4px solid #000;
+  border-radius: 100px;
+  width: 647px;
+  height: 172px;
+  transform: rotate(-27deg);
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.circeword4 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 27px;
+}
+.circles2 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 250px;
+}
+.longtext {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 100%;
+  color: #000;
+  padding: 52px;
+  margin-top: 12px;
+  margin-right: 56px;
+}
+.colortext {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+/* палитра цветов */
+.colorname1 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+}
+.firstcolor {
+  border-radius: 100%;
+  background-color: #f29db0;
+  width: 224px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* второй цвет */
+.colorname2 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: #f29db0;
+}
+.secondcolor {
+  border-radius: 100%;
+  background-color: #be153e;
+  width: 224px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* третий цвет */
+.colorname3 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: #004227;
+}
+.thirdcolor {
+  border-radius: 100%;
+  background-color: #fffaed;
+  width: 224px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* четвретый цвет */
+.colorname4 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: #fffaed;
+}
+.fourcolor {
+  border-radius: 100%;
+  background-color: #004227;
+  width: 224px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allcolors {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+/* сочетания цветов */
+.rect1 {
+  width: 413px;
+  height: 413px;
+  background: #f29db0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.re1 {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 236px;
+  line-height: 54%;
+  color: #be153e;
+  margin-top: -25px;
+}
+.rect2 {
+  width: 413px;
+  height: 413px;
+  background: #fffaed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.re2 {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 236px;
+  line-height: 54%;
+  color: #004227;
+  margin-top: -25px;
+}
+.rects {
+  display: flex;
+  justify-content: center;
+  /* gap: 185px; */
+}
+/* первый шрифт */
+.let1 {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+}
+.px1 {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 60px;
+  color: #f29db0;
+}
+.biglet1 {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 800px;
+  color: #f29db0;
+  margin-top: -1100px;
+  margin-right: 75px;
+}
+.firstline {
+  display: flex;
+  justify-content: space-between;
+}
+.smalllet1 {
+  margin-left: 93px;
+}
+/* второй шрифт */
+.let2 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 30px;
+  color: #181818;
+  margin-top: -760px;
+}
+.px2 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 40px;
+  color: #181818;
+  margin-top: 20px;
+}
+.biglet2 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 400px;
+  color: #181818;
+  margin-top: -1200px;
+  margin-right: 75px;
+}
+.secondline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -200px;
+}
+.smalllet2 {
+  margin-left: 93px;
+}
+/* третий шрифт */
+.let3 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 30px;
+  color: #181818;
+  margin-top: -700px;
+}
+.px3 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 50px;
+  color: #181818;
+  margin-top: 20px;
+}
+.px4 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 30px;
+  color: #181818;
+  margin-top: 0px;
+}
+.biglet3 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 200px;
+  color: #181818;
+  margin-top: -940px;
+  margin-right: 80px;
+}
+.thirdline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 250px;
+}
+.smalllet3 {
+  margin-left: 93px;
+}
+.reabc {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 76px;
+  color: #181818;
+  margin-top: -29px;
+}
+.boabc {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #000;
+}
+.gilabc {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 38px;
+  text-transform: lowercase;
+  color: #000;
+  margin-top: 20px;
+}
+.abc {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 94px;
+  margin-right: 94px;
+  margin-top: -450px;
+}
+.fourblock {
+  height: 867px;
+  width: 1470px;
+  margin: 0;
+  padding: 0;
+  background-color: #f29db0;
+}
+.words2 {
+  font-family: 'Bowler';
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #be153e;
+  margin-left: 90px;
+}
+.longtext2 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 100%;
+  color: #be153e;
+  padding: 52px;
+  margin-top: 12px;
+  margin-left: -94px;
+  margin-right: 94px;
+}
+.malina3 {
+  display: flex;
+  justify-content: center;
+}
+.longtext3 {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 100%;
+  color: #000;
+  padding: 52px;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+.firstlogo {
+  width: 720px;
+  height: 325px;
+  background: #f29db0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondlogo {
+  width: 720px;
+  height: 325px;
+  background: #fffaed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twologo {
+  display: flex;
+}
+.paketsvecha {
+  display: flex;
+  margin-top: -20px;
+}
+a {
+  text-decoration: inherit;
+  color: #be153e;
+}
+.last {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 424px;
+  line-height: 86%;
+  color: #181818;
+  display: flex;
+  justify-content: center;
+  margin-top: -300px;
+}
+.guide {
+  font-size: 100px;
+}
+/* @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+        body {
+          max-width: 1440px;
+        }
+      }
+      @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 414px) and (max-width: 768px) {
+        body {
+          width: 100%;
+        }
+      } */
+@media only screen and (min-width: 360px) and (max-width: 414px) {
+  body {
+    width: 100%;
+  }
+  .roseblock {
+    /* width: 784px; */
+    width: 840px;
+    height: 1844px;
+    margin: 0;
+    padding: 0;
+    background-color: #f29db0;
+    /* margin-top: -17px; */
+  }
+  .rosemenu {
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+  }
+  .menu {
+    border-radius: 100px;
+    width: 571px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+    display: none;
+  }
+  .oval1 {
+    border-radius: 100px;
+    width: 105px;
+    height: 50px;
+    background: #be153e;
+  }
+  .oval2 {
+    border-radius: 100px;
+    width: 105px;
+    height: 50px;
+    background: #f29db0;
+  }
+  .menu1 {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .menu2 {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-size: 14px;
+    color: #be153e;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .guide {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
     font-size: 200px;
+    color: #be153e;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .malina {
+    margin-top: -200px;
+  }
+  .firsttext {
+    display: block;
+    justify-content: space-between;
+    padding: 90px;
+  }
+  .long {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 40px;
+    color: #be153e;
+    margin-top: 0px;
+  }
+  .short {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #be153e;
+    margin-top: -50px;
+  }
+  .words {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 90px;
+  }
+  .circle1 {
+    border: 4px solid #000;
+    border-radius: 100px;
+    width: 573px;
+    height: 172px;
+    transform: rotate(-12deg);
+    display: flex;
+    justify-content: center;
+  }
+  .circeword1 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 27px;
+  }
+  .circle2 {
+    border: 4px solid #000;
+    border-radius: 100px;
+    width: 550px;
+    height: 172px;
+    transform: rotate(10deg);
+    display: flex;
+    justify-content: center;
+  }
+  .circeword2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 27px;
+  }
+  .circles1 {
+    display: block;
+    justify-content: space-between;
+    margin-left: 78px;
+    margin-right: 78px;
+  }
+  /* второй слой кругов */
+  .circle3 {
+    border-radius: 100px;
+    width: 625px;
+    height: 172px;
+    background: #f29db0;
+    transform: rotate(8deg);
+    display: flex;
+    justify-content: center;
+  }
+  .circeword3 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #be153e;
+    margin-top: 27px;
+  }
+  .circle4 {
+    border: 4px solid #000;
+    border-radius: 100px;
+    width: 647px;
+    height: 172px;
+    transform: rotate(-27deg);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .circeword4 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 27px;
+  }
+  .circles2 {
+    display: block;
+    justify-content: space-around;
+    margin-left: 100px;
+  }
+  .longtext {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000;
+    padding: 52px;
+    margin-top: -150px;
+    margin-right: 56px;
+    width: 700px;
+    margin-left: 38px;
+  }
+  .colortext {
+    display: block;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  /* палитра цветов */
+  .colorname1 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #be153e;
+  }
+  .firstcolor {
+    border-radius: 100%;
+    background-color: #f29db0;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* второй цвет */
+  .colorname2 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #f29db0;
+  }
+  .secondcolor {
+    border-radius: 100%;
+    background-color: #be153e;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  /* третий цвет */
+  .colorname3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #004227;
+  }
+  .thirdcolor {
+    border-radius: 100%;
+    background-color: #fffaed;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  /* четвретый цвет */
+  .colorname4 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fffaed;
+  }
+  .fourcolor {
+    border-radius: 100%;
+    background-color: #004227;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .allcolors {
+    display: block;
+    margin-left: 300px;
+    gap: 38px;
+  }
+  /* сочетания цветов */
+  .rect1 {
+    width: 413px;
+    height: 413px;
+    background: #f29db0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .re1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 236px;
+    line-height: 54%;
+    color: #be153e;
+    margin-top: -25px;
+  }
+  .rect2 {
+    width: 413px;
+    height: 413px;
+    background: #fffaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .re2 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 236px;
+    line-height: 54%;
+    color: #004227;
+    margin-top: -25px;
+  }
+  .rects {
+    display: block;
+    margin-left: 200px;
+    margin-top: 50px;
+
+    /* gap: 185px; */
+  }
+  /* первый шрифт */
+  .let1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+    display: none;
+  }
+  .px1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 60px;
+    color: #f29db0;
+    display: none;
+  }
+  .biglet1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 300px;
+    color: #f29db0;
+    margin-top: -450px;
+    /* margin-right: 800px; */
+    margin-left: 0px;
+    margin-left: 150px;
+  }
+  .firstline {
+    display: flex;
+    justify-content: space-between;
+  }
+  .smalllet1 {
+    margin-left: 93px;
+  }
+  /* второй шрифт */
+  .let2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 30px;
+    color: #181818;
+    margin-top: -760px;
+    display: none;
+  }
+  .px2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    color: #181818;
+    margin-top: 20px;
+    display: none;
+  }
+  .biglet2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 250px;
+    color: #181818;
+    margin-top: -400px;
+    margin-right: 75px;
+    margin-left: 150px;
+  }
+  .secondline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -200px;
+  }
+  .smalllet2 {
+    margin-left: 93px;
+  }
+  /* третий шрифт */
+  .let3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 30px;
+    color: #181818;
+    margin-top: -700px;
+    display: none;
+  }
+  .px3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 50px;
+    color: #181818;
+    margin-top: 20px;
+    display: none;
+  }
+  .px4 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 30px;
+    color: #181818;
+    margin-top: 0px;
+    display: none;
+  }
+  .biglet3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 300px;
+    color: #181818;
+    margin-top: -900px;
+    margin-right: 80px;
+    margin-left: 160px;
+  }
+  .thirdline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+  }
+  .smalllet3 {
+    margin-left: 93px;
+  }
+  .reabc {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 76px;
+    color: #181818;
+    margin-top: -29px;
+    margin-left: 150px;
+  }
+  .boabc {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  .gilabc {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: lowercase;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  .abc {
+    display: block;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 94px;
+    margin-top: -250px;
+  }
+  .fourblock {
+    height: 1667px;
+    width: 840px;
+    margin: 0;
+    padding: 0;
+    background-color: #f29db0;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .words2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #be153e;
+    margin-left: 90px;
+  }
+  .longtext2 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    color: #be153e;
+    padding: 52px;
+    margin-top: -150px;
+    margin-left: 38px;
+    margin-right: 94px;
+    width: 600px;
+  }
+  .malina3 {
+    display: flex;
+    /* justify-content: center; */
+    rotate: 90deg;
+    margin-top: 320px;
+    margin-left: -100px;
+  }
+  .longtext3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000;
+    padding: 52px;
+    margin-top: -140px;
+    margin-right: 15px;
+    width: 700px;
+    margin-left: 38px;
+  }
+  .firstlogo {
+    height: 325px;
+    background: #f29db0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+  }
+  .secondlogo {
+    width: 840px;
+    height: 325px;
+    background: #fffaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .twologo {
+    display: block;
+  }
+  .paketsvecha {
+    display: flex;
+    margin-top: -20px;
+  }
+  a {
+    text-decoration: inherit;
+    color: #be153e;
+  }
+  .last {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 424px;
+    line-height: 86%;
+    color: #181818;
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+  }
+  .guide {
+    font-size: 2px;
+  }
+  .firsttext {
+    display: block;
+    gap: 200px;
+  }
+  .words3 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 90px;
+    display: none;
+  }
+  .imgphone {
+    width: 840px;
+  }
+  .imgpaket {
+    width: 383px;
+  }
+  .imgsvecha {
+    width: 457px;
+    height: auto;
+    margin-left: -4px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  body {
+    width: 100%;
+  }
+  .roseblock {
+    /* width: 784px; */
+    width: 840px;
+    height: 1844px;
+    margin: 0;
+    padding: 0;
+    background-color: #f29db0;
+    /* margin-top: -17px; */
+  }
+  .rosemenu {
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+  }
+  .menu {
+    border-radius: 100px;
+    width: 571px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+    display: none;
+  }
+  .oval1 {
+    border-radius: 100px;
+    width: 105px;
+    height: 50px;
+    background: #be153e;
+  }
+  .oval2 {
+    border-radius: 100px;
+    width: 105px;
+    height: 50px;
+    background: #f29db0;
+  }
+  .menu1 {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .menu2 {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-size: 14px;
+    color: #be153e;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .guide {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 200px;
+    color: #be153e;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .malina {
+    margin-top: -200px;
+  }
+  .firsttext {
+    display: block;
+    justify-content: space-between;
+    padding: 90px;
+  }
+  .long {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 40px;
+    color: #be153e;
+    margin-top: 0px;
+  }
+  .short {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #be153e;
+    margin-top: -50px;
+  }
+  .words {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 90px;
+  }
+  .circle1 {
+    border: 4px solid #000;
+    border-radius: 100px;
+    width: 573px;
+    height: 172px;
+    transform: rotate(-12deg);
+    display: flex;
+    justify-content: center;
+  }
+  .circeword1 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 27px;
+  }
+  .circle2 {
+    border: 4px solid #000;
+    border-radius: 100px;
+    width: 550px;
+    height: 172px;
+    transform: rotate(10deg);
+    display: flex;
+    justify-content: center;
+  }
+  .circeword2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 27px;
+  }
+  .circles1 {
+    display: block;
+    justify-content: space-between;
+    margin-left: 78px;
+    margin-right: 78px;
+  }
+  /* второй слой кругов */
+  .circle3 {
+    border-radius: 100px;
+    width: 625px;
+    height: 172px;
+    background: #f29db0;
+    transform: rotate(8deg);
+    display: flex;
+    justify-content: center;
+  }
+  .circeword3 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #be153e;
+    margin-top: 27px;
+  }
+  .circle4 {
+    border: 4px solid #000;
+    border-radius: 100px;
+    width: 647px;
+    height: 172px;
+    transform: rotate(-27deg);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .circeword4 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 27px;
+  }
+  .circles2 {
+    display: block;
+    justify-content: space-around;
+    margin-left: 100px;
+  }
+  .longtext {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000;
+    padding: 52px;
+    margin-top: -150px;
+    margin-right: 56px;
+    width: 700px;
+    margin-left: 38px;
+  }
+  .colortext {
+    display: block;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  /* палитра цветов */
+  .colorname1 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #be153e;
+  }
+  .firstcolor {
+    border-radius: 100%;
+    background-color: #f29db0;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* второй цвет */
+  .colorname2 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #f29db0;
+  }
+  .secondcolor {
+    border-radius: 100%;
+    background-color: #be153e;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  /* третий цвет */
+  .colorname3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #004227;
+  }
+  .thirdcolor {
+    border-radius: 100%;
+    background-color: #fffaed;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  /* четвретый цвет */
+  .colorname4 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fffaed;
+  }
+  .fourcolor {
+    border-radius: 100%;
+    background-color: #004227;
+    width: 224px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .allcolors {
+    display: block;
+    margin-left: 300px;
+    gap: 38px;
+  }
+  /* сочетания цветов */
+  .rect1 {
+    width: 413px;
+    height: 413px;
+    background: #f29db0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .re1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 236px;
+    line-height: 54%;
+    color: #be153e;
+    margin-top: -25px;
+  }
+  .rect2 {
+    width: 413px;
+    height: 413px;
+    background: #fffaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .re2 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 236px;
+    line-height: 54%;
+    color: #004227;
+    margin-top: -25px;
+  }
+  .rects {
+    display: block;
+    margin-left: 200px;
+    margin-top: 50px;
+
+    /* gap: 185px; */
+  }
+  /* первый шрифт */
+  .let1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+    display: none;
+  }
+  .px1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 60px;
+    color: #f29db0;
+    display: none;
+  }
+  .biglet1 {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 300px;
+    color: #f29db0;
+    margin-top: -450px;
+    /* margin-right: 800px; */
+    margin-left: 0px;
+    margin-left: 150px;
+  }
+  .firstline {
+    display: flex;
+    justify-content: space-between;
+  }
+  .smalllet1 {
+    margin-left: 93px;
+  }
+  /* второй шрифт */
+  .let2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 30px;
+    color: #181818;
+    margin-top: -760px;
+    display: none;
+  }
+  .px2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 40px;
+    color: #181818;
+    margin-top: 20px;
+    display: none;
+  }
+  .biglet2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 250px;
+    color: #181818;
+    margin-top: -400px;
+    margin-right: 75px;
+    margin-left: 150px;
+  }
+  .secondline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -200px;
+  }
+  .smalllet2 {
+    margin-left: 93px;
+  }
+  /* третий шрифт */
+  .let3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 30px;
+    color: #181818;
+    margin-top: -700px;
+    display: none;
+  }
+  .px3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 50px;
+    color: #181818;
+    margin-top: 20px;
+    display: none;
+  }
+  .px4 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 30px;
+    color: #181818;
+    margin-top: 0px;
+    display: none;
+  }
+  .biglet3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 300px;
+    color: #181818;
+    margin-top: -900px;
+    margin-right: 80px;
+    margin-left: 160px;
+  }
+  .thirdline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+  }
+  .smalllet3 {
+    margin-left: 93px;
+  }
+  .reabc {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 76px;
+    color: #181818;
+    margin-top: -29px;
+    margin-left: 150px;
+  }
+  .boabc {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  .gilabc {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: lowercase;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  .abc {
+    display: block;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 94px;
+    margin-top: -250px;
+  }
+  .fourblock {
+    height: 1667px;
+    width: 840px;
+    margin: 0;
+    padding: 0;
+    background-color: #f29db0;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .words2 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #be153e;
+    margin-left: 90px;
+  }
+  .longtext2 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    color: #be153e;
+    padding: 52px;
+    margin-top: -150px;
+    margin-left: 38px;
+    margin-right: 94px;
+    width: 600px;
+  }
+  .malina3 {
+    display: flex;
+    /* justify-content: center; */
+    rotate: 90deg;
+    margin-top: 320px;
+    margin-left: -100px;
+  }
+  .longtext3 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000;
+    padding: 52px;
+    margin-top: -140px;
+    margin-right: 15px;
+    width: 700px;
+    margin-left: 38px;
+  }
+  .firstlogo {
+    height: 325px;
+    background: #f29db0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+  }
+  .secondlogo {
+    width: 840px;
+    height: 325px;
+    background: #fffaed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .twologo {
+    display: block;
+  }
+  .paketsvecha {
+    display: flex;
+    margin-top: -20px;
+  }
+  a {
+    text-decoration: inherit;
+    color: #be153e;
+  }
+  .last {
+    font-family: 'Bagel Fat One';
+    font-weight: 400;
+    font-size: 424px;
+    line-height: 86%;
+    color: #181818;
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+  }
+  .guide {
+    font-size: 2px;
+  }
+  .firsttext {
+    display: block;
+    gap: 200px;
+  }
+  .words3 {
+    font-family: 'Bowler';
+    font-weight: 400;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 90px;
+    display: none;
+  }
+  .imgphone {
+    width: 840px;
+  }
+  .imgpaket {
+    width: 383px;
+  }
+  .imgsvecha {
+    width: 457px;
+    height: auto;
+    margin-left: -4px;
   }
 }
