@@ -98,4 +98,141 @@ body.index {
     width: 567px;
     margin-left: 854px;
   }
+  @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+    body.index {
+      max-width: 1440px;
+    }
+  }
+  @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+    body.index {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    body.index {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body.index {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 414px) and (max-width: 768px) {
+    body.index {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 360px) and (max-width: 414px) {
+    body.index {
+      width: 100%;
+    }
+    .logo {
+      display: none;
+    }
+    .start {
+      display: none;
+    }
+    .but {
+      display: none;
+    }
+    .big {
+      font-family: 'Bagel Fat One';
+      font-weight: 400;
+      font-size: 120px;
+      /* line-height: 98%; */
+      color: #be153e;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      margin-top: -50px;
+      margin-left: 130px;
+      width: 300px;
+    }
+    .secondtext {
+      font-family: 'Gilroy';
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 100%;
+      color: #be153e;
+      display: flex;
+      justify-content: center;
+      margin-top: -100px;
+      width: 300px;
+      margin-left: 50px;
+    }
+    .longtext {
+      font-family: 'Gilroy';
+      font-weight: 400;
+      font-size: 20px;
+      color: #be153e;
+      width: 300px;
+      margin-left: 200px;
+    }
+    .white {
+      border-radius: 15px;
+      width: 300px;
+      height: 58px;
+      backdrop-filter: blur(100px);
+      background: #f29db0;
+      margin-left: 70px;
+      margin-top: 40px;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    body.index {
+      width: 100%;
+    }
+    .logo {
+      display: none;
+    }
+    .start {
+      display: none;
+    }
+    .but {
+      display: none;
+    }
+    .big {
+      font-family: 'Bagel Fat One';
+      font-weight: 400;
+      font-size: 120px;
+      /* line-height: 98%; */
+      color: #be153e;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      margin-top: -50px;
+      margin-left: 130px;
+      width: 300px;
+    }
+    .secondtext {
+      font-family: 'Gilroy';
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 100%;
+      color: #be153e;
+      display: flex;
+      justify-content: center;
+      margin-top: -100px;
+      width: 300px;
+      margin-left: 50px;
+    }
+    .longtext {
+      font-family: 'Gilroy';
+      font-weight: 400;
+      font-size: 20px;
+      color: #be153e;
+      width: 300px;
+      margin-left: 200px;
+    }
+    .white {
+      border-radius: 15px;
+      width: 300px;
+      height: 58px;
+      backdrop-filter: blur(100px);
+      background: #f29db0;
+      margin-left: 70px;
+      margin-top: 40px;
+    }
+  }
 }

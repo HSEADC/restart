@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Restart</title>
     <link rel="stylesheet" href="src/stylesheets/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <!-- Primary Meta Tags -->
@@ -151,6 +151,20 @@
         width: 567px;
         margin-left: 854px;
       }
+      @media only screen and (min-width: 360px) and (max-width: 414px) {
+        .logo {
+          display: none;
+        }
+        .start {
+          display: none;
+        }
+        .but {
+          display: none;
+        }
+        body.index {
+          width: 414px;
+        }
+      }
     </style> -->
     <div class="white">
       <div class="whitebox">
@@ -173,7 +187,9 @@
             <p><a href="src/tests.html">Тесты</a></p>
           </div>
         </div>
-        <div class="logo"><p>RESTART</p></div>
+        <div class="logo">
+          <a href="src/styleguide.html"><p>RESTART</p></a>
+        </div>
         <div class="but">
           <div class="start"><p>Начать терапию</p></div>
         </div>
