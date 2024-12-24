@@ -135,6 +135,13 @@ body {
     display: flex;
     gap: 20px;
   }
+  .menuic {
+    display: none;
+  }
+  .allm {
+    display: flex;
+    gap: 37px;
+  }
   @media only screen and (min-width: 360px) and (max-width: 414px) {
     .bigmalina {
       display: none;
@@ -174,20 +181,23 @@ body {
       font-size: 70px;
       line-height: 140%;
       color: #000;
-      margin-left: 50px;
+      /* margin-left: 15px; */
+      display: flex;
+      justify-content: center;
     }
     .mob {
       display: flex;
       margin-top: 20px;
+      justify-content: center;
     }
     .eightdays {
       display: block;
-      margin-left: 40px;
+      margin-left: 15px;
       width: 400px;
     }
     .fourdays {
       display: block;
-      margin-left: 40px;
+      margin-left: 15px;
       width: 400px;
     }
     .first1 {
@@ -205,6 +215,37 @@ body {
       border-radius: 40px;
       height: 236px;
       background: #f29db0;
+    }
+    .menuic {
+      display: flex;
+      background-color: #fff;
+      border: none;
+      margin-left: -50px;
+      margin-top: -20px;
+    }
+    .menu:hover .allm {
+      display: block;
+    }
+    .menu:hover .main {
+      display: block;
+    }
+    .main {
+      display: none;
+      color: #be153e;
+    }
+    .menu {
+      display: block;
+    }
+    .allm {
+      display: none;
+      width: 200px;
+      height: 350px;
+      padding-left: 50px;
+      padding-top: 50px;
+      font-family: 'Gilroy';
+      background-color: #fffcfd;
+      text-transform: capitalize;
+      font-size: 20px;
     }
   }
   @media only screen and (max-width: 360px) {
@@ -246,7 +287,9 @@ body {
       font-size: 70px;
       line-height: 140%;
       color: #000;
-      margin-left: 50px;
+      /* margin-left: 50px; */
+      display: flex;
+      justify-content: center;
     }
     .mob {
       display: flex;
@@ -254,12 +297,12 @@ body {
     }
     .eightdays {
       display: block;
-      margin-left: 40px;
+      margin-left: 15px;
       width: 400px;
     }
     .fourdays {
       display: block;
-      margin-left: 40px;
+      margin-left: 15px;
       width: 400px;
     }
     .first1 {
@@ -277,6 +320,37 @@ body {
       border-radius: 40px;
       height: 236px;
       background: #f29db0;
+    }
+    .menuic {
+      display: flex;
+      background-color: #fff;
+      border: none;
+      margin-left: -50px;
+      margin-top: -20px;
+    }
+    .menu:hover .allm {
+      display: block;
+    }
+    .menu:hover .main {
+      display: block;
+    }
+    .main {
+      display: none;
+      color: #be153e;
+    }
+    .menu {
+      display: block;
+    }
+    .allm {
+      display: none;
+      width: 200px;
+      height: 350px;
+      padding-left: 50px;
+      padding-top: 50px;
+      font-family: 'Gilroy';
+      background-color: #fffcfd;
+      text-transform: capitalize;
+      font-size: 20px;
     }
   }
 }

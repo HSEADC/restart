@@ -221,6 +221,13 @@ body.articles {
     display: flex;
     gap: 14px;
   }
+  .menuic {
+    display: none;
+  }
+  .allm {
+    display: flex;
+    gap: 37px;
+  }
   @media only screen and (min-width: 360px) and (max-width: 414px) {
     body {
       width: 100%;
@@ -288,6 +295,49 @@ body.articles {
       line-height: 125%;
       text-align: center;
       color: #be153e;
+    }
+    .menuic {
+      display: flex;
+      background-color: #fff;
+      border: none;
+      margin-left: -50px;
+      margin-top: -20px;
+    }
+    .menu:hover .allm {
+      display: block;
+    }
+    .menu:hover .main {
+      display: block;
+    }
+    .main {
+      display: none;
+      color: #be153e;
+    }
+    .menu {
+      display: block;
+    }
+    .allm {
+      display: none;
+      width: 200px;
+      height: 350px;
+      padding-left: 50px;
+      padding-top: 50px;
+      font-family: 'Gilroy';
+      background-color: #fffcfd;
+      text-transform: capitalize;
+      font-size: 20px;
+    }
+    .firstrow {
+      display: block;
+      gap: 20px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .firstrect1 {
+      display: none;
+    }
+    .firstrect {
+      margin-top: 20px;
     }
   }
   @media only screen and (max-width: 360px) {
@@ -357,6 +407,37 @@ body.articles {
       line-height: 125%;
       text-align: center;
       color: #be153e;
+    }
+    .menuic {
+      display: flex;
+      background-color: #fff;
+      border: none;
+      margin-left: -50px;
+      margin-top: -20px;
+    }
+    .menu:hover .allm {
+      display: block;
+    }
+    .menu:hover .main {
+      display: block;
+    }
+    .main {
+      display: none;
+      color: #be153e;
+    }
+    .menu {
+      display: block;
+    }
+    .allm {
+      display: none;
+      width: 200px;
+      height: 350px;
+      padding-left: 50px;
+      padding-top: 50px;
+      font-family: 'Gilroy';
+      background-color: #fffcfd;
+      text-transform: capitalize;
+      font-size: 20px;
     }
   }
 }
