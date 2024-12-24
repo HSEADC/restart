@@ -17,7 +17,7 @@ body {
     backdrop-filter: blur(100px);
     background: #fff;
     margin-left: 70px;
-    margin-top: 22px;
+    margin-top: 14px;
   }
   .menu {
     display: flex;
@@ -130,5 +130,153 @@ body {
     z-index: 100;
     margin-top: -80px;
     margin-left: 40px;
+  }
+  .mob {
+    display: flex;
+    gap: 20px;
+  }
+  @media only screen and (min-width: 360px) and (max-width: 414px) {
+    .bigmalina {
+      display: none;
+    }
+    body {
+      width: 100%;
+    }
+    .logo {
+      display: none;
+    }
+    .start {
+      display: none;
+    }
+    .but {
+      display: none;
+    }
+    .white {
+      border-radius: 15px;
+      width: 300px;
+      height: 58px;
+      backdrop-filter: blur(100px);
+      background: #ffffff;
+      margin-left: 70px;
+      margin-top: 40px;
+    }
+    /* .fourdays {
+      display: block;
+      margin-left: 120px;
+    }
+    .eightdays {
+      display: block;
+      margin-left: 120px;
+    } */
+    .firstname {
+      font-family: 'Bowler';
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 140%;
+      color: #000;
+      margin-left: 50px;
+    }
+    .mob {
+      display: flex;
+      margin-top: 20px;
+    }
+    .eightdays {
+      display: block;
+      margin-left: 40px;
+      width: 400px;
+    }
+    .fourdays {
+      display: block;
+      margin-left: 40px;
+      width: 400px;
+    }
+    .first1 {
+      font-family: 'Bagel Fat One';
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 61%;
+      letter-spacing: 0.01em;
+      text-align: right;
+      color: #be153e;
+      margin-right: 26px;
+      margin-top: -26px;
+    }
+    .firstday {
+      border-radius: 40px;
+      height: 236px;
+      background: #f29db0;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .bigmalina {
+      display: none;
+    }
+    body {
+      width: 100%;
+    }
+    .logo {
+      display: none;
+    }
+    .start {
+      display: none;
+    }
+    .but {
+      display: none;
+    }
+    .white {
+      border-radius: 15px;
+      width: 300px;
+      height: 58px;
+      backdrop-filter: blur(100px);
+      background: #ffffff;
+      margin-left: 70px;
+      margin-top: 40px;
+    }
+    /* .fourdays {
+      display: block;
+      margin-left: 120px;
+    }
+    .eightdays {
+      display: block;
+      margin-left: 120px;
+    } */
+    .firstname {
+      font-family: 'Bowler';
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 140%;
+      color: #000;
+      margin-left: 50px;
+    }
+    .mob {
+      display: flex;
+      margin-top: 20px;
+    }
+    .eightdays {
+      display: block;
+      margin-left: 40px;
+      width: 400px;
+    }
+    .fourdays {
+      display: block;
+      margin-left: 40px;
+      width: 400px;
+    }
+    .first1 {
+      font-family: 'Bagel Fat One';
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 61%;
+      letter-spacing: 0.01em;
+      text-align: right;
+      color: #be153e;
+      margin-right: 26px;
+      margin-top: -26px;
+    }
+    .firstday {
+      border-radius: 40px;
+      height: 236px;
+      background: #f29db0;
+    }
   }
 }
