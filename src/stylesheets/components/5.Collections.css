@@ -1,0 +1,24 @@
+.C_Menu {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 16px;
+  gap: 34px;
+}
+.C_Filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: -50px;
+}
+.C_BigArticles {
+  display: flex;
+  gap: 20px;
+  margin-left: 60px;
+}
+.C_MiniArticles {
+  display: flex;
+  margin-left: 60px;
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: -15px;
+}
