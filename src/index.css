@@ -7,3 +7,11 @@
 @import 'stylesheets/therapy.css';
 @import 'stylesheets/day.css';
 @import 'stylesheets/articles.css';
+
+@import 'stylesheets/components/1.Quarks.css';
+@import 'stylesheets/components/2.Atoms.css';
+@import 'stylesheets/components/3.Molecules.css';
+@import 'stylesheets/components/4.Wrappers.css';
+@import 'stylesheets/components/5.Collections.css';
+@import 'stylesheets/components/6.Organisms.css';
+@import 'stylesheets/components/7.SuperOrganisms.css';

@@ -1,0 +1,104 @@
+.A_MenuItem {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #be153e;
+}
+a {
+  text-decoration: inherit;
+  color: #be153e;
+}
+.A_Logo {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 25px;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+  margin-top: -19px;
+  margin-left: 10px;
+  margin-right: 200px;
+}
+.A_MenuButton {
+  border-radius: 10px;
+  width: 201px;
+  height: 50px;
+  background: #be153e;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 610;
+  line-height: 350%;
+  font-size: 13px;
+  color: #f7e6f0;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.A_Title {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 70px;
+  text-align: center;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.A_RedFilter {
+  border: 1px solid #be153e;
+  border-radius: 20px;
+  padding: 15px;
+  width: 127px;
+  height: 55px;
+  background: #be153e;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #fcf8ec;
+}
+.A_WhiteFilter {
+  border: 1px solid #be153e;
+  border-radius: 20px;
+  padding: 15px;
+  width: 153px;
+  height: 55px;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #be153e;
+  background: none;
+}
+.A_ArticleTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 20px;
+  color: #be153e;
+}
+.A_ArticleDescription {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 280;
+  font-size: 14px;
+  color: #be153e;
+  margin-top: -20px;
+}
+.A_MiniArticleTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 17px;
+  color: #be153e;
+}
+.A_MiniArticleDescription {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 280;
+  font-size: 12px;
+  color: #be153e;
+  margin-top: -15px;
+}
