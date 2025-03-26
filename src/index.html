@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/components/1.Quarks.css" />
+    <link rel="stylesheet" href="stylesheets/components/2.Atoms.css" />
+    <link rel="stylesheet" href="stylesheets/components/3.Molecules.css" />
+    <link rel="stylesheet" href="stylesheets/components/4.Wrappers.css" />
+    <link rel="stylesheet" href="stylesheets/components/5.Collections.css" />
+    <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
+    <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
+    <link rel="stylesheet" href="stylesheets//adaptive.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        width: 1470px;
+        background-color: #f29db0;
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+      }
+    </style>
+    <!-- <style>
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight Italic'),
+          url('TT Fors Trial ExtraLight Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Variable';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Variable'),
+          url('TT Fors Trial Variable.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin'),
+          url('TT Fors Trial Thin.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin Italic'),
+          url('TT Fors Trial Thin Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Regular'),
+          url('TT Fors Trial Regular.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium'),
+          url('TT Fors Trial Medium.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium Italic'),
+          url('TT Fors Trial Medium Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light'),
+          url('TT Fors Trial Light.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light Italic'),
+          url('TT Fors Trial Light Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Italic'),
+          url('TT Fors Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight'),
+          url('TT Fors Trial ExtraLight.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial Italic'),
+          url('TT Fors Black Outline Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold'),
+          url('TT Fors Trial ExtraBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold Italic'),
+          url('TT Fors Trial ExtraBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold'),
+          url('TT Fors Trial DemiBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold Italic'),
+          url('TT Fors Trial DemiBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold'),
+          url('TT Fors Trial Bold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold Italic'),
+          url('TT Fors Trial Bold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black'),
+          url('TT Fors Trial Black.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black Italic'),
+          url('TT Fors Trial Black Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial'),
+          url('TT Fors Black Outline Trial.woff') format('woff');
+      }
+      .bagel-fat-one-regular {
+        font-family: 'Bagel Fat One', serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #f29db0;
+        padding: 0;
+        margin: 0;
+        width: 1470px;
+      }
+      .A_MenuItem {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      a {
+        text-decoration: inherit;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_Logo {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-left: 10px;
+        margin-right: 200px;
+      }
+      .A_MenuButton {
+        border-radius: 10px;
+        width: 201px;
+        height: 50px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 610;
+        line-height: 350%;
+        font-size: 13px;
+        color: #f7e6f0;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .C_Menu {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 16px;
+        gap: 34px;
+      }
+      .O_Menu {
+        display: flex;
+        gap: 210px;
+        margin-top: 20px;
+      }
+      .A_BigText {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 140px;
+        text-transform: uppercase;
+        color: #be153e;
+        margin-left: 79px;
+      }
+      .A_SmallText {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        color: #be153e;
+        margin-top: -156px;
+      }
+      .M_MainScreen {
+        display: block;
+        justify-content: center;
+        margin-top: -118px;
+      }
+      .W_FirstScreen {
+        display: block;
+        justify-content: center;
+      }
+      .A_Malina {
+        justify-content: center;
+        margin-left: 508px;
+      }
+      .W_SecondBlock {
+        background-color: #fcf8ec;
+      }
+      .A_SecondMainScreen {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 139%;
+        text-align: center;
+        color: #1e1e1e;
+      }
+      .bold {
+        font-weight: 500;
+      }
+      .A_SecondMainScreen {
+        padding-top: 100px;
+      }
+      .A_TegTherapy {
+        border-radius: 20px;
+        width: 122px;
+        height: 40px;
+        background: #fbc1d4;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 18px;
+        color: #1e1e1e;
+        border: none;
+      }
+      .A_ThirdTitle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 107%;
+        color: #1e1e1e;
+        margin-top: -60px;
+      }
+      .A_ThirdText {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #1e1e1e;
+        margin-top: -50px;
+      }
+      .A_First {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 200px;
+        color: #1e1e1e;
+      }
+      .W_FirstRow {
+        display: flex;
+        gap: 43px;
+        margin-left: 59px;
+        margin-top: 197px;
+      }
+      .W_MainFirstDay {
+        border-radius: 7px;
+        width: 762px;
+        height: 413px;
+        background: #f1e8db;
+        margin-left: 27px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_FirstDay {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 108%;
+        color: #1e1e1e;
+        margin-top: -170px;
+      }
+      .M_FirstDay {
+        margin-top: -230px;
+        margin-left: 92px;
+      }
+      .A_Second {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 200px;
+        color: #be153e;
+      }
+      .W_SecondRow {
+        display: flex;
+        gap: 20px;
+        margin-left: 59px;
+        margin-top: 20px;
+      }
+      .W_MainSecondDay {
+        border-radius: 7px;
+        width: 762px;
+        height: 413px;
+        background: #f9c8d3;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_SecondDay {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 108%;
+        color: #be153e;
+        margin-top: -170px;
+      }
+      .M_SecondDay {
+        margin-top: -230px;
+        margin-left: 92px;
+      }
+      .A_Third {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 200px;
+        color: #f9c8d3;
+      }
+      .W_ThirdRow {
+        display: flex;
+        gap: 43px;
+        margin-left: 59px;
+        margin-top: 197px;
+      }
+      .W_MainThirdDay {
+        border-radius: 7px;
+        width: 538px;
+        height: 413px;
+        background: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_ThirdDay {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 108%;
+        color: #f9c8d3;
+        margin-top: -170px;
+      }
+      .M_ThirdDay {
+        margin-top: -230px;
+        margin-left: 92px;
+      }
+      .S_ThirdMainScreen {
+        margin-left: 16px;
+      }
+      .W_SecondBlock {
+        padding-bottom: 51px;
+      }
+      .A_TherapyGreen {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 73%;
+        color: #004227;
+      }
+      .A_ThirtyDays {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 319px;
+        line-height: 72%;
+        text-align: right;
+        color: #004227;
+        margin-top: -200px;
+        margin-left: 150px;
+      }
+      .O_YellowTherapy {
+        border-radius: 38px;
+        width: 1320px;
+        height: 751px;
+        background: #fcf8ec;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-left: 74px;
+      }
+      .A_MainArticleTitle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        color: #be153e;
+        text-align: center;
+      }
+      .A_MainArticleText {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #be153e;
+        margin-top: -50px;
+      }
+      .M_MainArticleText {
+        display: block;
+        justify-content: center;
+      }
+      .O_MainArticle {
+        border-radius: 15px;
+        width: 427px;
+        height: 482px;
+        background: #fcf8ec;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_MainArticlePhoto {
+        padding: 15px;
+      }
+      .A_MainArticle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        color: #1e1e1e;
+      }
+      .A_ArticleDescriptionMain {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 280;
+        font-size: 16px;
+        line-height: 112%;
+        color: #1e1e1e;
+        margin-top: -3px;
+      }
+      .A_MainArticleMinutes {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 14px;
+        color: #004227;
+      }
+      .A_MainArticleDate {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 14px;
+        color: #004227;
+      }
+      .M_MinutesDate {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+      }
+      .M_MainArticle {
+        margin-left: 15px;
+        margin-top: -10px;
+      }
+      .C_MainArticles {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+      }
+      .A_AllArticleButton {
+        border-radius: 100px;
+        width: 148px;
+        height: 54px;
+        background: #be153e;
+        border: none;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 18px;
+        color: #fcf8ec;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .M_AllArticleButton {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 45px;
+      }
+      .S_LastBlock {
+        background: #fcf8ec;
+        margin-top: 72px;
+        padding-bottom: 100px;
+      }
+      .A_MainTestsTitle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        color: #1e1e1e;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .A_MainTestsText {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #1e1e1e;
+        margin-top: -50px;
+      }
+      .A_MainTestName {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 24px;
+        color: #1e1e1e;
+        margin-left: 35px;
+        margin-top: 5px;
+      }
+      .M_MainTestName {
+        display: flex;
+        border-radius: 10px;
+        width: 610px;
+        height: 96px;
+        background: #fcf8ec;
+        margin-top: 420px;
+        gap: 110px;
+        margin-left: 20px;
+      }
+      .A_MainTestButton {
+        border-radius: 20px;
+        width: 102px;
+        height: 40px;
+        background: #fbc1d4;
+        border: none;
+        margin-left: 20px;
+        margin-top: 20px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .O_MainTest {
+        border-radius: 20px;
+        background-image: url(../images/test1.png);
+        width: 650px;
+        height: 597px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_TestButton {
+        margin-top: 25px;
+        margin-right: 28px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .C_MainTests {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 53px;
+      }
+      .O_MainTest2 {
+        border-radius: 20px;
+        background-image: url(../images/test2.png);
+        width: 650px;
+        height: 597px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_AllArticleButton2 {
+        border-radius: 100px;
+        width: 148px;
+        height: 54px;
+        background: #fbc1d4;
+        border: none;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 18px;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .O_MainThought {
+        border-radius: 15px;
+        width: 1320px;
+        height: 508px;
+        background: #f29db0;
+        display: flex;
+        justify-content: center;
+        margin-left: 75px;
+        margin-top: 73px;
+        gap: 50px;
+      }
+      .A_MainThoughtTitle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 100%;
+        text-align: center;
+        color: #be153e;
+      }
+      .A_ThoughtsButton {
+        border-radius: 128px;
+        width: 189px;
+        height: 69px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 23px;
+        color: #fcf8ec;
+        border: none;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .M_AllThoughtsButton {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: -20px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_Malina3 {
+        margin-top: 40px;
+        margin-left: -50px;
+      }
+      .W_MainThoughtText {
+        margin-left: -66px;
+        margin-top: 50px;
+      }
+      .A_Malina4 {
+        margin-top: 300px;
+      }
+     
+      .A_Person {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 23px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_Name {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_RestartFooter {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 300px;
+        text-transform: uppercase;
+        color: #be153e;
+      }
+      .W_FirstFooter {
+        display: flex;
+      }
+      .M_Social {
+        display: flex;
+        margin-left: 110px;
+        gap: 10px;
+        margin-top: 75px;
+      }
+      .W_TwoPerson {
+        display: flex;
+        gap: 100px;
+        margin-left: 600px;
+        margin-top: 45px;
+      }
+      .A_HSELogo {
+        margin-top: 75px;
+        margin-left: 80px;
+      }
+      .A_RestartFooter {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+        height: 434px;
+      }
+      .A_Name {
+        margin-top: -15px;
+      }
+      /* адаптивы */
+      /* @media only screen and (min-width: 1440px) and (max-width: 1920px) {
+        body {
+          max-width: 1440px;
+        }
+      }
+      @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        body {
+          width: 100%;
+        }
+      } */
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 100%;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        .A_Malina {
+          margin-left: 40px;
+        }
+        .A_BigText {
+          text-align: center;
+          font-size: 80px;
+          line-height: 80px;
+          margin-left: 5px;
+          margin-top: 150px;
+        }
+        .A_SmallText {
+          margin-top: -60px;
+        }
+        .W_FirstRow {
+          display: block;
+        }
+        .W_SecondRow {
+          display: block;
+        }
+        .W_MainFirstDay {
+          width: 427px;
+          height: 450px;
+          margin-left: -40px;
+          margin-top: -150px;
+        }
+        .W_MainSecondDay {
+          width: 427px;
+          height: 450px;
+          margin-top: -180px;
+          margin-left: -40px;
+        }
+        .W_MainThirdDay {
+          width: 427px;
+          height: 450px;
+          margin-top: -180px;
+          margin-left: -40px;
+        }
+        .M_SecondDay {
+          margin-top: 50px;
+        }
+        .M_FirstDay {
+          margin-top: 50px;
+        }
+        .M_ThirdDay {
+          margin-top: 50px;
+        }
+        .A_ThirdTitle {
+          font-size: 50px;
+        }
+        .A_ThirdTitle {
+          margin-top: -30px;
+          margin-left: -70px;
+          text-align: center;
+        }
+        .A_ThirdText {
+          margin-top: -30px;
+          margin-left: -70px;
+          text-align: center;
+        }
+        .A_TegTherapy {
+          margin-left: 115px;
+          text-align: center;
+          justify-content: center;
+        }
+        .A_SecondMainScreen {
+          font-size: 30px;
+          margin-bottom: -110px;
+        }
+        .O_YellowTherapy {
+          display: block;
+          width: 427px;
+          margin-left: 36px;
+          height: 850px;
+        }
+        .A_ThirtyDays {
+          font-size: 180px;
+          text-align: center;
+          margin-left: 5px;
+          margin-top: -150px;
+        }
+        .A_TherapyGreen {
+          text-align: center;
+          padding-top: 1px;
+        }
+        .A_MalinaButton {
+          margin-top: -50px;
+          margin-left: 50px;
+        }
+        .C_MainArticles {
+          display: block;
+        }
+        .O_MainArticle {
+          margin-top: 20px;
+          margin-left: 36px;
+        }
+        .A_MainArticleTitle {
+          font-size: 50px;
+          line-height: 107%;
+        }
+        .A_MainArticleText {
+          margin-top: -30px;
+          text-align: center;
+          font-size: 20px;
+        }
+        .C_MainTests {
+          display: block;
+        }
+        .O_MainTest {
+          margin-left: 36px;
+          width: 427px;
+          height: 374px;
+        }
+        .M_MainTestName {
+          margin-top: 200px;
+          width: 387px;
+          height: 96px;
+        }
+        .A_MainTestName {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+        .O_MainTest2 {
+          margin-left: 36px;
+          width: 427px;
+          height: 374px;
+          margin-top: 20px;
+        }
+        .M_MainTestName2 {
+          margin-top: 200px;
+          width: 387px;
+          height: 96px;
+        }
+        .A_MainTestName2 {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+        .A_MainTestsText {
+          text-align: center;
+          font-size: 20px;
+        }
+        .O_MainThought {
+          width: 427px;
+          margin-left: 36px;
+        }
+        .A_MainThoughtTitle {
+          font-size: 32px;
+          width: 390px;
+        }
+        .M_AllThoughtsButton {
+          margin-top: 0px;
+        }
+
+        .A_Malina3 {
+          display: none;
+        }
+        .W_MainThoughtText {
+          margin-left: -120px;
+          margin-top: 210px;
+        }
+        .A_Malina4 {
+          margin-left: -300px;
+          margin-top: 60px;
+        }
+  
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -275px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .S_LastBlock {
+          width: 500px;
+        }
+        .W_SecondBlock {
+          width: 500px;
+        }
+        .W_FirstScreen {
+          width: 500px;
+        }
+        .S_MainArticles {
+          width: 500px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 100%;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        .A_Malina {
+          margin-left: 40px;
+        }
+        .A_BigText {
+          text-align: center;
+          font-size: 80px;
+          line-height: 80px;
+          margin-left: 5px;
+          margin-top: 150px;
+        }
+        .A_SmallText {
+          margin-top: -60px;
+        }
+        .W_FirstRow {
+          display: block;
+        }
+        .W_SecondRow {
+          display: block;
+        }
+        .W_MainFirstDay {
+          width: 427px;
+          height: 450px;
+          margin-left: -40px;
+          margin-top: -150px;
+        }
+        .W_MainSecondDay {
+          width: 427px;
+          height: 450px;
+          margin-top: -180px;
+          margin-left: -40px;
+        }
+        .W_MainThirdDay {
+          width: 427px;
+          height: 450px;
+          margin-top: -180px;
+          margin-left: -40px;
+        }
+        .M_SecondDay {
+          margin-top: 50px;
+        }
+        .M_FirstDay {
+          margin-top: 50px;
+        }
+        .M_ThirdDay {
+          margin-top: 50px;
+        }
+        .A_ThirdTitle {
+          font-size: 50px;
+        }
+        .A_ThirdTitle {
+          margin-top: -30px;
+          margin-left: -70px;
+          text-align: center;
+        }
+        .A_ThirdText {
+          margin-top: -30px;
+          margin-left: -70px;
+          text-align: center;
+        }
+        .A_TegTherapy {
+          margin-left: 115px;
+          text-align: center;
+          justify-content: center;
+        }
+        .A_SecondMainScreen {
+          font-size: 30px;
+          margin-bottom: -110px;
+        }
+        .O_YellowTherapy {
+          display: block;
+          width: 427px;
+          margin-left: 36px;
+          height: 850px;
+        }
+        .A_ThirtyDays {
+          font-size: 180px;
+          text-align: center;
+          margin-left: 5px;
+          margin-top: -150px;
+        }
+        .A_TherapyGreen {
+          text-align: center;
+          padding-top: 1px;
+        }
+        .A_MalinaButton {
+          margin-top: -50px;
+          margin-left: 50px;
+        }
+        .C_MainArticles {
+          display: block;
+        }
+        .O_MainArticle {
+          margin-top: 20px;
+          margin-left: 36px;
+        }
+        .A_MainArticleTitle {
+          font-size: 50px;
+          line-height: 107%;
+        }
+        .A_MainArticleText {
+          margin-top: -30px;
+          text-align: center;
+          font-size: 20px;
+        }
+        .C_MainTests {
+          display: block;
+        }
+        .O_MainTest {
+          margin-left: 36px;
+          width: 427px;
+          height: 374px;
+        }
+        .M_MainTestName {
+          margin-top: 200px;
+          width: 387px;
+          height: 96px;
+        }
+        .A_MainTestName {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+        .O_MainTest2 {
+          margin-left: 36px;
+          width: 427px;
+          height: 374px;
+          margin-top: 20px;
+        }
+        .M_MainTestName2 {
+          margin-top: 200px;
+          width: 387px;
+          height: 96px;
+        }
+        .A_MainTestName2 {
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 8px;
+        }
+        .A_MainTestsText {
+          text-align: center;
+          font-size: 20px;
+        }
+        .O_MainThought {
+          width: 427px;
+          margin-left: 36px;
+        }
+        .A_MainThoughtTitle {
+          font-size: 32px;
+          width: 390px;
+        }
+        .M_AllThoughtsButton {
+          margin-top: 0px;
+        }
+
+        .A_Malina3 {
+          display: none;
+        }
+        .W_MainThoughtText {
+          margin-left: -120px;
+          margin-top: 210px;
+        }
+        .A_Malina4 {
+          margin-left: -300px;
+          margin-top: 60px;
+        }
+   
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -275px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .S_LastBlock {
+          width: 500px;
+        }
+        .W_SecondBlock {
+          width: 500px;
+        }
+        .W_FirstScreen {
+          width: 500px;
+        }
+        .S_MainArticles {
+          width: 500px;
+        }
+      }
+    </style> -->
+    <div class="O_Menu">
+      <div class="C_Menu">
+        <div class="A_MenuItem">
+          <b><a href="index.html">главная</a></b>
+        </div>
+        <div class="A_MenuItem"><a href="newtherapy.html">терапия</a></div>
+        <div class="A_MenuItem">
+          <a href="newarticles.html">статьи</a>
+        </div>
+        <div class="A_MenuItem"><a href="newthoughts.html">мысли</a></div>
+        <div class="A_MenuItem"><a href="newtest.html">тесты</a></div>
+      </div>
+      <div class="A_Logo"><p>RESTART</p></div>
+      <div class="A_MenuButton">
+        <button class="A_MenuButton">начать терапию</button>
+      </div>
+    </div>
+    <!-- первый экран -->
+    <div class="W_FirstScreen">
+      <div class="M_MainScreen">
+        <div class="A_BigText"><p>change your life</p></div>
+        <div class="A_SmallText">
+          <p>
+            Каждый конец – это шанс на новое начало, <br />
+            открой двери к счастью
+          </p>
+        </div>
+      </div>
+      <div class="A_Malina"><img src="../images/A_Malina.svg" alt="" /></div>
+    </div>
+    <!-- второй блок -->
+    <div class="W_SecondBlock">
+      <div class="A_SecondMainScreen">
+        <p>
+          <span class="bold">Расставание</span> — это всегда испытание, которое
+          <br />
+          может оставить глубокие раны. <br />
+          Но это также и возможность для
+          <span class="bold">
+            нового <br />
+            начала.</span
+          >
+          Наш медиа-сервис создан для того, <br />
+          чтобы помочь тебе пройти через этот сложный <br />
+          период и обрести <span class="bold">внутреннюю гармонию</span>
+        </p>
+      </div>
+      <div class="S_ThirdMainScreen">
+        <div class="W_FirstRow">
+          <div class="W_ThirdText">
+            <!-- <div class="A_TegTherapy"> -->
+            <button class="A_TegTherapy">Терапия</button>
+            <!-- </div> -->
+            <div class="M_ThirdText">
+              <div class="A_ThirdTitle">
+                <p>Терапия после <br />расставания</p>
+              </div>
+              <div class="A_ThirdText">
+                <p>
+                  Пошаговое руководство к эмоциональному <br />
+                  исцелению и внутреннему спокойствию
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="newdays/day1.html">
+            <div class="W_MainFirstDay">
+              <div class="M_FirstDay">
+                <div class="A_First"><p>1</p></div>
+                <div class="A_FirstDay">
+                  <p>
+                    Избавление <br />
+                    от сожалений
+                  </p>
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="W_SecondRow">
+          <div class="W_MainSecondDay">
+            <a href="newdays/day2.html">
+              <div class="M_SecondDay">
+                <div class="A_Second"><p>2</p></div>
+                <div class="A_SecondDay">
+                  <p>Принятие и восстановление</p>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="W_MainThirdDay">
+            <a href="newdays/day3.html">
+              <div class="M_ThirdDay">
+                <div class="A_Third"><p>3</p></div>
+                <div class="A_ThirdDay">
+                  <p>Поиск внутренней опоры</p>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- третий блок -->
+    <div class="O_YellowTherapy">
+      <div class="M_TherapyButton">
+        <div class="A_TherapyGreen"><p>Терапия</p></div>
+        <a href="newtherapy.html">
+          <div class="A_MalinaButton">
+            <img src="../images/A_MalinaButton.svg" alt="" /></div
+        ></a>
+      </div>
+      <div class="A_ThirtyDays">
+        <p>
+          30 <br />
+          days
+        </p>
+      </div>
+    </div>
+    <!-- статьи -->
+    <div class="S_MainArticles">
+      <div class="M_MainArticleText">
+        <div class="A_MainArticleTitle"><p>Как пережить расставание?</p></div>
+        <div class="A_MainArticleText">
+          <p>
+            Полезные статьи и советы, чтобы справиться <br />
+            с болью и начать новую главу
+          </p>
+        </div>
+      </div>
+      <div class="C_MainArticles">
+        <div class="O_MainArticle">
+          <div class="A_MainArticlePhoto">
+            <img
+              style="
+                border-radius: 10px;
+                width: 397px;
+                height: 259px;
+                object-fit: cover;
+              "
+              src="../images/firstarticle.jpg"
+              alt=""
+            />
+          </div>
+          <div class="M_MainArticle">
+            <div class="A_MainArticle"><p>Когнитивные искажения</p></div>
+            <div class="A_ArticleDescriptionMain">
+              <p>
+                Влияние восприятия реальности <br />
+                на эмоциональное состояние
+              </p>
+            </div>
+          </div>
+          <div class="M_MinutesDate">
+            <div class="A_MainArticleMinutes"><p>5 минут</p></div>
+            <div class="A_MainArticleDate"><p>20 May 2025</p></div>
+          </div>
+        </div>
+        <!-- вторая статья -->
+        <div class="O_MainArticle">
+          <div class="A_MainArticlePhoto">
+            <img
+              style="
+                border-radius: 10px;
+                width: 397px;
+                height: 259px;
+                object-fit: cover;
+              "
+              src="../images/article2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="M_MainArticle">
+            <div class="A_MainArticle"><p>Эмоциональная зависимость</p></div>
+            <div class="A_ArticleDescriptionMain">
+              <p>
+                Как распознать и преодолеть <br />
+                эмоциональную зависимость?
+              </p>
+            </div>
+          </div>
+          <div class="M_MinutesDate">
+            <div class="A_MainArticleMinutes"><p>5 минут</p></div>
+            <div class="A_MainArticleDate"><p>20 May 2025</p></div>
+          </div>
+        </div>
+        <!-- третья статья -->
+        <div class="O_MainArticle">
+          <div class="A_MainArticlePhoto">
+            <img
+              style="
+                border-radius: 10px;
+                width: 397px;
+                height: 259px;
+                object-fit: cover;
+              "
+              src="../images/article7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="M_MainArticle">
+            <div class="A_MainArticle"><p>Самооценка</p></div>
+            <div class="A_ArticleDescriptionMain">
+              <p>
+                Восстановление самооценки <br />
+                после расставания
+              </p>
+            </div>
+          </div>
+          <div class="M_MinutesDate">
+            <div class="A_MainArticleMinutes"><p>5 минут</p></div>
+            <div class="A_MainArticleDate"><p>20 May 2025</p></div>
+          </div>
+        </div>
+      </div>
+      <a href="newarticles.html">
+        <div class="M_AllArticleButton">
+          <div class="A_AllArticleButton">
+            <button class="A_AllArticleButton">К статьям</button>
+          </div>
+          <div class="A_Arrow">
+            <img src="../images/button.svg" alt="" />
+          </div></div
+      ></a>
+    </div>
+    <!-- тесты -->
+    <div class="S_LastBlock">
+      <div class="S_MainTests">
+        <div class="M_MainTestsText">
+          <div class="A_MainTestsTitle"><p>Тесты</p></div>
+          <div class="A_MainTestsText">
+            <p>
+              Проверь свои знания и готовность к новому <br />
+              этапу жизни
+            </p>
+          </div>
+        </div>
+        <div class="C_MainTests">
+          <div class="O_MainTest">
+            <button class="A_MainTestButton">Тесты</button>
+            <a href="newtests/testik2.html">
+              <div class="M_MainTestName">
+                <div class="A_MainTestName">
+                  <p>Что делать после расставания?</p>
+                </div>
+                <div class="A_TestButton">
+                  <img src="../images/rosecircle.svg" alt="" />
+                </div></div
+            ></a>
+          </div>
+          <!-- второй тест -->
+          <div class="O_MainTest2">
+            <button class="A_MainTestButton">Тесты</button>
+            <a href="newtests/testik.html">
+              <div class="M_MainTestName">
+                <div class="A_MainTestName">
+                  <p>Как вести себя с бывшим?</p>
+                </div>
+                <div class="A_TestButton">
+                  <img src="../images/rosecircle.svg" alt="" />
+                </div></div
+            ></a>
+          </div>
+        </div>
+        <a href="newtest.html">
+          <div class="M_AllArticleButton">
+            <div class="A_AllArticleButton">
+              <button class="A_AllArticleButton2">К тестам</button>
+            </div>
+            <div class="A_Arrow">
+              <img src="../images/arrowrose.svg" alt="" />
+            </div></div
+        ></a>
+      </div>
+      <!-- мысли -->
+      <div class="O_MainThought">
+        <div class="A_Malina3">
+          <img src="../images/A_Malina3.svg" alt="" />
+        </div>
+        <div class="W_MainThoughtText">
+          <div class="A_MainThoughtTitle">
+            <p>
+              Разбор мыслей <br />
+              после расставания <br />
+              и их корректировка
+            </p>
+          </div>
+          <a href="newthoughts.html">
+            <div class="M_AllThoughtsButton">
+              <button class="A_ThoughtsButton">К мыслям</button>
+              <div class="A_ArrowThoughts">
+                <img src="../images/A_ArrowThoughts.svg" alt="" />
+              </div></div
+          ></a>
+        </div>
+        <div class="A_Malina4">
+          <img src="../images/A_Malina4.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- футер -->
+    <div class="O_Footer">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
+  </body>
+</html>

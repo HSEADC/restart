@@ -3,3 +3,167 @@
   gap: 210px;
   margin-top: 20px;
 }
+.O_ArticleCard {
+  display: block;
+  padding: 1rem;
+  width: 30%;
+  background-color: #be153e;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+}
+/* страницы статей */
+
+/* футер */
+
+.O_Footer {
+  background-color: #f29db0;
+  height: 750px;
+  margin-top: 80px;
+}
+/* дни терапии */
+.O_Practice {
+  border-radius: 20px;
+  width: 874px;
+  height: 422px;
+  background: #f29db0;
+  margin-left: 283px;
+  margin-top: 58px;
+  display: flex;
+}
+/* все статьи */
+.O_Footer2 {
+  margin-top: 60px;
+}
+/* главная */
+
+.O_YellowTherapy {
+  border-radius: 38px;
+  width: 1320px;
+  height: 751px;
+  background: #fcf8ec;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 74px;
+}
+
+.O_MainArticle {
+  border-radius: 15px;
+  width: 427px;
+  height: 482px;
+  background: #fcf8ec;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_MainTest {
+  border-radius: 20px;
+  background-image: url(../../../images/test1.png);
+  width: 650px;
+  height: 597px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_MainTest2 {
+  border-radius: 20px;
+  background-image: url(../../../images/test2.png);
+  width: 650px;
+  height: 597px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_MainThought {
+  border-radius: 15px;
+  width: 1320px;
+  height: 508px;
+  background: #f29db0;
+  display: flex;
+  justify-content: center;
+  margin-left: 75px;
+  margin-top: 73px;
+  gap: 50px;
+}
+/* все тесты */
+.O_FirstTest {
+  border-radius: 10px;
+  width: 712px;
+  height: 449px;
+  background: #f29db0;
+  display: flex;
+  gap: 145px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_SecondTest {
+  border-radius: 10px;
+  width: 589px;
+  height: 449px;
+  background: #f9c8d3;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_ThreeTest {
+  border-radius: 10px;
+  width: 427px;
+  height: 449px;
+  background: #f1e8db;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_FourTest {
+  border-radius: 10px;
+  width: 426px;
+  height: 449px;
+  background: #f29db0;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_FiveTest {
+  border-radius: 10px;
+  width: 427px;
+  height: 449px;
+  background: #fff;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+/* терапия */
+
+.O_FirstDay {
+  border-radius: 9px;
+  width: 259px;
+  height: 432px;
+  background: #fcf8ec;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_FirstDay2 {
+  border-radius: 9px;
+  width: 259px;
+  height: 432px;
+  background: #fcf8ec;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_FirstDay3 {
+  border-radius: 9px;
+  width: 259px;
+  height: 432px;
+  background: #fcf8ec;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.O_FirstDay4 {
+  border-radius: 9px;
+  width: 259px;
+  height: 432px;
+  background: #fcf8ec;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+/* тест1 */
+.O_Test {
+  border-radius: 38px;
+  width: 1320px;
+  height: 630px;
+  background: #fcf8ec;
+  margin-top: 60px;
+  margin-left: 60px;
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тесты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/components/1.Quarks.css" />
+    <link rel="stylesheet" href="stylesheets/components/2.Atoms.css" />
+    <link rel="stylesheet" href="stylesheets/components/3.Molecules.css" />
+    <link rel="stylesheet" href="stylesheets/components/4.Wrappers.css" />
+    <link rel="stylesheet" href="stylesheets/components/5.Collections.css" />
+    <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
+    <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
+    <link rel="stylesheet" href="stylesheets//adaptive.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        width: 1470px;
+        background-color: #fcf8ec;
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+      }
+    </style>
+    <!-- <style>
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight Italic'),
+          url('TT Fors Trial ExtraLight Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Variable';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Variable'),
+          url('TT Fors Trial Variable.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin'),
+          url('TT Fors Trial Thin.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin Italic'),
+          url('TT Fors Trial Thin Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Regular'),
+          url('TT Fors Trial Regular.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium'),
+          url('TT Fors Trial Medium.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium Italic'),
+          url('TT Fors Trial Medium Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light'),
+          url('TT Fors Trial Light.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light Italic'),
+          url('TT Fors Trial Light Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Italic'),
+          url('TT Fors Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight'),
+          url('TT Fors Trial ExtraLight.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial Italic'),
+          url('TT Fors Black Outline Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold'),
+          url('TT Fors Trial ExtraBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold Italic'),
+          url('TT Fors Trial ExtraBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold'),
+          url('TT Fors Trial DemiBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold Italic'),
+          url('TT Fors Trial DemiBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold'),
+          url('TT Fors Trial Bold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold Italic'),
+          url('TT Fors Trial Bold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black'),
+          url('TT Fors Trial Black.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black Italic'),
+          url('TT Fors Trial Black Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial'),
+          url('TT Fors Black Outline Trial.woff') format('woff');
+      }
+      .bagel-fat-one-regular {
+        font-family: 'Bagel Fat One', serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #fcf8ec;
+        padding: 0;
+        margin: 0;
+        width: 1470px;
+      }
+      .A_MenuItem {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      a {
+        text-decoration: inherit;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_Logo {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-left: 10px;
+        margin-right: 200px;
+      }
+      .A_MenuButton {
+        border-radius: 10px;
+        width: 201px;
+        height: 50px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 610;
+        line-height: 350%;
+        font-size: 13px;
+        color: #f7e6f0;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .C_Menu {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 16px;
+        gap: 34px;
+      }
+      .O_Menu {
+        display: flex;
+        gap: 210px;
+        margin-top: 20px;
+      }
+      .A_Title {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        text-align: center;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+      }
+      .O_FirstTest {
+        border-radius: 10px;
+        width: 712px;
+        height: 449px;
+        background: #f29db0;
+        display: flex;
+        gap: 145px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_TestTime {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        margin-top: 26px;
+      }
+      .A_TestMinutes {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 24px;
+        color: #be153e;
+        margin-top: -27px;
+      }
+      .A_TestName1 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 112%;
+        color: #be153e;
+        padding-top: 150px;
+      }
+      .W_FirstTest {
+        margin-left: 26px;
+      }
+      .A_TestMalina {
+        margin-top: 22px;
+      }
+      .O_SecondTest {
+        border-radius: 10px;
+        width: 589px;
+        height: 449px;
+        background: #f9c8d3;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_TestTime2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        margin-top: 26px;
+      }
+      .A_TestMinutes2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 24px;
+        color: #be153e;
+        margin-top: -27px;
+      }
+      .A_TestName2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 112%;
+        color: #be153e;
+        padding-top: 150px;
+      }
+      .W_FirstRowTest {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+      .O_ThreeTest {
+        border-radius: 10px;
+        width: 427px;
+        height: 449px;
+        background: #f1e8db;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_TestTime3 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #004227;
+        margin-top: 26px;
+      }
+      .A_TestMinutes3 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 24px;
+        color: #004227;
+        margin-top: -27px;
+      }
+      .A_TestName3 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 112%;
+        color: #004227;
+        padding-top: 150px;
+      }
+      .W_Test3 {
+        margin-left: 26px;
+        padding-top: 1px;
+      }
+      .O_FourTest {
+        border-radius: 10px;
+        width: 426px;
+        height: 449px;
+        background: #f29db0;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_TestTime4 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        margin-top: 26px;
+      }
+      .A_TestMinutes4 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 24px;
+        color: #be153e;
+        margin-top: -27px;
+      }
+      .A_TestName4 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 112%;
+        color: #be153e;
+        padding-top: 150px;
+      }
+      .O_FiveTest {
+        border-radius: 10px;
+        width: 427px;
+        height: 449px;
+        background: #fff;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_TestTime5 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #1e1e1e;
+        margin-top: 26px;
+      }
+      .A_TestMinutes5 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 24px;
+        color: #1e1e1e;
+        margin-top: -27px;
+      }
+      .A_TestName5 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 112%;
+        color: #1e1e1e;
+        padding-top: 150px;
+      }
+      .W_SecondRowTest {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .S_Test {
+        margin-top: -50px;
+      }
+     
+      .A_Person {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 23px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_Name {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_RestartFooter {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 300px;
+        text-transform: uppercase;
+        color: #be153e;
+      }
+      .W_FirstFooter {
+        display: flex;
+      }
+      .M_Social {
+        display: flex;
+        margin-left: 110px;
+        gap: 10px;
+        margin-top: 75px;
+      }
+      .W_TwoPerson {
+        display: flex;
+        gap: 100px;
+        margin-left: 600px;
+        margin-top: 45px;
+      }
+      .A_HSELogo {
+        margin-top: 75px;
+        margin-left: 80px;
+      }
+      .A_RestartFooter {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+        height: 434px;
+      }
+      .O_Footer {
+        background-color: #f29db0;
+        height: 750px;
+        margin-top: 80px;
+      }
+      .A_Name {
+        margin-top: -15px;
+      }
+
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        
+        .O_Footer {
+          height: 300px;
+        }
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -245px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+          padding-top: 40px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .W_FirstRowTest {
+          display: block;
+          margin-left: 36px;
+        }
+        .W_SecondRowTest {
+          display: block;
+          margin-left: 36px;
+        }
+        .O_FirstTest {
+          border-radius: 10px;
+          width: 426px;
+          height: 449px;
+          background: #f29db0;
+          cursor: url('../images/smallcursor.svg'), auto;
+        }
+        .A_TestMalina {
+          display: none;
+        }
+        .O_SecondTest {
+          border-radius: 10px;
+          width: 426px;
+          height: 449px;
+          background: #f9c8d3;
+          cursor: url('../images/smallcursor.svg'), auto;
+          margin-top: 20px;
+        }
+        .W_FirstTest {
+          margin-left: 26px;
+          padding-top: 1px;
+        }
+        .O_ThreeTest {
+          margin-top: 20px;
+        }
+        .O_FourTest {
+          margin-top: 20px;
+        }
+        .O_FiveTest {
+          margin-top: 20px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+   
+        .O_Footer {
+          height: 300px;
+        }
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -245px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+          padding-top: 40px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .W_FirstRowTest {
+          display: block;
+          margin-left: 36px;
+        }
+        .W_SecondRowTest {
+          display: block;
+          margin-left: 36px;
+        }
+        .O_FirstTest {
+          border-radius: 10px;
+          width: 426px;
+          height: 449px;
+          background: #f29db0;
+          cursor: url('../images/smallcursor.svg'), auto;
+        }
+        .A_TestMalina {
+          display: none;
+        }
+        .O_SecondTest {
+          border-radius: 10px;
+          width: 426px;
+          height: 449px;
+          background: #f9c8d3;
+          cursor: url('../images/smallcursor.svg'), auto;
+          margin-top: 20px;
+        }
+        .W_FirstTest {
+          margin-left: 26px;
+          padding-top: 1px;
+        }
+        .O_ThreeTest {
+          margin-top: 20px;
+        }
+        .O_FourTest {
+          margin-top: 20px;
+        }
+        .O_FiveTest {
+          margin-top: 20px;
+        }
+      }
+    </style> -->
+    <div class="O_Menu">
+      <div class="C_Menu">
+        <div class="A_MenuItem">
+          <a href="index.html">главная</a>
+        </div>
+        <div class="A_MenuItem">
+          <a href="newtherapy.html">терапия</a>
+        </div>
+        <div class="A_MenuItem">
+          <a href="newarticles.html">статьи</a>
+        </div>
+        <div class="A_MenuItem"><a href="newthoughts.html">мысли</a></div>
+        <div class="A_MenuItem">
+          <b><a href="newtest.html">тесты</a></b>
+        </div>
+      </div>
+      <div class="A_Logo"><p>RESTART</p></div>
+      <div class="A_MenuButton">
+        <button class="A_MenuButton">начать терапию</button>
+      </div>
+    </div>
+    <!-- меню -->
+    <div class="A_Title"><p>Тесты</p></div>
+    <div class="S_Test">
+      <div class="W_FirstRowTest">
+        <a href="newtests/testik.html">
+          <div class="O_FirstTest">
+            <div class="W_FirstTest">
+              <div class="M_TestTime">
+                <div class="A_TestTime"><p>Время прохождения</p></div>
+                <div class="A_TestMinutes"><p>1 минута</p></div>
+              </div>
+              <div class="A_TestName1">
+                <p>
+                  Как вести себя <br />
+                  с бывшим?
+                </p>
+              </div>
+            </div>
+            <div class="A_TestMalina">
+              <img src="../images/A_TestMalina.svg" alt="" />
+            </div></div
+        ></a>
+
+        <div class="O_SecondTest">
+          <a href="newtests/testik2.html">
+            <div class="W_FirstTest">
+              <div class="M_TestTime">
+                <div class="A_TestTime2"><p>Время прохождения</p></div>
+                <div class="A_TestMinutes2"><p>1 минута</p></div>
+              </div>
+              <div class="A_TestName2">
+                <p>
+                  Что делать <br />
+                  после?
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="W_SecondRowTest">
+        <div class="O_ThreeTest">
+          <a href="newtests/testik3.html">
+            <div class="W_Test3">
+              <div class="M_TestTime">
+                <div class="A_TestTime3"><p>Время прохождения</p></div>
+                <div class="A_TestMinutes3"><p>1 минута</p></div>
+              </div>
+              <div class="A_TestName3">
+                <p>
+                  Здоровые <br />
+                  отношения
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <!-- четвертый тест -->
+        <div class="O_FourTest">
+          <a href="newtests/testik4.html">
+            <div class="W_Test3">
+              <div class="M_TestTime">
+                <div class="A_TestTime4"><p>Время прохождения</p></div>
+                <div class="A_TestMinutes4"><p>1 минута</p></div>
+              </div>
+              <div class="A_TestName4">
+                <p>
+                  Красные <br />
+                  флаги
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <!-- пятый тест -->
+        <div class="O_FiveTest">
+          <a href="newtests/testik5.html"
+            ><div class="W_Test3">
+              <div class="M_TestTime">
+                <div class="A_TestTime5"><p>Время прохождения</p></div>
+                <div class="A_TestMinutes5"><p>1 минута</p></div>
+              </div>
+              <div class="A_TestName5">
+                <p>
+                  Типы <br />
+                  привязанности
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- футер -->
+    <div class="O_Footer">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
+  </body>
+</html>

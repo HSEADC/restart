@@ -15,3 +15,5 @@
 @import 'stylesheets/components/5.Collections.css';
 @import 'stylesheets/components/6.Organisms.css';
 @import 'stylesheets/components/7.SuperOrganisms.css';
+
+@import 'stylesheets/adaptive.css';

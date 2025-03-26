@@ -1,3 +1,158 @@
 .W_Article {
   margin-top: 46px;
 }
+/* страницы статей */
+.W_TitleTime {
+  display: flex;
+  gap: 80px;
+}
+.W_ArticleTitle {
+  display: flex;
+  gap: 80px;
+}
+
+.W_MiniArticle {
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+/* футер */
+
+.W_FirstFooter {
+  display: flex;
+}
+
+.W_TwoPerson {
+  display: flex;
+  gap: 100px;
+  margin-left: 600px;
+  margin-top: 45px;
+}
+/* дни терапии */
+
+.W_Practice2 {
+  display: flex;
+  justify-content: center;
+}
+.W_Practice {
+  display: block;
+  justify-content: center;
+  margin-left: -82px;
+}
+/* главная */
+
+.W_FirstScreen {
+  display: block;
+  justify-content: center;
+}
+
+.W_SecondBlock {
+  background-color: #fcf8ec;
+}
+
+.W_FirstRow {
+  display: flex;
+  gap: 43px;
+  margin-left: 59px;
+  margin-top: 197px;
+}
+.W_MainFirstDay {
+  border-radius: 7px;
+  width: 762px;
+  height: 413px;
+  background: #f1e8db;
+  margin-left: 27px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.W_SecondRow {
+  display: flex;
+  gap: 20px;
+  margin-left: 59px;
+  margin-top: 20px;
+}
+.W_MainSecondDay {
+  border-radius: 7px;
+  width: 762px;
+  height: 413px;
+  background: #f9c8d3;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.W_ThirdRow {
+  display: flex;
+  gap: 43px;
+  margin-left: 59px;
+  margin-top: 197px;
+}
+.W_MainThirdDay {
+  border-radius: 7px;
+  width: 538px;
+  height: 413px;
+  background: #be153e;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.W_SecondBlock {
+  padding-bottom: 51px;
+}
+
+.W_MainThoughtText {
+  margin-left: -66px;
+  margin-top: 50px;
+}
+/* все тесты */
+
+.W_FirstTest {
+  margin-left: 26px;
+}
+
+.W_FirstRowTest {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.W_Test3 {
+  margin-left: 26px;
+  padding-top: 1px;
+}
+
+.W_SecondRowTest {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* терапия */
+
+.W_FirstDay {
+  display: block;
+  justify-content: center;
+  cursor: url('../images/smallcursor.svg'), auto;
+}
+
+.W_BigTherapy {
+  display: block;
+  gap: 200px;
+}
+
+.W_FirstDay2 {
+  margin-left: 30px;
+}
+.W_FirstDay3 {
+  margin-left: 20px;
+}
+.W_FirstDay4 {
+  margin-left: 30px;
+}
+.W_FirstDay5 {
+  margin-left: 30px;
+}
+/* тест1 */
+.W_Test {
+  margin-left: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

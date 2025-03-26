@@ -13,12 +13,81 @@
 .C_BigArticles {
   display: flex;
   gap: 20px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  justify-content: center;
+  margin-top: 0px;
 }
 .C_MiniArticles {
   display: flex;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   gap: 20px;
-  margin-top: 25px;
-  margin-bottom: -15px;
+  /* margin-top: 25px; */
+  /* margin-top: -20px; */
+  /* margin-bottom: -17px; */
+  justify-content: center;
+  margin-top: 0px;
+}
+/* страницы статей */
+
+.C_TwoArticles {
+  display: flex;
+  gap: 20px;
+  margin-left: 202px;
+}
+/* главная */
+
+.C_MainArticles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.C_MainTests {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 53px;
+}
+/* терапия */
+
+.C_Therapy {
+  display: flex;
+  overflow: hidden;
+  width: 1096px;
+  gap: 20px;
+}
+
+.C_Therapy2 {
+  display: flex;
+  overflow: hidden;
+  width: 1096px;
+  gap: 20px;
+}
+
+.C_Therapy3 {
+  display: flex;
+  overflow: hidden;
+  width: 1096px;
+  gap: 20px;
+}
+
+.C_Therapy4 {
+  display: flex;
+  overflow: hidden;
+  width: 1096px;
+  gap: 20px;
+}
+/* мысли */
+.C_FirstRowThoughts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -20px;
+}
+.C_SecondRowThoughts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
