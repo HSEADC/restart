@@ -4,10 +4,12 @@
   font-size: 13px;
   text-transform: uppercase;
   color: #be153e;
+  cursor: url('../../../images/smallcursor.svg'), auto;
 }
 a {
   text-decoration: inherit;
   color: #be153e;
+  cursor: url('../../../images/smallcursor.svg'), auto;
 }
 .A_Logo {
   font-family: 'Bagel Fat One';
@@ -79,15 +81,143 @@ a {
 .A_ArticleTitle {
   font-family: 'TT Fors Trial Variable';
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   color: #be153e;
 }
 .A_ArticleDescription {
   font-family: 'TT Fors Trial Variable';
   font-weight: 280;
-  font-size: 14px;
+  font-size: 18px;
   color: #be153e;
-  margin-top: -20px;
+  margin-top: -26px;
+}
+.A_MiniArticleTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 22px;
+  color: #be153e;
+}
+.A_MiniArticleDescription {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 280;
+  font-size: 16px;
+  color: #be153e;
+  margin-top: -21px;
+}
+/* фильтры */
+.A_ArticleCardHeader {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.A_WhiteFilter {
+  &.active {
+    background-color: #be153e;
+    color: white;
+  }
+  &:hover {
+    cursor: url('../../../images/smallcursor.svg'), auto;
+  }
+}
+
+/* страницы статей */
+.A_MenuItem {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #be153e;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+a {
+  text-decoration: inherit;
+  color: #be153e;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_Logo {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 25px;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+  margin-top: -19px;
+  margin-left: 10px;
+  margin-right: 200px;
+}
+.A_MenuButton {
+  border-radius: 10px;
+  width: 201px;
+  height: 50px;
+  background: #be153e;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 610;
+  line-height: 350%;
+  font-size: 13px;
+  color: #f7e6f0;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.A_BigArticleTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 111%;
+  color: #be153e;
+}
+.A_ArticleTime {
+  border: 1px solid #be153e;
+  border-radius: 20px;
+  padding: 15px;
+  width: 104px;
+  height: 55px;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: #be153e;
+  background-color: #fcf8ec;
+  margin-top: 83px;
+}
+
+.A_ArrowArticle {
+  margin-left: 50px;
+  margin-top: 76px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+/* .A_PhotoArticle {
+  display: flex;
+  justify-content: center;
+  margin-left: -108px;
+  margin-top: -30px;
+} */
+.A_ArticleText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #004227;
+  width: 800px;
+  margin-left: 202px;
+  margin-top: 80px;
+}
+.A_SmallArticleTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 30px;
+  color: #be153e;
+  margin-left: 202px;
+  margin-top: 60px;
+  margin-bottom: -50px;
+}
+.A_More {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 30px;
+  color: #be153e;
+  margin-left: 202px;
 }
 .A_MiniArticleTitle {
   font-family: 'TT Fors Trial Variable';
@@ -101,4 +231,878 @@ a {
   font-size: 12px;
   color: #be153e;
   margin-top: -15px;
+}
+
+.A_MenuButton {
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+/* футер */
+.A_Person {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 23px;
+  text-transform: capitalize;
+  color: #be153e;
+}
+.A_Name {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #be153e;
+}
+.A_RestartFooter {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 300px;
+  text-transform: uppercase;
+  color: #be153e;
+}
+.A_HSELogo {
+  margin-top: 75px;
+  margin-left: 80px;
+}
+.A_RestartFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+  height: 434px;
+}
+.A_PracticeTag {
+  margin-left: 265px;
+}
+.A_Name {
+  margin-top: -15px;
+}
+.A_PhotoArticle {
+  width: 954px;
+  height: 435px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: -10px;
+}
+
+/* дни терапии */
+.A_DayTitle {
+  font-family: 'Babe', 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 65%;
+  color: #be153e;
+  margin-left: 283px;
+  margin-top: -200px;
+}
+.A_DayText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #004227;
+  width: 700px;
+  margin-left: 283px;
+  margin-top: -30px;
+}
+.A_PracticeTag {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 16px;
+  color: #1c3c31;
+  border-radius: 10px;
+  width: 99px;
+  height: 35px;
+  background: #fcf8ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 249px;
+  margin-top: 95px;
+}
+.A_Practice {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 118%;
+  text-align: center;
+  color: #be153e;
+  width: 636px;
+}
+.A_MalinaDay2 {
+  margin-top: 238px;
+  margin-left: 31px;
+}
+.A_MalinaDay {
+  margin-top: 31px;
+  margin-left: -80px;
+}
+.bold {
+  font-weight: 500;
+}
+/* все статьи */
+
+.A_Name {
+  margin-top: -15px;
+}
+.A_PhotoArticle1 {
+  object-fit: cover;
+  width: 650px;
+  height: 448px;
+  border-radius: 10px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_MiniPhotoArticle {
+  object-fit: cover;
+  width: 427px;
+  height: 296px;
+  border-radius: 10px;
+}
+/* главная */
+
+.A_BigText {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 140px;
+  text-transform: uppercase;
+  color: #be153e;
+  margin-left: 79px;
+}
+.A_SmallText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #be153e;
+  margin-top: -156px;
+}
+
+.A_Malina {
+  justify-content: center;
+  margin-left: 508px;
+}
+
+.A_SecondMainScreen {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 139%;
+  text-align: center;
+  color: #1e1e1e;
+}
+.bold {
+  font-weight: 500;
+}
+.A_SecondMainScreen {
+  padding-top: 100px;
+}
+.A_TegTherapy {
+  border-radius: 20px;
+  width: 122px;
+  height: 40px;
+  background: #fbc1d4;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 18px;
+  color: #1e1e1e;
+  border: none;
+}
+.A_ThirdTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 107%;
+  color: #1e1e1e;
+  margin-top: -60px;
+}
+.A_ThirdText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #1e1e1e;
+  margin-top: -50px;
+}
+.A_First {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 200px;
+  color: #1e1e1e;
+}
+
+.A_FirstDay {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: #1e1e1e;
+  margin-top: -170px;
+}
+
+.A_Second {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 200px;
+  color: #be153e;
+}
+
+.A_SecondDay {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: #be153e;
+  margin-top: -170px;
+}
+
+.A_Third {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 200px;
+  color: #f9c8d3;
+}
+
+.A_ThirdDay {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: #f9c8d3;
+  margin-top: -170px;
+}
+
+.A_TherapyGreen {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 73%;
+  color: #004227;
+}
+.A_ThirtyDays {
+  font-family: 'Bagel Fat One';
+  font-weight: 400;
+  font-size: 319px;
+  line-height: 72%;
+  text-align: right;
+  color: #004227;
+  margin-top: -200px;
+  margin-left: 150px;
+}
+
+.A_MainArticleTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 70px;
+  color: #be153e;
+  text-align: center;
+}
+.A_MainArticleText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #be153e;
+  margin-top: -50px;
+}
+
+.A_MainArticlePhoto {
+  padding: 15px;
+}
+.A_MainArticle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #1e1e1e;
+}
+.A_ArticleDescriptionMain {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 280;
+  font-size: 16px;
+  line-height: 112%;
+  color: #1e1e1e;
+  margin-top: -3px;
+}
+.A_MainArticleMinutes {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 14px;
+  color: #004227;
+}
+.A_MainArticleDate {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 14px;
+  color: #004227;
+}
+
+.A_AllArticleButton {
+  border-radius: 100px;
+  width: 148px;
+  height: 54px;
+  background: #be153e;
+  border: none;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 18px;
+  color: #fcf8ec;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_MainTestsTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 70px;
+  color: #1e1e1e;
+  text-align: center;
+  padding-top: 10px;
+}
+.A_MainTestsText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #1e1e1e;
+  margin-top: -50px;
+}
+.A_MainTestName {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 24px;
+  color: #1e1e1e;
+  margin-left: 35px;
+  margin-top: 5px;
+}
+
+.A_MainTestButton {
+  border-radius: 20px;
+  width: 102px;
+  height: 40px;
+  background: #fbc1d4;
+  border: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_TestButton {
+  margin-top: 25px;
+  margin-right: 28px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_AllArticleButton2 {
+  border-radius: 100px;
+  width: 148px;
+  height: 54px;
+  background: #fbc1d4;
+  border: none;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 18px;
+  color: #be153e;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_MainThoughtTitle {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  text-align: center;
+  color: #be153e;
+}
+.A_ThoughtsButton {
+  border-radius: 128px;
+  width: 189px;
+  height: 69px;
+  background: #be153e;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 23px;
+  color: #fcf8ec;
+  border: none;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_Malina3 {
+  margin-top: 40px;
+  margin-left: -50px;
+}
+
+.A_Malina4 {
+  margin-top: 300px;
+}
+/* все тесты */
+
+.A_TestTime {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  margin-top: 26px;
+}
+.A_TestMinutes {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 24px;
+  color: #be153e;
+  margin-top: -27px;
+}
+.A_TestName1 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 112%;
+  color: #be153e;
+  padding-top: 150px;
+}
+
+.A_TestMalina {
+  margin-top: 22px;
+}
+
+.A_TestTime2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  margin-top: 26px;
+}
+.A_TestMinutes2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 24px;
+  color: #be153e;
+  margin-top: -27px;
+}
+.A_TestName2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 112%;
+  color: #be153e;
+  padding-top: 150px;
+}
+
+.A_TestTime3 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #004227;
+  margin-top: 26px;
+}
+.A_TestMinutes3 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 24px;
+  color: #004227;
+  margin-top: -27px;
+}
+.A_TestName3 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 112%;
+  color: #004227;
+  padding-top: 150px;
+}
+
+.A_TestTime4 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  margin-top: 26px;
+}
+.A_TestMinutes4 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 24px;
+  color: #be153e;
+  margin-top: -27px;
+}
+.A_TestName4 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 112%;
+  color: #be153e;
+  padding-top: 150px;
+}
+
+.A_TestTime5 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #1e1e1e;
+  margin-top: 26px;
+}
+.A_TestMinutes5 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e1e1e;
+  margin-top: -27px;
+}
+.A_TestName5 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 112%;
+  color: #1e1e1e;
+  padding-top: 150px;
+}
+/* терапия */
+
+.A_FirstWeek {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 705;
+  font-size: 30px;
+  line-height: 327%;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.A_First1 {
+  font-family: 'Babe';
+  font-weight: 500;
+  font-size: 158px;
+  color: #1e1e1e;
+  text-align: center;
+  margin-left: -37px;
+}
+.A_Day1 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  margin-top: -130px;
+  text-align: center;
+  margin-left: 45px;
+}
+.A_TherapyText {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 101%;
+  text-align: center;
+  color: #1e1e1e;
+  margin-left: 40px;
+}
+
+.A_TherapyText {
+  margin-top: 80px;
+}
+
+.A_Second1 {
+  font-family: 'Babe';
+  font-weight: 500;
+  font-size: 158px;
+  color: #1e1e1e;
+  text-align: center;
+  margin-left: 20px;
+}
+.A_ArrowTest {
+  border: none;
+  fill: none;
+  width: 0;
+  height: 0;
+  background-color: #f29db0;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.cursor {
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_SecondArrowTest {
+  border: none;
+  fill: none;
+  width: 0;
+  height: 0;
+  background-color: #f29db0;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_FirstWeek2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 705;
+  font-size: 30px;
+  line-height: 327%;
+  color: #be153e;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* seccond */
+.A_TherapyText2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 101%;
+  text-align: center;
+  color: #1e1e1e;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+/* мысли */
+
+.A_Thought1:hover .Q_Effect {
+  transform: rotateY(180deg);
+}
+.A_ThoughtRazbor1 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -78px;
+}
+.A_Thought1 {
+  perspective: 1000px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+.A_ThoughtText1 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  backface-visibility: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 117px;
+}
+/* вторая карточка */
+.A_ThoughtRazbor2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #004227;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -78px;
+}
+.A_Thought2 {
+  perspective: 1000px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_ThoughtText2 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #004227;
+  backface-visibility: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 117px;
+}
+
+.A_Thought2:hover .Q_Effect2 {
+  transform: rotateY(180deg);
+}
+/* третья карточка */
+.A_ThoughtRazbor3 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #fcf8ec;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -78px;
+}
+.A_Thought3 {
+  perspective: 1000px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_ThoughtText3 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #fcf8ec;
+  backface-visibility: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 117px;
+}
+
+.A_Thought3:hover .Q_Effect3 {
+  transform: rotateY(180deg);
+}
+/* четвертая карточка */
+.A_ThoughtRazbor4 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -78px;
+}
+.A_Thought4 {
+  perspective: 1000px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_ThoughtText4 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #be153e;
+  backface-visibility: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 117px;
+}
+
+.A_Thought4:hover .Q_Effect4 {
+  transform: rotateY(180deg);
+}
+/* пятая карточка */
+.A_ThoughtRazbor5 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #f29db0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -78px;
+}
+.A_Thought5 {
+  perspective: 1000px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_ThoughtText5 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #f29db0;
+  backface-visibility: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 117px;
+}
+
+.A_Thought5:hover .Q_Effect5 {
+  transform: rotateY(180deg);
+}
+/* шестая карточка */
+.A_ThoughtRazbor6 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #004227;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -78px;
+}
+.A_Thought6 {
+  perspective: 1000px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_ThoughtText6 {
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 20px;
+  color: #004227;
+  backface-visibility: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 117px;
+}
+.A_Thought6:hover .Q_Effect6 {
+  transform: rotateY(180deg);
+}
+/* тест1 */
+.A_TestTitle {
+  margin-bottom: 54px;
+  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 104%;
+  text-align: center;
+  color: #be153e;
+  width: 900px;
+}
+.A_Answers {
+  margin: 20px;
+  border-radius: 15px;
+  width: 538px;
+  height: 129px;
+  background: #f1e8db;
+  font-family: 'TT Fors Trial Variable';
+  font-weight: 400;
+  font-size: 24px;
+  color: #1e1e1e;
+  border: none;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+.A_Answers:hover {
+  background-color: #f29db0;
+}
+
+.A_Answers:hover {
+  color: #be153e;
 }

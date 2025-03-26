@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мысли</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/components/1.Quarks.css" />
+    <link rel="stylesheet" href="stylesheets/components/2.Atoms.css" />
+    <link rel="stylesheet" href="stylesheets/components/3.Molecules.css" />
+    <link rel="stylesheet" href="stylesheets/components/4.Wrappers.css" />
+    <link rel="stylesheet" href="stylesheets/components/5.Collections.css" />
+    <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
+    <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
+    <link rel="stylesheet" href="stylesheets//adaptive.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        width: 1470px;
+        background-color: #fcf8ec;
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+      }
+    </style>
+    <!-- <style>
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight Italic'),
+          url('TT Fors Trial ExtraLight Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Variable';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Variable'),
+          url('TT Fors Trial Variable.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin'),
+          url('TT Fors Trial Thin.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin Italic'),
+          url('TT Fors Trial Thin Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Regular'),
+          url('TT Fors Trial Regular.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium'),
+          url('TT Fors Trial Medium.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium Italic'),
+          url('TT Fors Trial Medium Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light'),
+          url('TT Fors Trial Light.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light Italic'),
+          url('TT Fors Trial Light Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Italic'),
+          url('TT Fors Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight'),
+          url('TT Fors Trial ExtraLight.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial Italic'),
+          url('TT Fors Black Outline Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold'),
+          url('TT Fors Trial ExtraBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold Italic'),
+          url('TT Fors Trial ExtraBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold'),
+          url('TT Fors Trial DemiBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold Italic'),
+          url('TT Fors Trial DemiBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold'),
+          url('TT Fors Trial Bold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold Italic'),
+          url('TT Fors Trial Bold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black'),
+          url('TT Fors Trial Black.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black Italic'),
+          url('TT Fors Trial Black Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial'),
+          url('TT Fors Black Outline Trial.woff') format('woff');
+      }
+      .bagel-fat-one-regular {
+        font-family: 'Bagel Fat One', serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #fcf8ec;
+        padding: 0;
+        margin: 0;
+        width: 1470px;
+      }
+      .A_MenuItem {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      a {
+        text-decoration: inherit;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_Logo {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-left: 10px;
+        margin-right: 200px;
+      }
+      .A_MenuButton {
+        border-radius: 10px;
+        width: 201px;
+        height: 50px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 610;
+        line-height: 350%;
+        font-size: 13px;
+        color: #f7e6f0;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .C_Menu {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 16px;
+        gap: 34px;
+      }
+      .O_Menu {
+        display: flex;
+        gap: 210px;
+        margin-top: 20px;
+      }
+      .A_Title {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        text-align: center;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+      }
+      /* thoughts */
+      .C_FirstRowThoughts {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -20px;
+      }
+      .C_SecondRowThoughts {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .A_Thought1:hover .Q_Effect {
+        transform: rotateY(180deg);
+      }
+      .A_ThoughtRazbor1 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -78px;
+      }
+      .A_Thought1 {
+        perspective: 1000px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .Q_Effect {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        border-radius: 10px;
+        width: 427px;
+        height: 305px;
+        background: #f9c8d3;
+      }
+      .A_ThoughtText1 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 117px;
+      }
+      /* вторая карточка */
+      .A_ThoughtRazbor2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #004227;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -78px;
+      }
+      .A_Thought2 {
+        perspective: 1000px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_ThoughtText2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #004227;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 117px;
+      }
+      .Q_Effect2 {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        border-radius: 10px;
+        width: 427px;
+        height: 305px;
+        background: #f1e8db;
+      }
+      .A_Thought2:hover .Q_Effect2 {
+        transform: rotateY(180deg);
+      }
+      /* третья карточка */
+      .A_ThoughtRazbor3 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #fcf8ec;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -78px;
+      }
+      .A_Thought3 {
+        perspective: 1000px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_ThoughtText3 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #fcf8ec;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 117px;
+      }
+      .Q_Effect3 {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        border-radius: 10px;
+        width: 427px;
+        height: 305px;
+        background: #004227;
+      }
+      .A_Thought3:hover .Q_Effect3 {
+        transform: rotateY(180deg);
+      }
+      /* четвертая карточка */
+      .A_ThoughtRazbor4 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -78px;
+      }
+      .A_Thought4 {
+        perspective: 1000px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_ThoughtText4 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #be153e;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 117px;
+      }
+      .Q_Effect4 {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        border-radius: 10px;
+        width: 427px;
+        height: 305px;
+        background: #f29db0;
+      }
+      .A_Thought4:hover .Q_Effect4 {
+        transform: rotateY(180deg);
+      }
+      /* пятая карточка */
+      .A_ThoughtRazbor5 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #f29db0;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -78px;
+      }
+      .A_Thought5 {
+        perspective: 1000px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_ThoughtText5 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #f29db0;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 117px;
+      }
+      .Q_Effect5 {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        border-radius: 10px;
+        width: 427px;
+        height: 305px;
+        background: #be153e;
+      }
+      .A_Thought5:hover .Q_Effect5 {
+        transform: rotateY(180deg);
+      }
+      /* шестая карточка */
+      .A_ThoughtRazbor6 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #004227;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -78px;
+      }
+      .A_Thought6 {
+        perspective: 1000px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_ThoughtText6 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 20px;
+        color: #004227;
+        backface-visibility: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 117px;
+      }
+      .Q_Effect6 {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        border-radius: 10px;
+        width: 427px;
+        height: 305px;
+        background: #ffffff;
+      }
+      .A_Thought6:hover .Q_Effect6 {
+        transform: rotateY(180deg);
+      }
+      /* футер */
+      .A_Person {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 23px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_Name {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_RestartFooter {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 300px;
+        text-transform: uppercase;
+        color: #be153e;
+      }
+      .W_FirstFooter {
+        display: flex;
+      }
+      .M_Social {
+        display: flex;
+        margin-left: 110px;
+        gap: 10px;
+        margin-top: 75px;
+      }
+      .W_TwoPerson {
+        display: flex;
+        gap: 100px;
+        margin-left: 600px;
+        margin-top: 45px;
+      }
+      .A_HSELogo {
+        margin-top: 75px;
+        margin-left: 80px;
+      }
+      .A_RestartFooter {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+        height: 434px;
+      }
+      .O_Footer {
+        background-color: #f29db0;
+        height: 750px;
+        margin-top: 80px;
+      }
+      .A_Name {
+        margin-top: -15px;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        /* футер */
+        .O_Footer {
+          height: 300px;
+        }
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -245px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+          padding-top: 40px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .C_FirstRowThoughts {
+          display: block;
+          margin-left: 36px;
+        }
+        .C_SecondRowThoughts {
+          display: block;
+          margin-left: 36px;
+        }
+        .A_Thought2 {
+          margin-top: 20px;
+        }
+        .A_Thought3 {
+          margin-top: 20px;
+        }
+        .A_Thought4 {
+          margin-top: 20px;
+        }
+        .A_Thought5 {
+          margin-top: 20px;
+        }
+        .A_Thought6 {
+          margin-top: 20px;
+        }
+        .A_Thought7 {
+          margin-top: 20px;
+        }
+        .A_Thought8 {
+          margin-top: 20px;
+        }
+        .A_Thought9 {
+          margin-top: 20px;
+        }
+        .A_Thought1 {
+          margin-top: 20px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        /* футер */
+        .O_Footer {
+          height: 300px;
+        }
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -245px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+          padding-top: 40px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .C_FirstRowThoughts {
+          display: block;
+          margin-left: 36px;
+        }
+        .C_SecondRowThoughts {
+          display: block;
+          margin-left: 36px;
+        }
+        .A_Thought2 {
+          margin-top: 20px;
+        }
+        .A_Thought3 {
+          margin-top: 20px;
+        }
+        .A_Thought4 {
+          margin-top: 20px;
+        }
+        .A_Thought5 {
+          margin-top: 20px;
+        }
+        .A_Thought6 {
+          margin-top: 20px;
+        }
+        .A_Thought7 {
+          margin-top: 20px;
+        }
+        .A_Thought8 {
+          margin-top: 20px;
+        }
+        .A_Thought9 {
+          margin-top: 20px;
+        }
+        .A_Thought1 {
+          margin-top: 20px;
+        }
+      }
+    </style> -->
+    <div class="O_Menu">
+      <div class="C_Menu">
+        <div class="A_MenuItem">
+          <a href="index.html">главная</a>
+        </div>
+        <div class="A_MenuItem">
+          <a href="newtherapy.html">терапия</a>
+        </div>
+        <div class="A_MenuItem">
+          <a href="newarticles.html">статьи</a>
+        </div>
+        <div class="A_MenuItem">
+          <b><a href="newthoughts.html">мысли</a></b>
+        </div>
+        <div class="A_MenuItem"><a href="newtest.html">тесты</a></div>
+      </div>
+      <div class="A_Logo"><p>RESTART</p></div>
+      <div class="A_MenuButton">
+        <button class="A_MenuButton">начать терапию</button>
+      </div>
+    </div>
+    <!-- меню -->
+
+    <div class="A_Title"><p>Мысли</p></div>
+
+    <div class="C_FirstRowThoughts">
+      <div class="A_Thought1">
+        <div class="Q_Effect">
+          <div class="A_ThoughtText1"><p>Я не смогу пережить это</p></div>
+          <div class="A_ThoughtRazbor1">
+            <p>
+              Я уже переживала трудные времена <br />
+              и справлялась с ними
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- вторая карточка -->
+      <div class="A_Thought2">
+        <div class="Q_Effect2">
+          <div class="A_ThoughtText2">
+            <p>Я виновата в том, что произошло</p>
+          </div>
+          <div class="A_ThoughtRazbor2">
+            <p>
+              Отношения — это всегда совместная работа. Я могу учиться на своих
+              ошибках, но не несу всю ответственность
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- третья карточка -->
+      <div class="A_Thought3">
+        <div class="Q_Effect3">
+          <div class="A_ThoughtText3">
+            <p>Я не смогу быть счастлива одна</p>
+          </div>
+          <div class="A_ThoughtRazbor3">
+            <p>
+              Счастье — это внутреннее состояние, которое можно развивать
+              независимо от других
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- второй ряд -->
+    <div class="C_SecondRowThoughts">
+      <div class="A_Thought4">
+        <div class="Q_Effect4">
+          <div class="A_ThoughtText4">
+            <p>Я никогда не найду никого лучше</p>
+          </div>
+          <div class="A_ThoughtRazbor4">
+            <p>
+              Отношения — это не только о том, чтобы найти "лучшего", но и о
+              том, чтобы развивать себя и строить здоровые связи
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- пятая карточка -->
+      <div class="A_Thought5">
+        <div class="Q_Effect5">
+          <div class="A_ThoughtText5">
+            <p>Я должна была сделать что-то иначе</p>
+          </div>
+          <div class="A_ThoughtRazbor5">
+            <p>Сосредоточьтесь на том, что вы можете извлечь из этого опыта</p>
+          </div>
+        </div>
+      </div>
+      <!-- шестая карточка -->
+      <div class="A_Thought6">
+        <div class="Q_Effect6">
+          <div class="A_ThoughtText6">
+            <p>Все отношения закончатся так же</p>
+          </div>
+          <div class="A_ThoughtRazbor6">
+            <p>
+              Эта мысль основана на обобщении. Каждые отношения уникальны, и у
+              вас есть возможность учиться на своем опыте
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- третий ряд -->
+    <div class="C_SecondRowThoughts">
+      <div class="A_Thought3">
+        <div class="Q_Effect3">
+          <div class="A_ThoughtText3">
+            <p>Я не знаю, как жить дальше</p>
+          </div>
+          <div class="A_ThoughtRazbor3">
+            <p>
+              Я могу делать маленькие шаги каждый день, чтобы определить, что
+              мне нужно
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- пятая карточка -->
+      <div class="A_Thought2">
+        <div class="Q_Effect2">
+          <div class="A_ThoughtText2">
+            <p>Я должна быть идеальной</p>
+          </div>
+          <div class="A_ThoughtRazbor2">
+            <p>
+              Я могу быть собой и принимать свои недостатки как часть своей
+              уникальности
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- шестая карточка -->
+      <div class="A_Thought1">
+        <div class="Q_Effect">
+          <div class="A_ThoughtText1">
+            <p>Я потеряла часть себя</p>
+          </div>
+          <div class="A_ThoughtRazbor1">
+            <p>
+              Я могу открыть новые аспекты себя <br />и развиваться независимо
+              от отношений
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- футер -->
+    <div class="O_Footer">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
+  </body>
+</html>

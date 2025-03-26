@@ -4,3 +4,96 @@
 .M_MiniArticle {
   margin-top: -6px;
 }
+/* страница статей */
+
+.M_MiniArticle {
+  margin-top: -6px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+/* футер */
+
+.M_Social {
+  display: flex;
+  margin-left: 110px;
+  gap: 10px;
+  margin-top: 75px;
+}
+/* главная */
+
+.M_MainScreen {
+  display: block;
+  justify-content: center;
+  margin-top: -118px;
+}
+
+.M_FirstDay {
+  margin-top: -230px;
+  margin-left: 92px;
+}
+
+.M_SecondDay {
+  margin-top: -230px;
+  margin-left: 92px;
+}
+
+.M_ThirdDay {
+  margin-top: -230px;
+  margin-left: 92px;
+}
+
+.M_MainArticleText {
+  display: block;
+  justify-content: center;
+}
+
+.M_MinutesDate {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+}
+.M_MainArticle {
+  margin-left: 15px;
+  margin-top: -10px;
+}
+
+.M_AllArticleButton {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.M_MainTestName {
+  display: flex;
+  border-radius: 10px;
+  width: 610px;
+  height: 96px;
+  background: #fcf8ec;
+  margin-top: 420px;
+  gap: 110px;
+  margin-left: 20px;
+}
+
+.M_AllThoughtsButton {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -20px;
+  cursor: url('../../../images/smallcursor.svg'), auto;
+}
+
+/* терапия */
+
+.M_FirstDay1 {
+  margin-top: -120px;
+}
+
+.M_ArrowTest {
+  display: flex;
+  gap: 40px;
+  margin-left: -40px;
+  margin-top: 22px;
+}

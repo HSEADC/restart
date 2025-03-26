@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Терапия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/components/1.Quarks.css" />
+    <link rel="stylesheet" href="stylesheets/components/2.Atoms.css" />
+    <link rel="stylesheet" href="stylesheets/components/3.Molecules.css" />
+    <link rel="stylesheet" href="stylesheets/components/4.Wrappers.css" />
+    <link rel="stylesheet" href="stylesheets/components/5.Collections.css" />
+    <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
+    <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
+    <link rel="stylesheet" href="stylesheets//adaptive.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        width: 1470px;
+        background-color: #f29db0;
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+      }
+    </style>
+    <!-- <style>
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight Italic'),
+          url('TT Fors Trial ExtraLight Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Variable';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Variable'),
+          url('TT Fors Trial Variable.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin'),
+          url('TT Fors Trial Thin.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin Italic'),
+          url('TT Fors Trial Thin Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Regular'),
+          url('TT Fors Trial Regular.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium'),
+          url('TT Fors Trial Medium.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium Italic'),
+          url('TT Fors Trial Medium Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light'),
+          url('TT Fors Trial Light.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light Italic'),
+          url('TT Fors Trial Light Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Italic'),
+          url('TT Fors Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight'),
+          url('TT Fors Trial ExtraLight.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial Italic'),
+          url('TT Fors Black Outline Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold'),
+          url('TT Fors Trial ExtraBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold Italic'),
+          url('TT Fors Trial ExtraBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold'),
+          url('TT Fors Trial DemiBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold Italic'),
+          url('TT Fors Trial DemiBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold'),
+          url('TT Fors Trial Bold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold Italic'),
+          url('TT Fors Trial Bold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black'),
+          url('TT Fors Trial Black.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black Italic'),
+          url('TT Fors Trial Black Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial'),
+          url('TT Fors Black Outline Trial.woff') format('woff');
+      }
+      .bagel-fat-one-regular {
+        font-family: 'Bagel Fat One', serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #f29db0;
+        padding: 0;
+        margin: 0;
+        width: 1470px;
+      }
+      .A_MenuItem {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      a {
+        text-decoration: inherit;
+        color: #be153e;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_Logo {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-left: 10px;
+        margin-right: 200px;
+      }
+      .A_MenuButton {
+        border-radius: 10px;
+        width: 201px;
+        height: 50px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 610;
+        line-height: 350%;
+        font-size: 13px;
+        color: #f7e6f0;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .C_Menu {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 16px;
+        gap: 34px;
+      }
+      .O_Menu {
+        display: flex;
+        gap: 210px;
+        margin-top: 20px;
+      }
+      .A_Title {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        text-align: center;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+      }
+      .A_FirstWeek {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 705;
+        font-size: 30px;
+        line-height: 327%;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -100px;
+      }
+
+      /* слайдер */
+      .S_Therapy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -30px;
+      }
+      .C_Therapy {
+        display: flex;
+        overflow: hidden;
+        width: 1096px;
+        gap: 20px;
+      }
+      .O_FirstDay {
+        border-radius: 9px;
+        width: 259px;
+        height: 432px;
+        background: #fcf8ec;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_First1 {
+        font-family: 'Babe';
+        font-weight: 500;
+        font-size: 158px;
+        color: #1e1e1e;
+        text-align: center;
+        margin-left: -37px;
+      }
+      .A_Day1 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #1e1e1e;
+        margin-top: -130px;
+        text-align: center;
+        margin-left: 45px;
+      }
+      .A_TherapyText {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 101%;
+        text-align: center;
+        color: #1e1e1e;
+        margin-left: 40px;
+      }
+      .M_FirstDay1 {
+        margin-top: -120px;
+      }
+      .A_TherapyText {
+        margin-top: 80px;
+      }
+      .W_FirstDay {
+        display: block;
+        justify-content: center;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_Second1 {
+        font-family: 'Babe';
+        font-weight: 500;
+        font-size: 158px;
+        color: #1e1e1e;
+        text-align: center;
+        margin-left: 20px;
+      }
+      .A_ArrowTest {
+        border: none;
+        fill: none;
+        width: 0;
+        height: 0;
+        background-color: #f29db0;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .cursor {
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_SecondArrowTest {
+        border: none;
+        fill: none;
+        width: 0;
+        height: 0;
+        background-color: #f29db0;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .M_ArrowTest {
+        display: flex;
+        gap: 40px;
+        margin-left: -40px;
+        margin-top: 22px;
+      }
+      .W_BigTherapy {
+        display: block;
+        gap: 200px;
+      }
+      /* новое */
+      .C_Therapy2 {
+        display: flex;
+        overflow: hidden;
+        width: 1096px;
+        gap: 20px;
+      }
+      .O_FirstDay2 {
+        border-radius: 9px;
+        width: 259px;
+        height: 432px;
+        background: #fcf8ec;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_FirstWeek2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 705;
+        font-size: 30px;
+        line-height: 327%;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+      .O_FirstDay3 {
+        border-radius: 9px;
+        width: 259px;
+        height: 432px;
+        background: #fcf8ec;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .C_Therapy3 {
+        display: flex;
+        overflow: hidden;
+        width: 1096px;
+        gap: 20px;
+      }
+      .O_FirstDay4 {
+        border-radius: 9px;
+        width: 259px;
+        height: 432px;
+        background: #fcf8ec;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .C_Therapy4 {
+        display: flex;
+        overflow: hidden;
+        width: 1096px;
+        gap: 20px;
+      }
+      /* футер */
+      .A_Person {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 23px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_Name {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_RestartFooter {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 300px;
+        text-transform: uppercase;
+        color: #be153e;
+      }
+      .W_FirstFooter {
+        display: flex;
+      }
+      .M_Social {
+        display: flex;
+        margin-left: 110px;
+        gap: 10px;
+        margin-top: 75px;
+      }
+      .W_TwoPerson {
+        display: flex;
+        gap: 100px;
+        margin-left: 600px;
+        margin-top: 45px;
+      }
+      .A_HSELogo {
+        margin-top: 75px;
+        margin-left: 80px;
+      }
+      .A_RestartFooter {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+        height: 434px;
+      }
+      .O_Footer {
+        margin-top: 100px;
+      }
+      /* seccond */
+      .A_TherapyText2 {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 101%;
+        text-align: center;
+        color: #1e1e1e;
+        margin-left: 30px;
+        margin-top: 80px;
+      }
+      .W_FirstDay2 {
+        margin-left: 30px;
+      }
+      .W_FirstDay3 {
+        margin-left: 20px;
+      }
+      .W_FirstDay4 {
+        margin-left: 30px;
+      }
+      .W_FirstDay5 {
+        margin-left: 30px;
+      }
+      .A_Name {
+        margin-top: -15px;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        /* футер */
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -275px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .S_LastBlock {
+          width: 500px;
+        }
+        .W_SecondBlock {
+          width: 500px;
+        }
+        .W_FirstScreen {
+          width: 500px;
+        }
+        .S_MainArticles {
+          width: 500px;
+        }
+        .O_FirstDay {
+          width: 110px;
+          height: 300px;
+        }
+        .A_Second1 {
+          font-size: 58px;
+        }
+        .M_FirstDay1 {
+          margin-top: 0px;
+        }
+        .W_FirstDay {
+          margin-top: 0px;
+        }
+        .C_Therapy {
+          /* margin-left: 640px; */
+          margin-left: 60px;
+          gap: 5px;
+          width: 500px;
+        }
+        .A_First1 {
+          font-size: 58px;
+          margin-left: 0px;
+        }
+        .A_TherapyText {
+          display: none;
+        }
+        .A_Day1 {
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        /* вторая строка */
+        .O_FirstDay2 {
+          width: 110px;
+          height: 300px;
+        }
+        .C_Therapy2 {
+          margin-left: 60px;
+          gap: 5px;
+          width: 500px;
+        }
+        .O_FirstDay3 {
+          width: 110px;
+          height: 300px;
+        }
+        .C_Therapy3 {
+          gap: 5px;
+          width: 500px;
+          margin-left: 60px;
+        }
+        /* second */
+        .W_FirstDay2 {
+          margin-top: 0px;
+          margin-left: -30px;
+        }
+        .W_FirstDay3 {
+          margin-left: 0px;
+        }
+        .W_FirstDay5 {
+          margin-left: 0px;
+        }
+        .W_FirstDay4 {
+          margin-left: 0px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        /* футер */
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -275px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .S_LastBlock {
+          width: 500px;
+        }
+        .W_SecondBlock {
+          width: 500px;
+        }
+        .W_FirstScreen {
+          width: 500px;
+        }
+        .S_MainArticles {
+          width: 500px;
+        }
+        .O_FirstDay {
+          width: 110px;
+          height: 300px;
+        }
+        .A_Second1 {
+          font-size: 58px;
+        }
+        .M_FirstDay1 {
+          margin-top: 0px;
+        }
+        .W_FirstDay {
+          margin-top: 0px;
+        }
+        .C_Therapy {
+          margin-left: 60px;
+          gap: 5px;
+          width: 500px;
+        }
+        .A_First1 {
+          font-size: 58px;
+          margin-left: 0px;
+        }
+        .A_TherapyText {
+          display: none;
+        }
+        .A_Day1 {
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        /* вторая строка */
+        .O_FirstDay2 {
+          width: 110px;
+          height: 300px;
+        }
+        .C_Therapy2 {
+          margin-left: 60px;
+          gap: 5px;
+          width: 500px;
+        }
+        .O_FirstDay3 {
+          width: 110px;
+          height: 300px;
+        }
+        .C_Therapy3 {
+          margin-left: 60px;
+          gap: 5px;
+          width: 500px;
+        }
+        /* second */
+        .W_FirstDay2 {
+          margin-top: 0px;
+          margin-left: -30px;
+        }
+        .W_FirstDay3 {
+          margin-left: 0px;
+        }
+        .W_FirstDay5 {
+          margin-left: 0px;
+        }
+        .W_FirstDay4 {
+          margin-left: 0px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+      }
+    </style> -->
+
+    <div class="O_Menu">
+      <div class="C_Menu">
+        <div class="A_MenuItem">
+          <a href="index.html">главная</a>
+        </div>
+        <div class="A_MenuItem">
+          <b><a href="newtherapy.html">терапия</a></b>
+        </div>
+        <div class="A_MenuItem">
+          <a href="newarticles.html">статьи</a>
+        </div>
+        <div class="A_MenuItem"><a href="newthoughts.html">мысли</a></div>
+        <div class="A_MenuItem"><a href="newtest.html">тесты</a></div>
+      </div>
+      <div class="A_Logo"><p>RESTART</p></div>
+      <div class="A_MenuButton">
+        <button class="A_MenuButton">начать терапию</button>
+      </div>
+    </div>
+    <!-- меню -->
+    <div class="A_Title"><p>Терапия</p></div>
+
+    <div class="A_FirstWeek"><p>Неделя 1</p></div>
+    <!-- слайдер -->
+    <div class="S_Therapy">
+      <div class="C_Therapy" id="C_Therapy">
+        <!-- первый день -->
+
+        <div class="O_FirstDay">
+          <a href="newdays/day1.html">
+            <div class="W_FirstDay">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>1</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Избавление <br />
+                  от сожалений и чувства <br />
+                  вины
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <!-- второй день -->
+
+        <div class="O_FirstDay">
+          <a href="newdays/day2.html">
+            <div class="W_FirstDay2">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>2</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText2">
+                <p>Принятие <br />и восстановление</p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay">
+          <a href="newdays/day3.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>3</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Поиск <br />
+                  внутренней опоры
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay">
+          <a href="newdays/day4.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>4</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Принятие эмоций</p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay">
+          <a href="newdays/day5.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>5</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Определение <br />границ и ценностей</p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay">
+          <a href="newdays/day6.html">
+            <div class="W_FirstDay5">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>6</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Забота о себе</p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay">
+          <a href="newdays/day7.html">
+            <div class="W_FirstDay5">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>7</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Освобождение <br />от прошлого</p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="M_ArrowTest">
+        <button class="A_ArrowTest" id="prev-button">
+          <img src="../images/firstbutton.svg" alt="" />
+        </button>
+        <button class="A_SecondArrowTest" id="next-button">
+          <img src="../images/secondbutton.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <!-- второй ряд -->
+    <div class="A_FirstWeek2"><p>Неделя 2</p></div>
+    <!-- слайдер -->
+    <div class="S_Therapy">
+      <div class="C_Therapy2" id="C_Therapy2">
+        <!-- первый день -->
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day8.html">
+            <div class="W_FirstDay">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>8</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Принятие и прощение</p>
+              </div>
+            </div></a
+          >
+        </div>
+        <!-- второй день -->
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day9.html">
+            <div class="W_FirstDay4">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>9</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Восстановление <br />
+                  уверенности
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day10.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>10</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Построение <br />
+                  новых целей
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day11.html">
+            <div class="W_FirstDay5">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>11</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Развитие <br />
+                  новых привычек
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day12.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>12</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Восстановление <br />
+                  социальных связей
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day13.html">
+            <div class="W_FirstDay5">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>13</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Освобождение <br />
+                  от негатива
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay2">
+          <a href="newdays/day14.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>14</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Открытие новых <br />
+                  увлечений
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="M_ArrowTest">
+        <button class="A_ArrowTest" id="prev-button2">
+          <img src="../images/firstbutton.svg" alt="" />
+        </button>
+        <button class="A_SecondArrowTest" id="next-button2">
+          <img src="../images/secondbutton.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <!-- третий ряд -->
+    <div class="A_FirstWeek2"><p>Неделя 3</p></div>
+    <!-- слайдер -->
+    <div class="S_Therapy">
+      <div class="C_Therapy3" id="C_Therapy3">
+        <!-- первый день -->
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day15.html">
+            <div class="W_FirstDay">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>15</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Открытие новых <br />
+                  возможностей
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <!-- второй день -->
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day16.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>16</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Ведение "Дневника <br />
+                  Благодарности"
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day17.html">
+            <div class="W_FirstDay4">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>17</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Создание карты<br />
+                  жизни
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day18.html">
+            <div class="W_FirstDay3">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>18</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Творческое <br />
+                  cамовыражение
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day19.html">
+            <div class="W_FirstDay4">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>19</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>
+                  Взаимодействие <br />
+                  с природой
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day20.html">
+            <div class="W_FirstDay">
+              <div class="M_FirstDay1">
+                <div class="A_First1"><p>20</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Анализ мыслей</p>
+              </div>
+            </div></a
+          >
+        </div>
+
+        <div class="O_FirstDay3">
+          <a href="newdays/day21.html">
+            <div class="W_FirstDay">
+              <div class="M_FirstDay1">
+                <div class="A_Second1"><p>21</p></div>
+                <div class="A_Day1"><p>ДЕНЬ</p></div>
+              </div>
+              <div class="A_TherapyText">
+                <p>Сила воспоминаний</p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="M_ArrowTest">
+        <button class="A_ArrowTest" id="prev-button3">
+          <img src="../images/firstbutton.svg" alt="" />
+        </button>
+        <button class="A_SecondArrowTest" id="next-button3">
+          <img src="../images/secondbutton.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <!-- футер -->
+    <div class="O_Footer">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
+    <script>
+      const cardContainer = document.getElementById('C_Therapy')
+      const cards = document.querySelectorAll('.O_FirstDay')
+      let currentStartIndex = 0
+
+      function updateCards() {
+        cards.forEach((card, index) => {
+          card.style.display =
+            index >= currentStartIndex && index < currentStartIndex + 4
+              ? 'flex'
+              : 'none'
+        })
+      }
+
+      document.getElementById('prev-button').onclick = function () {
+        if (currentStartIndex > 0) {
+          currentStartIndex--
+          updateCards()
+        }
+      }
+
+      document.getElementById('next-button').onclick = function () {
+        if (currentStartIndex < cards.length - 4) {
+          currentStartIndex++
+          updateCards()
+        }
+      }
+
+      updateCards()
+
+      //   второй
+      const cardContainer2 = document.getElementById('C_Therapy2')
+      const cards2 = document.querySelectorAll('.O_FirstDay2')
+      let currentStartIndex2 = 0
+
+      function updateCards2() {
+        cards2.forEach((card, index) => {
+          card.style.display =
+            index >= currentStartIndex2 && index < currentStartIndex2 + 4
+              ? 'flex'
+              : 'none'
+        })
+      }
+
+      document.getElementById('prev-button2').onclick = function () {
+        if (currentStartIndex2 > 0) {
+          currentStartIndex2--
+          updateCards2()
+        }
+      }
+
+      document.getElementById('next-button2').onclick = function () {
+        if (currentStartIndex2 < cards2.length - 4) {
+          currentStartIndex2++
+          updateCards2()
+        }
+      }
+
+      updateCards2()
+
+      //   третий
+      const cardContainer3 = document.getElementById('C_Therapy3')
+      const cards3 = document.querySelectorAll('.O_FirstDay3')
+      let currentStartIndex3 = 0
+
+      function updateCards3() {
+        cards3.forEach((card, index) => {
+          card.style.display =
+            index >= currentStartIndex3 && index < currentStartIndex3 + 4
+              ? 'flex'
+              : 'none'
+        })
+      }
+
+      document.getElementById('prev-button3').onclick = function () {
+        if (currentStartIndex3 > 0) {
+          currentStartIndex3--
+          updateCards3()
+        }
+      }
+
+      document.getElementById('next-button3').onclick = function () {
+        if (currentStartIndex3 < cards3.length - 4) {
+          currentStartIndex3++
+          updateCards3()
+        }
+      }
+
+      updateCards3()
+      //   четвертый
+      const cardContainer4 = document.getElementById('C_Therapy4')
+      const cards4 = document.querySelectorAll('.O_FirstDay4')
+      let currentStartIndex4 = 0
+
+      function updateCards4() {
+        cards4.forEach((card, index) => {
+          card.style.display =
+            index >= currentStartIndex4 && index < currentStartIndex4 + 4
+              ? 'flex'
+              : 'none'
+        })
+      }
+
+      document.getElementById('prev-button4').onclick = function () {
+        if (currentStartIndex4 > 0) {
+          currentStartIndex4--
+          updateCards4()
+        }
+      }
+
+      document.getElementById('next-button4').onclick = function () {
+        if (currentStartIndex4 < cards4.length - 4) {
+          currentStartIndex4++
+          updateCards4()
+        }
+      }
+
+      updateCards4()
+    </script>
+  </body>
+</html>

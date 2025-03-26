@@ -150,6 +150,76 @@
   font-weight: 400;
   font-style: normal;
 }
-body {
-  background-color: #fcf8ec;
+/* мысли */
+.Q_Effect {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  width: 427px;
+  height: 305px;
+  background: #f9c8d3;
+}
+
+/* вторая карточка */
+
+.Q_Effect2 {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  width: 427px;
+  height: 305px;
+  background: #f1e8db;
+}
+
+/* третья карточка */
+
+.Q_Effect3 {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  width: 427px;
+  height: 305px;
+  background: #004227;
+}
+.A_Thought3:hover .Q_Effect3 {
+  transform: rotateY(180deg);
+}
+/* четвертая карточка */
+
+.Q_Effect4 {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  width: 427px;
+  height: 305px;
+  background: #f29db0;
+}
+.A_Thought4:hover .Q_Effect4 {
+  transform: rotateY(180deg);
+}
+/* пятая карточка */
+
+.Q_Effect5 {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  width: 427px;
+  height: 305px;
+  background: #be153e;
+}
+.A_Thought5:hover .Q_Effect5 {
+  transform: rotateY(180deg);
+}
+/* шестая карточка */
+
+.Q_Effect6 {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 10px;
+  width: 427px;
+  height: 305px;
+  background: #ffffff;
+}
+.A_Thought6:hover .Q_Effect6 {
+  transform: rotateY(180deg);
 }

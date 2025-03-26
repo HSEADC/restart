@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="stylesheets/components/5.Collections.css" />
     <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
     <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
+    <link rel="stylesheet" href="stylesheets//adaptive.css" />
   </head>
   <body>
     <!-- <style>
@@ -315,19 +316,325 @@
         margin-top: 25px;
         margin-bottom: -15px;
       }
+      /* фильтры */
+      .A_FilterTag {
+        background-color: white;
+        color: cornflowerblue;
+        border: 2px solid cornflowerblue;
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+
+        &.active {
+          background-color: cornflowerblue;
+          color: white;
+          font-weight: bold;
+        }
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .A_ArticleCardHeader {
+        font-weight: 400;
+        font-size: 1.3rem;
+      }
+      .O_ArticleCard {
+        display: block;
+        padding: 1rem;
+        width: 30%;
+        background-color: #be153e;
+        border-radius: 1rem;
+        text-decoration: none;
+        color: black;
+      }
+      .A_WhiteFilter {
+        &.active {
+          background-color: #be153e;
+          color: white;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
     </style> -->
+    <style>
+      /* body {
+        width: 1470px;
+        background-color: #fcf8ec;
+      }
+
+      .A_Person {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 23px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_Name {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #be153e;
+      }
+      .A_RestartFooter {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 300px;
+        text-transform: uppercase;
+        color: #be153e;
+      }
+      .W_FirstFooter {
+        display: flex;
+      }
+      .M_Social {
+        display: flex;
+        margin-left: 110px;
+        gap: 10px;
+        margin-top: 75px;
+      }
+      .W_TwoPerson {
+        display: flex;
+        gap: 100px;
+        margin-left: 600px;
+        margin-top: 45px;
+      }
+      .A_HSELogo {
+        margin-top: 75px;
+        margin-left: 80px;
+      }
+      .A_RestartFooter {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+        height: 434px;
+      }
+      .O_Footer2 {
+        margin-top: 60px;
+      } */
+      /* .O_Footer {
+        background-color: #f29db0;
+        height: 750px;
+        margin-top: 80px;
+        padding: 0;
+      } */
+      /* .A_Name {
+        margin-top: -15px;
+      }
+      .A_PhotoArticle1 {
+        object-fit: cover;
+        width: 650px;
+        height: 448px;
+        border-radius: 10px;
+        cursor: url('../images/smallcursor.svg'), auto;
+      }
+      .A_MiniPhotoArticle {
+        object-fit: cover;
+        width: 427px;
+        height: 296px;
+        border-radius: 10px;
+      } */
+      body {
+        width: 1470px;
+        background-color: #fcf8ec;
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 500px) {
+        body {
+          width: 500px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        body {
+          width: 500px;
+        }
+      }
+      /* @media only screen and (min-width: 360px) and (max-width: 500px) {
+        .C_BigArticles {
+          display: block;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        .C_MiniArticles {
+          display: block;
+        }
+
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -275px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .S_LastBlock {
+          width: 500px;
+        }
+        .W_SecondBlock {
+          width: 500px;
+        }
+        .W_FirstScreen {
+          width: 500px;
+        }
+        .S_MainArticles {
+          width: 500px;
+        }
+        .A_PhotoArticle1 {
+          object-fit: cover;
+          width: 427px;
+          height: 296px;
+          border-radius: 10px;
+        }
+        body {
+          width: 500px;
+        }
+        .A_WhiteFilter {
+          font-size: 12px;
+          width: 200px;
+          height: 55px;
+        }
+        .C_Filter {
+          gap: 5px;
+          width: 300px;
+          margin-left: 100px;
+        }
+        .C_BigArticles {
+          margin-left: 36px;
+        }
+        .C_MiniArticles {
+          margin-left: 36px;
+        }
+        .A_MiniArticleTitle {
+          font-family: 'TT Fors Trial Variable';
+          font-weight: 600;
+          font-size: 24px;
+          color: #be153e;
+        }
+        .A_MiniArticleDescription {
+          font-family: 'TT Fors Trial Variable';
+          font-weight: 280;
+          font-size: 18px;
+          color: #be153e;
+          margin-top: -26px;
+        }
+      }
+      @media only screen and (max-width: 360px) {
+        .C_BigArticles {
+          display: block;
+        }
+        .A_Logo {
+          display: none;
+        }
+        .A_MenuButton {
+          display: none;
+        }
+        .C_MiniArticles {
+          display: block;
+        }
+
+        .A_RestartFooter {
+          font-size: 50px;
+          display: none;
+        }
+        .W_TwoPerson {
+          margin-left: 36px;
+          gap: 80px;
+        }
+        .W_FirstFooter {
+          display: block;
+        }
+        .M_Social {
+          margin-top: -275px;
+          margin-left: 391px;
+        }
+        .A_HSELogo {
+          margin-left: 36px;
+        }
+        .A_Name {
+          margin-top: -15px;
+        }
+        .S_LastBlock {
+          width: 500px;
+        }
+        .W_SecondBlock {
+          width: 500px;
+        }
+        .W_FirstScreen {
+          width: 500px;
+        }
+        .S_MainArticles {
+          width: 500px;
+        }
+        .A_PhotoArticle1 {
+          object-fit: cover;
+          width: 427px;
+          height: 296px;
+          border-radius: 10px;
+        }
+        body {
+          width: 500px;
+        }
+        .A_WhiteFilter {
+          font-size: 12px;
+          width: 200px;
+          height: 55px;
+        }
+        .C_Filter {
+          gap: 5px;
+          width: 300px;
+          margin-left: 100px;
+        }
+        .C_BigArticles {
+          margin-left: 36px;
+        }
+        .C_MiniArticles {
+          margin-left: 36px;
+        }
+        .A_MiniArticleTitle {
+          font-family: 'TT Fors Trial Variable';
+          font-weight: 600;
+          font-size: 24px;
+          color: #be153e;
+        }
+        .A_MiniArticleDescription {
+          font-family: 'TT Fors Trial Variable';
+          font-weight: 280;
+          font-size: 18px;
+          color: #be153e;
+          margin-top: -26px;
+        }
+      } */
+    </style>
     <!-- меню -->
     <div class="O_Menu">
       <div class="C_Menu">
         <div class="A_MenuItem">
-          <a href="../index.html">главная</a>
+          <a href="index.html">главная</a>
         </div>
-        <div class="A_MenuItem"><a href="">терапия</a></div>
+        <div class="A_MenuItem"><a href="newtherapy.html">терапия</a></div>
         <div class="A_MenuItem">
-          <b><a href="">статьи</a></b>
+          <b><a href="newarticles.html">статьи</a></b>
         </div>
-        <div class="A_MenuItem"><a href="">мысли</a></div>
-        <div class="A_MenuItem"><a href="">тесты</a></div>
+        <div class="A_MenuItem"><a href="newthoughts.html">мысли</a></div>
+        <div class="A_MenuItem"><a href="newtest.html">тесты</a></div>
       </div>
       <div class="A_Logo"><p>RESTART</p></div>
       <div class="A_MenuButton">
@@ -337,26 +644,22 @@
     <!-- статьи -->
     <div class="A_Title"><p>Статьи</p></div>
     <div class="C_Filter">
-      <button class="A_RedFilter">Психология</button>
-      <button class="A_WhiteFilter">Саморазвитие</button>
-      <button class="A_WhiteFilter">Развлечения</button>
-      <button class="A_WhiteFilter">Практики</button>
-      <button class="A_WhiteFilter">Отношения</button>
+      <button class="A_WhiteFilter all">Все</button>
+      <button class="A_WhiteFilter psyhology">Психология</button>
+      <button class="A_WhiteFilter develop">Развлечения</button>
+      <button class="A_WhiteFilter activity">Саморазвитие</button>
+      <button class="A_WhiteFilter relationship">Отношения</button>
     </div>
     <div class="C_BigArticles">
-      <div class="W_Article">
-        <div class="A_PhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 650px;
-              height: 448px;
-              border-radius: 10px;
-            "
-            src="../images/firstarticle.jpg"
-            alt=""
-          />
-        </div>
+      <div class="W_Article psyhology">
+        <a href="new_articles.html/article1.html"
+          ><div class="A_PhotoArticle1">
+            <img
+              src="../images/firstarticle.jpg"
+              alt=""
+              class="A_PhotoArticle1"
+            /></div
+        ></a>
         <div class="M_Article">
           <div class="A_ArticleTitle"><p>Когнитивные искажения</p></div>
           <div class="A_ArticleDescription">
@@ -365,19 +668,15 @@
         </div>
       </div>
       <!-- вторая статья -->
-      <div class="W_Article">
-        <div class="A_PhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 650px;
-              height: 448px;
-              border-radius: 10px;
-            "
-            src="../images/article2.jpg"
-            alt=""
-          />
-        </div>
+      <div class="W_Article psyhology">
+        <a href="new_articles.html/article2.html"
+          ><div class="A_PhotoArticle1">
+            <img
+              src="../images/second.jpg"
+              alt=""
+              class="A_PhotoArticle1"
+            /></div
+        ></a>
         <div class="M_Article">
           <div class="A_ArticleTitle"><p>Эмоциональная зависимость</p></div>
           <div class="A_ArticleDescription">
@@ -388,40 +687,32 @@
     </div>
     <!-- маленькие статьи -->
     <div class="C_MiniArticles">
-      <div class="W_MiniArticle">
-        <div class="A_MiniPhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 427px;
-              height: 296px;
-              border-radius: 10px;
-            "
-            src="../images/article3.jpg"
-            alt=""
-          />
-        </div>
+      <div class="W_Article psyhology">
+        <a href="new_articles.html/article3.html">
+          <div class="A_MiniPhotoArticle">
+            <img
+              src="../images/heands.jpg"
+              alt=""
+              class="A_MiniPhotoArticle"
+            /></div
+        ></a>
         <div class="M_MiniArticle">
           <div class="A_MiniArticleTitle"><p>Психология прощения</p></div>
           <div class="A_MiniArticleDescription">
-            <p>Прощение как способ освобождения от негативных эмоций</p>
+            <p>Прощение как способ освобождения от негатива</p>
           </div>
         </div>
       </div>
       <!-- вторая статья -->
-      <div class="W_MiniArticle">
-        <div class="A_MiniPhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 427px;
-              height: 296px;
-              border-radius: 10px;
-            "
-            src="../images/article4.jpg"
-            alt=""
-          />
-        </div>
+      <div class="W_Article psyhology">
+        <a href="new_articles.html/article4.html">
+          <div class="A_MiniPhotoArticle">
+            <img
+              src="../images/article4.jpg"
+              alt=""
+              class="A_MiniPhotoArticle"
+            /></div
+        ></a>
         <div class="M_MiniArticle">
           <div class="A_MiniArticleTitle"><p>Эмоциональные этапы</p></div>
           <div class="A_MiniArticleDescription">
@@ -430,42 +721,129 @@
         </div>
       </div>
       <!-- третья статья -->
-      <div class="W_MiniArticle">
-        <div class="A_MiniPhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 427px;
-              height: 296px;
-              border-radius: 10px;
-            "
-            src="../images/article5.jpg"
-            alt=""
-          />
-        </div>
+      <div class="W_Article psyhology">
+        <a href="new_articles.html/article5.html">
+          <div class="A_MiniPhotoArticle">
+            <img
+              style="
+                object-fit: cover;
+                width: 427px;
+                height: 296px;
+                border-radius: 10px;
+              "
+              src="../images/self.jpg"
+              alt=""
+            /></div
+        ></a>
         <div class="M_MiniArticle">
-          <div class="A_MiniArticleTitle"><p>Типы привязанности</p></div>
+          <div class="A_MiniArticleTitle"><p>Самооценка</p></div>
           <div class="A_MiniArticleDescription">
-            <p>Типы привязанности и их влияние на отношения</p>
+            <p>Восстановление самооценки после расставания</p>
           </div>
         </div>
       </div>
     </div>
     <!-- третий ряд статей -->
     <div class="C_BigArticles">
-      <div class="W_Article">
-        <div class="A_PhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 650px;
-              height: 448px;
-              border-radius: 10px;
-            "
-            src="../images/article6.jpg"
-            alt=""
-          />
+      <div class="W_Article develop">
+        <a href="new_articles.html/article11.html">
+          <div class="A_PhotoArticle1">
+            <img src="../images/film.jpg" alt="" class="A_PhotoArticle1" /></div
+        ></a>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Фильмы</p></div>
+          <div class="A_ArticleDescription">
+            <p>Фильмы об отношениях, которые стоит посмотреть</p>
+          </div>
         </div>
+      </div>
+      <!-- вторая статья -->
+      <div class="W_Article develop">
+        <a href="new_articles.html/article12.html">
+          <div class="A_PhotoArticle1">
+            <img
+              src="../images/books.jpg"
+              alt=""
+              class="A_PhotoArticle1"
+            /></div
+        ></a>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Книги</p></div>
+          <div class="A_ArticleDescription">
+            <p>Книги об отношениях, которые стоит почитать</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- четвертый ряд статей -->
+    <div class="C_MiniArticles">
+      <div class="W_Article activity">
+        <a href="new_articles.html/article6.html">
+          <div class="A_MiniPhotoArticle">
+            <img
+              src="../images/grow.jpg"
+              alt=""
+              class="A_MiniPhotoArticle"
+            /></div
+        ></a>
+        <div class="M_MiniArticle">
+          <div class="A_MiniArticleTitle"><p>Посттравматический рост</p></div>
+          <div class="A_MiniArticleDescription">
+            <p>Путь к внутреннему возрождению</p>
+          </div>
+        </div>
+      </div>
+      <!-- вторая статья -->
+      <div class="W_Article activity">
+        <a href="new_articles.html/article7.html">
+          <div class="A_MiniPhotoArticle">
+            <img
+              src="../images/balance.jpg"
+              alt=""
+              class="A_MiniPhotoArticle"
+            /></div
+        ></a>
+        <div class="M_MiniArticle">
+          <div class="A_MiniArticleTitle"><p>Колесо баланса</p></div>
+          <div class="A_MiniArticleDescription">
+            <p>Инструмент для гармонии в жизни</p>
+          </div>
+        </div>
+      </div>
+      <!-- третья статья -->
+      <div class="W_Article activity">
+        <a href="new_articles.html/article8.html">
+          <div class="A_MiniPhotoArticle">
+            <img
+              style="
+                object-fit: cover;
+                width: 427px;
+                height: 296px;
+                border-radius: 10px;
+              "
+              src="../images/emotion.jpg"
+              alt=""
+            /></div
+        ></a>
+        <div class="M_MiniArticle">
+          <div class="A_MiniArticleTitle"><p>Эмоциональный интеллект</p></div>
+          <div class="A_MiniArticleDescription">
+            <p>Ключ к личностному росту</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- пятый ряд статей -->
+    <div class="C_BigArticles">
+      <div class="W_Article relationship">
+        <a href="new_articles.html/article9.html">
+          <div class="A_PhotoArticle1">
+            <img
+              src="../images/article6.jpg"
+              alt=""
+              class="A_PhotoArticle1"
+            /></div
+        ></a>
         <div class="M_Article">
           <div class="A_ArticleTitle"><p>Конфликты</p></div>
           <div class="A_ArticleDescription">
@@ -476,26 +854,132 @@
         </div>
       </div>
       <!-- вторая статья -->
-      <div class="W_Article">
-        <div class="A_PhotoArticle">
-          <img
-            style="
-              object-fit: cover;
-              width: 650px;
-              height: 448px;
-              border-radius: 10px;
-            "
-            src="../images/article7.jpg"
-            alt=""
-          />
-        </div>
+      <div class="W_Article relationship">
+        <a href="new_articles.html/article10.html">
+          <div class="A_PhotoArticle1">
+            <img src="../images/type.jpg" alt="" class="A_PhotoArticle1" /></div
+        ></a>
         <div class="M_Article">
-          <div class="A_ArticleTitle"><p>Самооценка</p></div>
+          <div class="A_ArticleTitle"><p>Типы привязанности</p></div>
           <div class="A_ArticleDescription">
-            <p>Восстановление самооценки после расставания</p>
+            <p>Типы привязанности и их влияние на отношения</p>
           </div>
         </div>
       </div>
     </div>
+    <!-- футер -->
+    <div class="O_Footer2">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
+    <script>
+      console.clear()
+      document.addEventListener('DOMContentLoaded', () => {
+        initFilter()
+        initMultiselect()
+      })
+
+      function initFilter() {
+        const tags = document.querySelectorAll('.A_WhiteFilter')
+        const tagAll = document.querySelector('.all')
+
+        tags.forEach((tag) => {
+          tag.addEventListener('click', () => {
+            if (tag != tagAll) {
+              tagAll.classList.remove('active')
+              tag.classList.toggle('active')
+
+              console.log('здесь будет функция фильтрации по тегу')
+              filterByTag()
+            }
+
+            let activeTags = document.querySelectorAll('.active')
+            if (tag == tagAll && !tag.classList.contains('active')) {
+              activeTags.forEach((tag) => {
+                tag.classList.remove('active')
+              })
+              tag.classList.add('active')
+              console.log('здесь будет функция вывода всех карточек')
+              filterAll()
+            }
+            if (
+              tags.length - 1 == activeTags.length ||
+              activeTags.length == 0
+            ) {
+              activeTags.forEach((tag) => {
+                tag.classList.remove('active')
+              })
+              tagAll.classList.add('active')
+              console.log('здесь будет функция вывода всех карточек')
+              filterAll()
+            }
+          })
+        })
+      }
+      function filterByTag() {
+        const cards = document.querySelectorAll('.W_Article')
+        const activeTags = document.querySelectorAll('.active')
+        let tagList = []
+        let count
+
+        cards.forEach((card) => {
+          card.style.display = 'none'
+        })
+
+        activeTags.forEach((tag) => {
+          let classList = tag.className.split(' ')
+          classList = classList.sort()
+          count = 1
+          if (classList[1] == 'active') {
+            count++
+          }
+          for (let i = count; i < classList.length; i++) {
+            tagList.push(classList[i])
+          }
+        })
+
+        tagList.forEach((tagName) => {
+          cards.forEach((card) => {
+            if (card.classList.contains(tagName)) {
+              card.style.display = 'block'
+            }
+          })
+        })
+      }
+
+      function filterAll() {
+        const cards = document.querySelectorAll('.W_Article')
+        const activeTags = document.querySelectorAll('.active')
+
+        activeTags.forEach((tag) => {
+          if (tag.classList.contains('all')) {
+            cards.forEach((card) => {
+              card.style.display = 'block'
+            })
+          }
+        })
+      }
+    </script>
   </body>
 </html>

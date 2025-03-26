@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статьи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/components/1.Quarks.css" />
+    <link rel="stylesheet" href="stylesheets/components/2.Atoms.css" />
+    <link rel="stylesheet" href="stylesheets/components/3.Molecules.css" />
+    <link rel="stylesheet" href="stylesheets/components/4.Wrappers.css" />
+    <link rel="stylesheet" href="stylesheets/components/5.Collections.css" />
+    <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
+    <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
+  </head>
+  <body>
+    <!-- <style>
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight Italic'),
+          url('TT Fors Trial ExtraLight Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Variable';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Variable'),
+          url('TT Fors Trial Variable.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin'),
+          url('TT Fors Trial Thin.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Thin Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Thin Italic'),
+          url('TT Fors Trial Thin Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Regular'),
+          url('TT Fors Trial Regular.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium'),
+          url('TT Fors Trial Medium.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Medium Italic'),
+          url('TT Fors Trial Medium Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light'),
+          url('TT Fors Trial Light.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Light Italic'),
+          url('TT Fors Trial Light Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Italic'),
+          url('TT Fors Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraLight';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraLight'),
+          url('TT Fors Trial ExtraLight.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial Italic'),
+          url('TT Fors Black Outline Trial Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold'),
+          url('TT Fors Trial ExtraBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial ExtraBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial ExtraBold Italic'),
+          url('TT Fors Trial ExtraBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold'),
+          url('TT Fors Trial DemiBold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial DemiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial DemiBold Italic'),
+          url('TT Fors Trial DemiBold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold'),
+          url('TT Fors Trial Bold.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Bold Italic'),
+          url('TT Fors Trial Bold Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black'),
+          url('TT Fors Trial Black.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Trial Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Trial Black Italic'),
+          url('TT Fors Trial Black Italic.woff') format('woff');
+      }
+      @font-face {
+        font-family: 'TT Fors Black Outline Trial';
+        font-style: normal;
+        font-weight: normal;
+        src: local('TT Fors Black Outline Trial'),
+          url('TT Fors Black Outline Trial.woff') format('woff');
+      }
+      .bagel-fat-one-regular {
+        font-family: 'Bagel Fat One', serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        background-color: #fcf8ec;
+      }
+      .A_MenuItem {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #be153e;
+      }
+      a {
+        text-decoration: inherit;
+        color: #be153e;
+      }
+      .A_Logo {
+        font-family: 'Bagel Fat One';
+        font-weight: 400;
+        font-size: 25px;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -19px;
+        margin-left: 10px;
+        margin-right: 200px;
+      }
+      .A_MenuButton {
+        border-radius: 10px;
+        width: 201px;
+        height: 50px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 610;
+        line-height: 350%;
+        font-size: 13px;
+        color: #f7e6f0;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .C_Menu {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 16px;
+        gap: 34px;
+      }
+      .O_Menu {
+        display: flex;
+        gap: 210px;
+        margin-top: 20px;
+      }
+      .A_Title {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 500;
+        font-size: 70px;
+        text-align: center;
+        color: #be153e;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+      }
+      .C_Filter {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: -50px;
+      }
+      .A_RedFilter {
+        border: 1px solid #be153e;
+        border-radius: 20px;
+        padding: 15px;
+        width: 127px;
+        height: 55px;
+        background: #be153e;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #fcf8ec;
+      }
+      .A_WhiteFilter {
+        border: 1px solid #be153e;
+        border-radius: 20px;
+        padding: 15px;
+        width: 153px;
+        height: 55px;
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #be153e;
+        background: none;
+      }
+      .A_ArticleTitle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 20px;
+        color: #be153e;
+      }
+      .A_ArticleDescription {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 280;
+        font-size: 14px;
+        color: #be153e;
+        margin-top: -20px;
+      }
+      .M_Article {
+        margin-top: -10px;
+      }
+      .W_Article {
+        margin-top: 46px;
+      }
+      .C_BigArticles {
+        display: flex;
+        gap: 20px;
+        margin-left: 60px;
+      }
+      .A_MiniArticleTitle {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 600;
+        font-size: 17px;
+        color: #be153e;
+      }
+      .A_MiniArticleDescription {
+        font-family: 'TT Fors Trial Variable';
+        font-weight: 280;
+        font-size: 12px;
+        color: #be153e;
+        margin-top: -15px;
+      }
+      .M_MiniArticle {
+        margin-top: -6px;
+      }
+      .C_MiniArticles {
+        display: flex;
+        margin-left: 60px;
+        gap: 20px;
+        margin-top: 25px;
+        margin-bottom: -15px;
+      }
+    </style> -->
+    <!-- меню -->
+    <div class="O_Menu">
+      <div class="C_Menu">
+        <div class="A_MenuItem">
+          <a href="newmain.html">главная</a>
+        </div>
+        <div class="A_MenuItem"><a href="newtherapy.html">терапия</a></div>
+        <div class="A_MenuItem">
+          <b><a href="newarticles.html">статьи</a></b>
+        </div>
+        <div class="A_MenuItem"><a href="newthoughts.html">мысли</a></div>
+        <div class="A_MenuItem"><a href="newtest.html">тесты</a></div>
+      </div>
+      <div class="A_Logo"><p>RESTART</p></div>
+      <div class="A_MenuButton">
+        <button class="A_MenuButton">начать терапию</button>
+      </div>
+    </div>
+    <!-- статьи -->
+    <div class="A_Title"><p>Статьи</p></div>
+    <div class="C_Filter">
+      <button class="A_RedFilter">Психология</button>
+      <button class="A_WhiteFilter">Саморазвитие</button>
+      <button class="A_WhiteFilter">Развлечения</button>
+      <button class="A_WhiteFilter">Практики</button>
+      <button class="A_WhiteFilter">Отношения</button>
+    </div>
+    <div class="C_BigArticles">
+      <div class="W_Article">
+        <a href="newarticle.html"
+          ><div class="A_PhotoArticle">
+            <img
+              style="
+                object-fit: cover;
+                width: 650px;
+                height: 448px;
+                border-radius: 10px;
+              "
+              src="../images/firstarticle.jpg"
+              alt=""
+            /></div
+        ></a>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Когнитивные искажения</p></div>
+          <div class="A_ArticleDescription">
+            <p>Влияние восприятия реальности на эмоциональное состояние</p>
+          </div>
+        </div>
+      </div>
+      <!-- вторая статья -->
+      <div class="W_Article">
+        <div class="A_PhotoArticle">
+          <img
+            style="
+              object-fit: cover;
+              width: 650px;
+              height: 448px;
+              border-radius: 10px;
+            "
+            src="../images/article2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Эмоциональная зависимость</p></div>
+          <div class="A_ArticleDescription">
+            <p>Как распознать и преодолеть эмоциональную зависимость?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- маленькие статьи -->
+    <div class="C_MiniArticles">
+      <div class="W_MiniArticle">
+        <div class="A_MiniPhotoArticle">
+          <img
+            style="
+              object-fit: cover;
+              width: 427px;
+              height: 296px;
+              border-radius: 10px;
+            "
+            src="../images/article3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="M_MiniArticle">
+          <div class="A_MiniArticleTitle"><p>Психология прощения</p></div>
+          <div class="A_MiniArticleDescription">
+            <p>Прощение как способ освобождения от негатива</p>
+          </div>
+        </div>
+      </div>
+      <!-- вторая статья -->
+      <div class="W_MiniArticle">
+        <div class="A_MiniPhotoArticle">
+          <img
+            style="
+              object-fit: cover;
+              width: 427px;
+              height: 296px;
+              border-radius: 10px;
+            "
+            src="../images/article4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="M_MiniArticle">
+          <div class="A_MiniArticleTitle"><p>Эмоциональные этапы</p></div>
+          <div class="A_MiniArticleDescription">
+            <p>Стадии после разрыва отношений</p>
+          </div>
+        </div>
+      </div>
+      <!-- третья статья -->
+      <div class="W_MiniArticle">
+        <div class="A_MiniPhotoArticle">
+          <img
+            style="
+              object-fit: cover;
+              width: 427px;
+              height: 296px;
+              border-radius: 10px;
+            "
+            src="../images/article5.jpg"
+            alt=""
+          />
+        </div>
+        <div class="M_MiniArticle">
+          <div class="A_MiniArticleTitle"><p>Типы привязанности</p></div>
+          <div class="A_MiniArticleDescription">
+            <p>Типы привязанности и их влияние на отношения</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- третий ряд статей -->
+    <div class="C_BigArticles">
+      <div class="W_Article">
+        <div class="A_PhotoArticle">
+          <img
+            style="
+              object-fit: cover;
+              width: 650px;
+              height: 448px;
+              border-radius: 10px;
+            "
+            src="../images/article6.jpg"
+            alt=""
+          />
+        </div>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Конфликты</p></div>
+          <div class="A_ArticleDescription">
+            <p>
+              Методики для конструктивного разрешения споров и недоразумений
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- вторая статья -->
+      <div class="W_Article">
+        <div class="A_PhotoArticle">
+          <img
+            style="
+              object-fit: cover;
+              width: 650px;
+              height: 448px;
+              border-radius: 10px;
+            "
+            src="../images/article7.jpg"
+            alt=""
+          />
+        </div>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Самооценка</p></div>
+          <div class="A_ArticleDescription">
+            <p>Восстановление самооценки после расставания</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>День1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheets/components/1.Quarks.css" />
+    <link rel="stylesheet" href="../stylesheets/components/2.Atoms.css" />
+    <link rel="stylesheet" href="../stylesheets/components/3.Molecules.css" />
+    <link rel="stylesheet" href="../stylesheets/components/4.Wrappers.css" />
+    <link rel="stylesheet" href="../stylesheets/components/5.Collections.css" />
+    <link rel="stylesheet" href="../stylesheets/components/6.Organisms.css" />
+    <link
+      rel="stylesheet"
+      href="../stylesheets/components/7.SuperOrganisms.css"
+    />
+    <link rel="stylesheet" href="../stylesheets//adaptive.css" />
+  </head>
+  <style>
+    body {
+      width: 1470px;
+      background-color: #fcf8ec;
+      margin: 0;
+      padding: 0;
+    }
+    @media only screen and (min-width: 360px) and (max-width: 500px) {
+      body {
+        width: 500px;
+      }
+    }
+    @media only screen and (max-width: 360px) {
+      body {
+        width: 500px;
+      }
+    }
+    /* @font-face {
+      font-family: 'TT Fors Trial ExtraLight Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial ExtraLight Italic'),
+        url('TT Fors Trial ExtraLight Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Variable';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Variable'),
+        url('TT Fors Trial Variable.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Thin';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Thin'),
+        url('TT Fors Trial Thin.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Thin Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Thin Italic'),
+        url('TT Fors Trial Thin Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Regular'),
+        url('TT Fors Trial Regular.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Medium';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Medium'),
+        url('TT Fors Trial Medium.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Medium Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Medium Italic'),
+        url('TT Fors Trial Medium Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Light';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Light'),
+        url('TT Fors Trial Light.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Light Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Light Italic'),
+        url('TT Fors Trial Light Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Italic'),
+        url('TT Fors Trial Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial ExtraLight';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial ExtraLight'),
+        url('TT Fors Trial ExtraLight.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Black Outline Trial Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Black Outline Trial Italic'),
+        url('TT Fors Black Outline Trial Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial ExtraBold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial ExtraBold'),
+        url('TT Fors Trial ExtraBold.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial ExtraBold Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial ExtraBold Italic'),
+        url('TT Fors Trial ExtraBold Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial DemiBold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial DemiBold'),
+        url('TT Fors Trial DemiBold.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial DemiBold Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial DemiBold Italic'),
+        url('TT Fors Trial DemiBold Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Bold'),
+        url('TT Fors Trial Bold.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Bold Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Bold Italic'),
+        url('TT Fors Trial Bold Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Black';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Black'),
+        url('TT Fors Trial Black.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Trial Black Italic';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Trial Black Italic'),
+        url('TT Fors Trial Black Italic.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'TT Fors Black Outline Trial';
+      font-style: normal;
+      font-weight: normal;
+      src: local('TT Fors Black Outline Trial'),
+        url('TT Fors Black Outline Trial.woff') format('woff');
+    }
+    .bagel-fat-one-regular {
+      font-family: 'Bagel Fat One', serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      background-color: #f1e8db;
+      padding: 0;
+      margin: 0;
+      width: 1470px;
+    }
+    .A_MenuItem {
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 400;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #be153e;
+      cursor: url('../../images/smallcursor.svg'), auto;
+    }
+    a {
+      text-decoration: inherit;
+      color: #be153e;
+      cursor: url('../../images/smallcursor.svg'), auto;
+    }
+    .A_Logo {
+      font-family: 'Bagel Fat One';
+      font-weight: 400;
+      font-size: 25px;
+      color: #be153e;
+      display: flex;
+      justify-content: center;
+      margin-top: -19px;
+      margin-left: 10px;
+      margin-right: 200px;
+    }
+    .A_MenuButton {
+      border-radius: 10px;
+      width: 201px;
+      height: 50px;
+      background: #be153e;
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 610;
+      line-height: 350%;
+      font-size: 13px;
+      color: #f7e6f0;
+      display: flex;
+      justify-content: center;
+      border: none;
+    }
+    .C_Menu {
+      display: flex;
+      margin-left: 60px;
+      margin-top: 16px;
+      gap: 34px;
+    }
+    .O_Menu {
+      display: flex;
+      gap: 210px;
+      margin-top: 20px;
+    }
+    .A_DayTitle {
+      font-family: 'Babe', 'TT Fors Trial Variable';
+      font-weight: 500;
+      font-size: 120px;
+      line-height: 65%;
+      color: #be153e;
+      margin-left: 283px;
+      margin-top: -200px;
+    }
+    .A_DayText {
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 125%;
+      color: #004227;
+      width: 700px;
+      margin-left: 283px;
+      margin-top: -30px;
+    }
+    .O_Practice {
+      border-radius: 20px;
+      width: 874px;
+      height: 422px;
+      background: #f29db0;
+      margin-left: 283px;
+      margin-top: 58px;
+      display: flex;
+    }
+    .A_PracticeTag {
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 400;
+      font-size: 16px;
+      color: #1c3c31;
+      border-radius: 10px;
+      width: 99px;
+      height: 35px;
+      background: #fcf8ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 249px;
+      margin-top: 95px;
+    }
+    .A_Practice {
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 118%;
+      text-align: center;
+      color: #be153e;
+      width: 636px;
+    }
+    .W_Practice2 {
+      display: flex;
+      justify-content: center;
+    }
+    .W_Practice {
+      display: block;
+      justify-content: center;
+      margin-left: -82px;
+    }
+    .A_MalinaDay2 {
+      margin-top: 238px;
+      margin-left: 31px;
+    }
+    .A_MalinaDay {
+      margin-top: 31px;
+      margin-left: -80px;
+    }
+    .A_ArrowArticle {
+      margin-left: 90px;
+      margin-top: 100px;
+    }
+    .bold {
+      font-weight: 500;
+    } */
+    /* футер */
+    /* .A_Person {
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 500;
+      font-size: 23px;
+      text-transform: capitalize;
+      color: #be153e;
+    }
+    .A_Name {
+      font-family: 'TT Fors Trial Variable';
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #be153e;
+    }
+    .A_RestartFooter {
+      font-family: 'Bagel Fat One';
+      font-weight: 400;
+      font-size: 300px;
+      text-transform: uppercase;
+      color: #be153e;
+    }
+    .W_FirstFooter {
+      display: flex;
+    }
+    .M_Social {
+      display: flex;
+      margin-left: 110px;
+      gap: 10px;
+      margin-top: 75px;
+    }
+    .W_TwoPerson {
+      display: flex;
+      gap: 100px;
+      margin-left: 600px;
+      margin-top: 45px;
+    }
+    .A_HSELogo {
+      margin-top: 75px;
+      margin-left: 80px;
+    }
+    .A_RestartFooter {
+      display: flex;
+      justify-content: center;
+      margin-top: -200px;
+      height: 434px;
+    }
+    .O_Footer {
+      background-color: #f29db0;
+      height: 750px;
+      margin-top: 80px;
+    }
+    .A_PracticeTag {
+      margin-left: 265px;
+    }
+    .A_Name {
+      margin-top: -15px;
+    } */
+    /* @media only screen and (min-width: 360px) and (max-width: 500px) {
+      body {
+        width: 500px;
+      }
+      .A_Logo {
+        display: none;
+      }
+      .A_MenuButton {
+        display: none;
+      }
+     
+      .O_Footer {
+        height: 300px;
+      }
+      .A_RestartFooter {
+        font-size: 50px;
+        display: none;
+      }
+      .W_TwoPerson {
+        margin-left: 36px;
+        gap: 80px;
+      }
+      .W_FirstFooter {
+        display: block;
+      }
+      .M_Social {
+        margin-top: -245px;
+        margin-left: 391px;
+      }
+      .A_HSELogo {
+        margin-left: 36px;
+        padding-top: 40px;
+      }
+      .A_Name {
+        margin-top: -15px;
+      }
+      .O_Practice {
+        width: 427px;
+        margin-left: 36px;
+      }
+      .A_Practice {
+        font-size: 20px;
+        width: 350px;
+      }
+      .A_DayText {
+        margin-left: 36px;
+        width: 400px;
+      }
+      .A_DayTitle {
+        margin-top: -80px;
+        margin-left: 36px;
+      }
+      .A_ArrowArticle {
+        margin-left: 36px;
+        margin-top: 50px;
+      }
+      .A_PracticeTag {
+        margin-left: 30px;
+      }
+      .A_Practice {
+        margin-left: -100px;
+      }
+      .A_MalinaDay {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 360px) {
+      body {
+        width: 500px;
+      }
+      .A_Logo {
+        display: none;
+      }
+      .A_MenuButton {
+        display: none;
+      }
+   
+      .O_Footer {
+        height: 300px;
+      }
+      .A_RestartFooter {
+        font-size: 50px;
+        display: none;
+      }
+      .W_TwoPerson {
+        margin-left: 36px;
+        gap: 80px;
+      }
+      .W_FirstFooter {
+        display: block;
+      }
+      .M_Social {
+        margin-top: -245px;
+        margin-left: 391px;
+      }
+      .A_HSELogo {
+        margin-left: 36px;
+        padding-top: 40px;
+      }
+      .A_Name {
+        margin-top: -15px;
+      }
+      .O_Practice {
+        width: 427px;
+        margin-left: 36px;
+      }
+      .A_Practice {
+        font-size: 20px;
+        width: 350px;
+      }
+      .A_DayText {
+        margin-left: 36px;
+        width: 400px;
+      }
+      .A_DayTitle {
+        margin-top: -80px;
+        margin-left: 36px;
+      }
+      .A_ArrowArticle {
+        margin-left: 36px;
+        margin-top: 50px;
+      }
+      .A_PracticeTag {
+        margin-left: 30px;
+      }
+      .A_Practice {
+        margin-left: -100px;
+      }
+      .A_MalinaDay {
+        display: none;
+      }
+    } */
+  </style>
+  <body>
+    <div class="O_Menu">
+      <div class="C_Menu">
+        <div class="A_MenuItem">
+          <b><a href="../index.html">главная</a></b>
+        </div>
+        <div class="A_MenuItem"><a href="../newtherapy.html">терапия</a></div>
+        <div class="A_MenuItem">
+          <a href="../newarticles.html">статьи</a>
+        </div>
+        <div class="A_MenuItem"><a href="../newthoughts.html">мысли</a></div>
+        <div class="A_MenuItem"><a href="../newtest.html">тесты</a></div>
+      </div>
+      <div class="A_Logo"><p>RESTART</p></div>
+      <div class="A_MenuButton">
+        <button class="A_MenuButton">начать терапию</button>
+      </div>
+    </div>
+    <!-- контент -->
+    <a href="../newtherapy.html">
+      <div class="A_ArrowArticle">
+        <img src="../../images/A_ArrowArticle.svg" alt="" /></div
+    ></a>
+    <div class="A_DayTitle"><p>День 1</p></div>
+    <div class="A_DayText">
+      <p>
+        <span class="bold"
+          >Когда отношения заканчиваются, особенно те, в которые мы вложили
+          много времени и сил, возникает болезненное искушение копаться в
+          прошлом, размышляя о том, как можно было бы избежать
+          расставания.</span
+        >
+        <br /><br />Мы начинаем мучительно перебирать варианты: “А что, если бы
+        я была более понимающей?”, “А что, если бы он больше уделял мне
+        внимания?”, “А что, если бы мы попробовали психотерапию раньше?”. Эти
+        мысли кажутся ключом к упущенному счастью, но на самом деле, они часто
+        лишь затягивают нас в пучину сожалений и не позволяют двигаться дальше.
+        Правда в том, что разрыв – это редко спонтанное событие. Он, как
+        правило, является кульминацией накопившихся проблем, нерешенных
+        конфликтов и фундаментальных различий, которые просто невозможно
+        игнорировать. <br /><br />Вместо того, чтобы тратить энергию на фантазии
+        о “том, чего не случилось”, гораздо полезнее честно взглянуть на
+        причины, по которым отношения были обречены с самого начала. Анализ этих
+        причин поможет вам не только принять свершившийся факт расставания, но и
+        избежать повторения подобных ошибок в будущем. <br /><br />Глубинные
+        корни разрыва: Когда изменения бесполезны За каждым разрывом кроется
+        целый ряд причин, которые часто остаются незамеченными или игнорируются
+        в период увлеченности и надежды. Давай попробуем составить список
+        причин, по которым наши отношения все равно бы подошли к концу. Это
+        поможет принять реальность и, возможно, понять, почему расставание было
+        неизбежным
+      </p>
+    </div>
+    <div class="O_Practice">
+      <div class="W_Practice2">
+        <div class="A_MalinaDay2">
+          <img src="../../images/A_MalinaDay2.svg" alt="" />
+        </div>
+        <div class="W_Practice">
+          <div class="A_PracticeTag"><p>задание</p></div>
+          <div class="A_Practice">
+            <p>
+              Составь список причин, по которым ваши отношения все равно подошли
+              бы к концу
+            </p>
+          </div>
+        </div>
+        <div class="A_MalinaDay">
+          <img src="../../images/A_MalinaDay.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- футер -->
+    <div class="O_Footer">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
+  </body>
+</html>
