@@ -8,7 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    searchVanilla: './src/javascripts/search-vanilla.js'
   },
   output: {
     filename: '[name].js',
@@ -287,7 +288,12 @@ module.exports = {
       template: './src/newdays/day21.html',
       filename: './day21.html'
     }),
-
+    //поиск
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'searchVanilla']
+    }),
     // Internal pages
     // new HtmlWebpackPlugin({
     //   hash: true,

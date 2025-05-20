@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Статьи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="stylesheets/components/1.Quarks.css" />
     <link rel="stylesheet" href="stylesheets/components/2.Atoms.css" />
     <link rel="stylesheet" href="stylesheets/components/3.Molecules.css" />
@@ -12,62 +18,16 @@
     <link rel="stylesheet" href="stylesheets/components/6.Organisms.css" />
     <link rel="stylesheet" href="stylesheets/components/7.SuperOrganisms.css" />
     <link rel="stylesheet" href="stylesheets//adaptive.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        background-color: #fcf8ec;
-      }
-      .search-container {
-        text-align: center;
-        margin-top: -20px;
-        margin-bottom: 20px;
-      }
-      .search-input {
-        padding: 10px;
-        width: 400px;
-        font-size: 16px;
-        border-radius: 50px;
-        height: 40px;
-
-        background-color: transparent;
-
-        border: solid #be153e 1.5px;
-      }
-      .search-button {
-        padding: 10px 25px;
-        margin-left: 10px;
-        font-size: 16px;
-        background-color: #be153e;
-        color: #fcf8ec;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        height: 40px;
-        width: 100px;
-      }
-      /* .search-button:hover {
-        background-color: #be153e;
-      } */
-      .search-input:hover {
-        border-color: #be153e;
-      }
-      .C_MiniArticles {
-        margin-top: 24px;
-      }
-      .search-input::placeholder {
-        color: #be153e;
-        opacity: 0.4;
-        padding-left: 14px;
-      }
-    </style>
+    <analytics></analytics>
+    <script src="https://cdn.jsdelivr.net/npm/airtable@latest/build/airtable.browser.js"></script>
   </head>
   <body>
-    <!-- меню -->
+    <!-- поиск -->
+    <h1>Поиск статей</h1>
+    <input type="text" id="search" placeholder="Поиск статей..." />
+    <div class="S_Content"></div>
+    <!-- поиск -->
+
     <div class="O_Menu">
       <div class="C_Menu">
         <div class="A_MenuItem">
@@ -85,13 +45,15 @@
         <button class="A_MenuButton">начать терапию</button>
       </div>
     </div>
+    <!-- статьи -->
     <div class="A_Title"><p>Статьи</p></div>
-
-    <div class="search-container">
-      <input type="text" class="search-input" placeholder="Название статьи" />
-      <button class="search-button" style="height: 64px">Найти</button>
+    <div class="C_Filter">
+      <button class="A_WhiteFilter all">Все</button>
+      <button class="A_WhiteFilter psyhology">Психология</button>
+      <button class="A_WhiteFilter develop">Развлечения</button>
+      <button class="A_WhiteFilter activity">Саморазвитие</button>
+      <button class="A_WhiteFilter relationship">Отношения</button>
     </div>
-
     <div class="C_BigArticles">
       <div class="W_Article psyhology">
         <a href="new_articles.html/article1.html"
@@ -102,12 +64,14 @@
               class="A_PhotoArticle1"
             /></div
         ></a>
-
-        <div class="A_ArticleTitle"><p>Когнитивные искажения</p></div>
-        <div class="A_ArticleDescription">
-          <p>Влияние восприятия реальности на эмоциональное состояние</p>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Когнитивные искажения</p></div>
+          <div class="A_ArticleDescription">
+            <p>Влияние восприятия реальности на эмоциональное состояние</p>
+          </div>
         </div>
       </div>
+      <!-- вторая статья -->
       <div class="W_Article psyhology">
         <a href="new_articles.html/article2.html"
           ><div class="A_PhotoArticle1">
@@ -117,15 +81,17 @@
               class="A_PhotoArticle1"
             /></div
         ></a>
-
-        <div class="A_ArticleTitle"><p>Эмоциональная зависимость</p></div>
-        <div class="A_ArticleDescription">
-          <p>Как распознать и преодолеть эмоциональную зависимость?</p>
+        <div class="M_Article">
+          <div class="A_ArticleTitle"><p>Эмоциональная зависимость</p></div>
+          <div class="A_ArticleDescription">
+            <p>Как распознать и преодолеть эмоциональную зависимость?</p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- маленькие статьи -->
     <div class="C_MiniArticles">
-      <div class="W_Articlem psyhology">
+      <div class="W_Article psyhology">
         <a href="new_articles.html/article3.html">
           <div class="A_MiniPhotoArticle">
             <img
@@ -142,7 +108,7 @@
         </div>
       </div>
       <!-- вторая статья -->
-      <div class="W_Articlem psyhology">
+      <div class="W_Article psyhology">
         <a href="new_articles.html/article4.html">
           <div class="A_MiniPhotoArticle">
             <img
@@ -159,7 +125,7 @@
         </div>
       </div>
       <!-- третья статья -->
-      <div class="W_Articlem psyhology">
+      <div class="W_Article psyhology">
         <a href="new_articles.html/article5.html">
           <div class="A_MiniPhotoArticle">
             <img
@@ -215,7 +181,7 @@
     </div>
     <!-- четвертый ряд статей -->
     <div class="C_MiniArticles">
-      <div class="W_Articlem activity">
+      <div class="W_Article activity">
         <a href="new_articles.html/article6.html">
           <div class="A_MiniPhotoArticle">
             <img
@@ -232,7 +198,7 @@
         </div>
       </div>
       <!-- вторая статья -->
-      <div class="W_Articlem activity">
+      <div class="W_Article activity">
         <a href="new_articles.html/article7.html">
           <div class="A_MiniPhotoArticle">
             <img
@@ -249,7 +215,7 @@
         </div>
       </div>
       <!-- третья статья -->
-      <div class="W_Articlem activity">
+      <div class="W_Article activity">
         <a href="new_articles.html/article8.html">
           <div class="A_MiniPhotoArticle">
             <img
@@ -305,67 +271,175 @@
         </div>
       </div>
     </div>
-
+    <!-- футер -->
+    <div class="O_Footer2">
+      <div class="W_FirstFooter">
+        <div class="A_HSELogo">
+          <img src="../images/A_HSELogo.svg" alt="" />
+        </div>
+        <div class="W_TwoPerson">
+          <div class="W_Person">
+            <div class="M_Person">
+              <div class="A_Person"><p>Кураторы</p></div>
+              <div class="A_Name"><p>Софья Каем</p></div>
+            </div>
+            <div class="A_Name"><p>Aнна Комкова</p></div>
+          </div>
+          <div class="M_Person">
+            <div class="A_Person"><p>Дизайнер</p></div>
+            <div class="A_Name"><p>Миловидова Нина</p></div>
+          </div>
+        </div>
+        <div class="M_Social">
+          <div class="A_Tg"><img src="../images/A_Tg.svg" alt="" /></div>
+          <div class="A_Vk"><img src="../images/A_Vk.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="A_RestartFooter"><p>RESTART</p></div>
+    </div>
     <script>
+      console.clear()
       document.addEventListener('DOMContentLoaded', () => {
-        const searchInput = document.querySelector('.search-input')
-        const searchButton = document.querySelector('.search-button')
-        const articles = document.querySelectorAll('.W_Article')
+        initFilter()
+        initMultiselect()
+      })
 
-        searchButton.addEventListener('click', () => {
-          const query = searchInput.value.toLowerCase()
-          articles.forEach((article) => {
-            const title = article
-              .querySelector('.A_ArticleTitle p')
-              .innerText.toLowerCase()
-            const description = article
-              .querySelector('.A_ArticleDescription p')
-              .innerText.toLowerCase()
+      function initFilter() {
+        const tags = document.querySelectorAll('.A_WhiteFilter')
+        const tagAll = document.querySelector('.all')
 
-            if (title.includes(query) || description.includes(query)) {
-              article.style.display = 'block'
-            } else {
-              article.style.display = 'none'
+        tags.forEach((tag) => {
+          tag.addEventListener('click', () => {
+            if (tag != tagAll) {
+              tagAll.classList.remove('active')
+              tag.classList.toggle('active')
+
+              console.log('здесь будет функция фильтрации по тегу')
+              filterByTag()
+            }
+
+            let activeTags = document.querySelectorAll('.active')
+            if (tag == tagAll && !tag.classList.contains('active')) {
+              activeTags.forEach((tag) => {
+                tag.classList.remove('active')
+              })
+              tag.classList.add('active')
+              console.log('здесь будет функция вывода всех карточек')
+              filterAll()
+            }
+            if (
+              tags.length - 1 == activeTags.length ||
+              activeTags.length == 0
+            ) {
+              activeTags.forEach((tag) => {
+                tag.classList.remove('active')
+              })
+              tagAll.classList.add('active')
+              console.log('здесь будет функция вывода всех карточек')
+              filterAll()
             }
           })
         })
+      }
+      function filterByTag() {
+        const cards = document.querySelectorAll('.W_Article')
+        const activeTags = document.querySelectorAll('.active')
+        let tagList = []
+        let count
 
-        searchInput.addEventListener('keyup', (e) => {
-          if (e.key === 'Enter') {
-            searchButton.click()
+        cards.forEach((card) => {
+          card.style.display = 'none'
+        })
+
+        activeTags.forEach((tag) => {
+          let classList = tag.className.split(' ')
+          classList = classList.sort()
+          count = 1
+          if (classList[1] == 'active') {
+            count++
+          }
+          for (let i = count; i < classList.length; i++) {
+            tagList.push(classList[i])
           }
         })
-      })
-      //   другие
-      document.addEventListener('DOMContentLoaded', () => {
-        const searchInput = document.querySelector('.search-input')
-        const searchButton = document.querySelector('.search-button')
-        const articles = document.querySelectorAll('.W_Articlem')
 
-        searchButton.addEventListener('click', () => {
-          const query = searchInput.value.toLowerCase()
-          articles.forEach((article) => {
-            const title = article
-              .querySelector('.A_MiniArticleTitle p')
-              .innerText.toLowerCase()
-            const description = article
-              .querySelector('.A_MiniArticleDescription p')
-              .innerText.toLowerCase()
-
-            if (title.includes(query) || description.includes(query)) {
-              article.style.display = 'block'
-            } else {
-              article.style.display = 'none'
+        tagList.forEach((tagName) => {
+          cards.forEach((card) => {
+            if (card.classList.contains(tagName)) {
+              card.style.display = 'block'
             }
           })
         })
+      }
 
-        searchInput.addEventListener('keyup', (e) => {
-          if (e.key === 'Enter') {
-            searchButton.click()
+      function filterAll() {
+        const cards = document.querySelectorAll('.W_Article')
+        const activeTags = document.querySelectorAll('.active')
+
+        activeTags.forEach((tag) => {
+          if (tag.classList.contains('all')) {
+            cards.forEach((card) => {
+              card.style.display = 'block'
+            })
           }
         })
+      }
+
+      //  поиск
+
+      const articles = [
+        {
+          title: 'Первая статья',
+          description: 'Это описание первой статьи.',
+          image: 'https://via.placeholder.com/150'
+        },
+        {
+          title: 'Вторая статья',
+          description: 'Это описание второй статьи.',
+          image: 'https://via.placeholder.com/150'
+        },
+        {
+          title: 'Третья статья',
+          description: 'Это описание третьей статьи.',
+          image: 'https://via.placeholder.com/150'
+        }
+      ]
+
+      // Функция для отображения статей
+      function displayArticles(articlesToDisplay) {
+        const contentDiv = document.querySelector('.S_Content')
+        contentDiv.innerHTML = '' // Очищаем предыдущие результаты
+
+        if (articlesToDisplay.length === 0) {
+          contentDiv.innerHTML = '<p>Статьи не найдены.</p>'
+          return
+        }
+
+        articlesToDisplay.forEach((article) => {
+          const articleDiv = document.createElement('div')
+          articleDiv.classList.add('article')
+          articleDiv.innerHTML = `
+                    <h2>${article.title}</h2>
+                    <img src="${article.image}" alt="${article.title}" />
+                    <p>${article.description}</p>
+                `
+          contentDiv.appendChild(articleDiv)
+        })
+      }
+
+      // Слушатель события для поля поиска
+      document.getElementById('search').addEventListener('input', (event) => {
+        const searchTerm = event.target.value.toLowerCase()
+        const filteredArticles = articles.filter(
+          (article) =>
+            article.title.toLowerCase().includes(searchTerm) ||
+            article.description.toLowerCase().includes(searchTerm)
+        )
+        displayArticles(filteredArticles)
       })
+
+      // Инициализация
+      displayArticles(articles)
     </script>
   </body>
 </html>
